@@ -1,0 +1,12 @@
+# cmake_minimum_required(VERSION <specify CMake version here>)
+project(leetcode)
+
+set(CMAKE_CXX_STANDARD 11)
+
+add_executable(leetcode main.cpp)
+add_executable(001_Two_Sum 001_Two_Sum.cpp)
+add_executable(002_Add_Two_Numbers 002_Add_Two_Numbers.cpp)
+add_executable(003_Longest_Substring_Without_Repeating_Characters 003_Longest_Substring_Without_Repeating_Characters.cpp)
+add_executable(004_Median_of_Two_Sorted_Arrays 004_Median_of_Two_Sorted_Arrays.cpp)
+add_executable(005_Longest_Palindromic_Substring 005_Longest_Palindromic_Substring.cpp)
+add_executable(006_ZigZag_Conversion 006_ZigZag_Conversion.cpp)
