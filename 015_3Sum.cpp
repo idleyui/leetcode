@@ -1,6 +1,5 @@
 #include "alg.h"
 
-//todo
 vector<vector<int>> threeSum(vector<int> &nums) {
     set<vector<int>> result = {};
     sort(nums.begin(), nums.end());
