@@ -1,12 +1,5 @@
 #include "alg.h"
 
-struct ListNode {
-    int val;
-    ListNode *next;
-
-    ListNode(int x) : val(x), next(NULL) {}
-};
-
 ListNode *mergeTwoLists(ListNode *l1, ListNode *l2) {
     ListNode *p1 = l1, *p2 = l2;
     ListNode *head = new ListNode(0), *p = head;
@@ -31,16 +24,6 @@ ListNode *mergeTwoLists(ListNode *l1, ListNode *l2) {
     p->next = p1;
 
     return head->next;
-}
-
-ListNode *mklst(vector<int> v) {
-    ListNode *h = new ListNode(0);
-    ListNode *p = h;
-    for (int i: v) {
-        p->next = new ListNode(i);
-        p = p->next;
-    }
-    return h->next;
 }
 
 int main() {

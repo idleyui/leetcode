@@ -29,3 +29,4 @@ add_executable(019_Remove_Nth_Node_From_End_of_List 019_Remove_Nth_Node_From_End
 add_executable(020_Valid_Parentheses 020_Valid_Parentheses.cpp)
 add_executable(021_Merge_Two_Sorted_Lists 021_Merge_Two_Sorted_Lists.cpp)
 add_executable(022_Generate_Parentheses 022_Generate_Parentheses.cpp)
+add_executable(024_Swap_Nodes_in_Pairs 024_Swap_Nodes_in_Pairs.cpp)
