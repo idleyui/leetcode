@@ -20,9 +20,17 @@
 
 using namespace std;
 
+vector<int> mkv(vector<int> v) {
+    return v;
+}
+
+vector<vector<int>> mkvv(vector<vector<int>> vv) {
+    return vv;
+}
+
+
 template<typename T>
-void print_container(const T& container)
-{
+void print_container(const T &container) {
     std::copy(std::begin(container),
               std::end(container),
               std::ostream_iterator<typename T::value_type>(cout, " "));
