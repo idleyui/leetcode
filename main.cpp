@@ -1,6 +1,6 @@
 #include <iostream>
 #include "cmath"
-#include "alg.h"
+#include "debug/alg.h"
 
 ListNode *removeNthFromEnd(ListNode *head, int n) {
     ListNode *h = new ListNode(1);
