@@ -1,5 +1,7 @@
 # Leetcode Solutions
-Update Time:	Thu Oct 25 21:52:07 2018
+> This README file was build by [script/readme.py](https://github.com/leelddd/leetcode/blob/master/script/readme.py) file
+
+Update Time:	Thu Oct 25 22:41:56 2018
 
 Status:	54/875
 ## Solution Table

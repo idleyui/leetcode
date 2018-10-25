@@ -1,9 +1,6 @@
-#!/usr/bin/env python
-# Created by Bruce yuan on 18-1-22.
 import requests
 import json
 import time
-from bs4 import BeautifulSoup
 import re
 import configparser
 
@@ -17,7 +14,7 @@ class Config:
     name = ''
     pws = ''
     local_path = ''
-    github_url = 'https://github.com/leelddd/leetcode/blob/master/latest_submissions/'
+    github_url = 'https://github.com/leelddd/leetcode/blob/master/'
     leetcode_url = 'https://leetcode.com/problems/'
     difficulty = ['Easy', 'Medium', 'Hard']
     column = {
@@ -25,7 +22,7 @@ class Config:
         'Title': lambda item: '[' + item['stat']['question__title'] + '](' + Config.leetcode_url + item['stat'][
             'question__title_slug'] + ')',
         'Difficulty': lambda item: Config.difficulty[item['difficulty']['level'] - 1],
-        'Solution': lambda item: '[cpp](' + Config.github_url + solution_name(item, 'cpp') + ')'
+        'Solution': lambda item: '[cpp](' + Config.github_url + 'latest_submissions/' + solution_name(item, 'cpp') + ')'
     }
 
     # all_column = ['Id', 'Title', 'Difficulty', 'Description', 'C++', 'Java', 'Python', 'Python3', 'C', 'C#',
@@ -82,6 +79,7 @@ class API:
         if languages is None:
             languages = {'cpp'}
         content = self.session.get(self.urls['sub'] + problem).content
+        time.sleep(1)
         submissions = json.loads(content)['submissions_dump']
         result = []
         for submission in submissions:
@@ -122,8 +120,9 @@ def main():
     print('generating README.md file...')
     # write 1. update time; 2. ac status; 3. solution table
     problems = api.problems()
-    with open(Config.local_path + 'READMD.md', 'w+') as f:
+    with open(Config.local_path + 'README.md', 'w+') as f:
         f.write('# Leetcode Solutions\n')
+        f.write('> This README file was build by [script/readme.py](%sscript/readme.py) file\n\n' % Config.github_url)
         f.write('Update Time:\t%s\n\n' % time.asctime(time.localtime()))
         status = api.ac_status()
         f.write('Status:\t%d/%d\n' % (status['num_solved'], status['num_total']))
@@ -132,18 +131,15 @@ def main():
     print('generating finish')
 
     # get latest submissions
-    for problem in problems:
-        try:
-            for solution in api.submissions(problem['stat']['question__title_slug']):
-                f = open(Config.local_path + solution_name(problem, solution['lang']), 'w+')
-                print('downloading submission ', problem['stat']['question__title'])
-                f.write(api.submission(solution['url']))
-                f.close()
-        except:
-            print(problem['stat']['question__title'])
-
-    for s in api.submissions('reverse-string'):
-        print(1)
+    # for problem in problems:
+    #     try:
+    #         for solution in api.submissions(problem['stat']['question__title_slug']):
+    #             f = open(Config.local_path + '/latest_submissions/' +  solution_name(problem, solution['lang']), 'w+')
+    #             print('downloading submission ', problem['stat']['question__title'])
+    #             f.write(api.submission(solution['url']))
+    #             f.close()
+    #     except:
+    #         print('wrong in', problem['stat']['question__title'])
 
 
 
@@ -151,6 +147,6 @@ if __name__ == '__main__':
     config = configparser.ConfigParser()
     config.read('login.ini')
     Config.name = config['default']['name']
-    Config.pwd= config['default']['pwd']
-    Config.local_path= config['default']['path']
+    Config.pwd = config['default']['pwd']
+    Config.local_path = config['default']['path']
     main()
