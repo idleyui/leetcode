@@ -104,6 +104,10 @@ def status():
     pass
 
 
+def custom():
+    return '## '
+
+
 def table(problems):
     result = '| ' + ' | '.join(Config.column_order) + ' |\n'
     result += '|:---:' * len(Config.column_order) + '|\n'
@@ -122,7 +126,7 @@ def main():
     problems = api.problems()
     with open(Config.local_path + 'README.md', 'w+') as f:
         f.write('# Leetcode Solutions\n')
-        f.write('> This README file was build by [script/readme.py](%sscript/readme.py) file\n\n' % Config.github_url)
+        f.write('This README file was build by [script/readme.py](%sscript/readme.py) file\n\n' % Config.github_url)
         f.write('Update Time:\t%s\n\n' % time.asctime(time.localtime()))
         status = api.ac_status()
         f.write('Status:\t%d/%d\n' % (status['num_solved'], status['num_total']))

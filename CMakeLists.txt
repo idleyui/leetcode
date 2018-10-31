@@ -3,7 +3,6 @@ project(leetcode)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(leetcode main.cpp)
 add_executable(001_Two_Sum debug/001_Two_Sum.cpp)
 add_executable(002_Add_Two_Numbers debug/002_Add_Two_Numbers.cpp)
 add_executable(003_Longest_Substring_Without_Repeating_Characters debug/003_Longest_Substring_Without_Repeating_Characters.cpp)
@@ -38,3 +37,9 @@ add_executable(914_X_of_a_Kind_in_a_Deck_of_Cards debug/914_X_of_a_Kind_in_a_Dec
 add_executable(915_Partition_Array_into_Disjoint_Intervals debug/915_Partition_Array_into_Disjoint_Intervals.cpp)
 add_executable(916_Word_Subsets debug/916_Word_Subsets.cpp)
 add_executable(913_Cat_and_Mouse debug/913_Cat_and_Mouse.cpp)
+
+add_executable(033_Search_in_Rotated_Sorted_Array debug/033_Search_in_Rotated_Sorted_Array.cpp)
+add_executable(035_Count_and_Say debug/035_Count_and_Say.cpp)
+
+add_executable(039_Combination_Sum debug/039_Combination_Sum.cpp)
+add_executable(test debug/test.cpp)
