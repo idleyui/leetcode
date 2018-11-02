@@ -70,4 +70,13 @@ void printList(ListNode *l, string spliter = ", ") {
     }
 }
 
+struct Point {
+    int x;
+    int y;
+
+    Point() : x(0), y(0) {}
+
+    Point(int a, int b) : x(a), y(b) {}
+};
+
 #endif //LEETCODE_ALG_H

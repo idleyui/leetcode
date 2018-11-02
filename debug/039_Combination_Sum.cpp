@@ -1,31 +1,24 @@
 #include "alg.h"
 
-set<unordered_multiset<int>> uniqSum(vector<int> &candidates, int target) {
-    set<unordered_multiset<int>> results{};
-    for (int num: candidates) {
-//        if (target == num) {
-            unordered_multiset<int> sets({num});
-            results.insert(sets);
-//        } else if (target > num) {
-//            set<unordered_multiset<int>> recur_v = uniqSum(candidates, target - num);
-//            for (auto item = recur_v.begin(); item != recur_v.end(); item++) {
-//                auto um = *item;
-//                um.insert(num);
-//            }
-//            if (!recur_v.empty()) results.insert(recur_v.begin(), recur_v.end());
-//        }
+
+void combinationSum(vector<int> &candidates, int target, vector<vector<int>> &res, vector<int> combination, int begin) {
+    if (!target) {
+        res.push_back(combination);
+        return;
     }
-    return results;
+    for (int i = begin; i != candidates.size() && target >= candidates[i]; ++i) {
+        combination.push_back(candidates[i]);
+        combinationSum(candidates, target - candidates[i], res, combination, i);
+        combination.pop_back();
+    }
 }
 
 vector<vector<int>> combinationSum(vector<int> &candidates, int target) {
-    set<unordered_multiset<int>> re = uniqSum(candidates, target);
-    vector<vector<int>> vr;
-    for (auto item = re.begin(); item != re.end(); item++){
-        auto un = *item;
-        vr.push_back(vector<int>(un.begin(), un.end()));
-    }
-    return vr;
+    sort(candidates.begin(), candidates.end());
+    vector<vector<int>> res;
+    vector<int> combination;
+    combinationSum(candidates, target, res, combination, 0);
+    return res;
 }
 
 int main() {
@@ -34,5 +27,4 @@ int main() {
     for (auto &v2: v) {
         print_container(v2);
     }
-    cout << v.size();
 }

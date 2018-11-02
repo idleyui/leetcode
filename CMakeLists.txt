@@ -43,3 +43,5 @@ add_executable(035_Count_and_Say debug/035_Count_and_Say.cpp)
 
 add_executable(039_Combination_Sum debug/039_Combination_Sum.cpp)
 add_executable(test debug/test.cpp)
+add_executable(065_Valid_Number debug/065_Valid_Number.cpp)
+add_executable(149_Max_Points_on_a_Line debug/149_Max_Points_on_a_Line.cpp)
