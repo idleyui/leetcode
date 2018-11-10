@@ -11,6 +11,8 @@
 #include <iostream>
 #include <algorithm>
 #include <vector>
+#include <queue>
+#include <deque>
 #include <map>
 #include <unordered_map>
 #include <set>
@@ -78,5 +80,30 @@ struct Point {
 
     Point(int a, int b) : x(a), y(b) {}
 };
+
+struct TreeNode {
+    int val;
+    TreeNode *left;
+    TreeNode *right;
+
+    TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+};
+
+void print_tree(TreeNode *node) {
+    if (!node) return;
+    cout << "[";
+    queue<TreeNode *> q;
+    q.push(node);
+    while (!q.empty()) {
+        TreeNode *node = q.front();
+        cout << (node ? to_string(node->val) : "null") << ",";
+        if (node && (node->left || node->right)) {
+            q.push(node->left);
+            q.push(node->right);
+        }
+        q.pop();
+    }
+    cout << "]," << endl;
+}
 
 #endif //LEETCODE_ALG_H
