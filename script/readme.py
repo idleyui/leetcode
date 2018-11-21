@@ -3,6 +3,8 @@ import json
 import time
 import re
 import configparser
+import os
+import random
 
 
 def solution_name(item, suffix):
@@ -10,9 +12,19 @@ def solution_name(item, suffix):
 
 
 class Config:
-    # Basic configuration
+    """Basic configurations
+        Attributes:
+            name:           leetcode account name
+            pwd:            leetcode account password
+            local_path:     path to store algorithms file
+            github_url:     your leetcode repository url in github
+            leetcode_url:   leetcode url
+            difficulty:
+            column:         generate template for columns
+            column_order:   order of your column
+    """
     name = ''
-    pws = ''
+    pwd = ''
     local_path = ''
     github_url = 'https://github.com/leelddd/leetcode/blob/master/'
     leetcode_url = 'https://leetcode.com/problems/'
@@ -24,14 +36,15 @@ class Config:
         'Difficulty': lambda item: Config.difficulty[item['difficulty']['level'] - 1],
         'Solution': lambda item: '[cpp](' + Config.github_url + 'latest_submissions/' + solution_name(item, 'cpp') + ')'
     }
-
-    # all_column = ['Id', 'Title', 'Difficulty', 'Description', 'C++', 'Java', 'Python', 'Python3', 'C', 'C#',
-    #               'JavaScript',
-    #               'Ruby',
-    #               'Swift', 'Go', 'Scala', 'Kotlin']
-
-    # Customize for yourself
     column_order = ['#', 'Title', 'Difficulty', 'Solution']
+
+
+def init(filename):
+    config = configparser.ConfigParser()
+    config.read(filename)
+    Config.name = config['login']['name']
+    Config.pwd = config['login']['pwd']
+    Config.local_path = config['st']['path']
 
 
 class API:
@@ -62,18 +75,13 @@ class API:
         s.post(login_url, data=payload, headers=headers)
         return s
 
-    def ac_status(self):
-        content = self.session.get(self.urls['problem']).content
-        status = json.loads(content)
-        return status
-
     def problems(self, status='ac'):
         content = self.session.get(self.urls['problem']).content
         all_questions = json.loads(content)['stat_status_pairs']
         if status == 'all':
-            return all_questions
+            return json.loads(content), all_questions
         else:
-            return [item for item in all_questions if item['status'] == status]
+            return json.loads(content), [item for item in all_questions if item['status'] == status]
 
     def submissions(self, problem, languages=None):
         if languages is None:
@@ -100,15 +108,12 @@ class API:
         return re.sub('(?P<value>\\\\u[0-9A-F]{4})', cd, solution)
 
 
-def status():
-    pass
-
-
-def custom():
-    return '## '
-
-
 def table(problems):
+    """Generate solution table string by problems json
+
+    :param problems: leetcode problems json api
+    :return: table string
+    """
     result = '| ' + ' | '.join(Config.column_order) + ' |\n'
     result += '|:---:' * len(Config.column_order) + '|\n'
     lines = []
@@ -119,38 +124,69 @@ def table(problems):
     return result + '\n'.join(lines)
 
 
-def main():
-    api = API(Config.name, Config.pwd)
+def readme(status: json, problems: json):
+    """Generate README.md file
+
+    1. Update time 2. Update AC status 3. Update solution table
+
+    :param api: leetcode API class
+    :return:
+    """
     print('generating README.md file...')
-    # write 1. update time; 2. ac status; 3. solution table
-    problems = api.problems()
+
     with open(Config.local_path + 'README.md', 'w+') as f:
         f.write('# Leetcode Solutions\n')
         f.write('This README file was build by [script/readme.py](%sscript/readme.py) file\n\n' % Config.github_url)
         f.write('Update Time:\t%s\n\n' % time.asctime(time.localtime()))
-        status = api.ac_status()
+
         f.write('Status:\t%d/%d\n' % (status['num_solved'], status['num_total']))
+
         f.write('## Solution Table\n')
         f.write(table(problems))
+
     print('generating finish')
 
-    # get latest submissions
-    # for problem in problems:
-    #     try:
-    #         for solution in api.submissions(problem['stat']['question__title_slug']):
-    #             f = open(Config.local_path + '/latest_submissions/' +  solution_name(problem, solution['lang']), 'w+')
-    #             print('downloading submission ', problem['stat']['question__title'])
-    #             f.write(api.submission(solution['url']))
-    #             f.close()
-    #     except:
-    #         print('wrong in', problem['stat']['question__title'])
 
+def download(api, problems, language):
+    wrong_list = []
+    for problem in problems:
+        # path = Config.local_path + '/latest_submissions/' + solution_name(problem, solution['lang'])
+        path = Config.local_path + '/latest_submissions/' + solution_name(problem, language)
+        if os.path.exists(path):
+            print("solution %s exists" % solution_name(problem, language))
+            continue
+
+        try:
+            for solution in api.submissions(problem['stat']['question__title_slug']):
+                f = open(path, 'w+')
+                print('downloading submission ', problem['stat']['question__title'])
+                f.write(api.submission(solution['url']))
+                f.close()
+                time.sleep(random.randint(0, 3))
+
+
+        except:
+            wrong_list.append(problem)
+            print('wrong in', problem['stat']['question__title'])
+
+    if len(wrong_list) > 0:
+        download(api, wrong_list, 'cpp')
+
+
+def default_update():
+    """Default update
+
+    Update README.md and latest submissions
+
+    :return:
+    """
+    api = API(Config.name, Config.pwd)
+    status, problems = api.problems()
+
+    readme(status, problems)
+    download(api, problems, 'cpp')
 
 
 if __name__ == '__main__':
-    config = configparser.ConfigParser()
-    config.read('login.ini')
-    Config.name = config['default']['name']
-    Config.pwd = config['default']['pwd']
-    Config.local_path = config['default']['path']
-    main()
+    init('login.ini')  # read configurations from 'login.ini'
+    default_update()  # update solution table and
