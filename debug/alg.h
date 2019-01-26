@@ -70,6 +70,7 @@ void printList(ListNode *l, string spliter = ", ") {
         cout << l->val << spliter;
         l = l->next;
     }
+    cout << endl;
 }
 
 struct Point {
