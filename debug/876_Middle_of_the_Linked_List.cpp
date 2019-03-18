@@ -1,6 +1,8 @@
 /*
  * use two pointer, slow go 1 steps while fast go 2 steps
  * and check if fast->next exist
+ * discuss:
+ * - https://leetcode.com/problems/middle-of-the-linked-list/discuss/154619/C%2B%2BJavaPython-Slow-and-Fast-Pointers
  */
 
 #include "alg.h"
