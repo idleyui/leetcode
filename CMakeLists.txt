@@ -68,3 +68,5 @@ add_executable(309_Best_Time_to_Buy_and_Sell_Stock_with_Cooldown debug/309_Best_
 add_executable(876_Middle_of_the_Linked_List debug/876_Middle_of_the_Linked_List.cpp)
 add_executable(206_Reverse_Linked_List debug/206_Reverse_Linked_List.cpp)
 add_executable(005_Longest_Palindromic_Substring_II debug/005_Longest_Palindromic_Substring_II.cpp)
+add_executable(023_Merge_k_Sorted_Lists debug/023_Merge_k_Sorted_Lists.cpp)
+add_executable(025_Reverse_Nodes_in_k-Group debug/025_Reverse_Nodes_in_k-Group.cpp)

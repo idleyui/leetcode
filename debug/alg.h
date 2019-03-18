@@ -21,6 +21,7 @@
 #include <bits/stdc++.h>
 #include <cmath>
 #include <numeric>
+#include <list>
 
 using namespace std;
 
@@ -53,7 +54,16 @@ struct ListNode {
     ListNode *next;
 
     ListNode(int x) : val(x), next(NULL) {}
+
+    // https://stackoverflow.com/questions/1380463/sorting-a-vector-of-custom-objects
+    bool operator<(const ListNode &node) const {
+        return (val < node.val);
+    }
 };
+
+// https://stackoverflow.com/questions/7446743/sorting-vector-of-pointers
+bool compareListNode(ListNode *a, ListNode *b) { return (a->val < b->val); }
+
 
 ListNode *mklst(vector<int> v) {
     ListNode *h = new ListNode(0);
