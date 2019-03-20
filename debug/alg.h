@@ -75,6 +75,14 @@ ListNode *mklst(vector<int> v) {
     return h->next;
 }
 
+vector<ListNode *> mklsts(vector<vector<int>> vv) {
+    vector<ListNode *> rt;
+    for (auto v: vv) {
+        rt.push_back(mklst(v));
+    }
+    return rt;
+}
+
 void printList(ListNode *l, string spliter = ", ") {
     while (l) {
         cout << l->val << spliter;
