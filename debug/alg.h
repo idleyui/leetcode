@@ -64,6 +64,12 @@ struct ListNode {
 // https://stackoverflow.com/questions/7446743/sorting-vector-of-pointers
 bool compareListNode(ListNode *a, ListNode *b) { return (a->val < b->val); }
 
+ListNode *tail(ListNode *head) {
+    while (head && head->next) {
+        head = head->next;
+    }
+    return head;
+}
 
 ListNode *mklst(vector<int> v) {
     ListNode *h = new ListNode(0);
@@ -74,6 +80,16 @@ ListNode *mklst(vector<int> v) {
     }
     return h->next;
 }
+
+ListNode *mklst_with_cycle(vector<int> v, int pos) {
+    ListNode *head = mklst(v), *p = head, *t = tail(head);
+    for (int i = 0; i < pos; ++i) {
+        p = p->next;
+    }
+    t->next = p;
+    return head;
+}
+
 
 vector<ListNode *> mklsts(vector<vector<int>> vv) {
     vector<ListNode *> rt;
@@ -124,5 +140,20 @@ void print_tree(TreeNode *node) {
     }
     cout << "]," << endl;
 }
+
+class Node {
+public:
+    int val;
+    Node *next;
+    Node *random;
+
+    Node() {}
+
+    Node(int _val, Node *_next, Node *_random) {
+        val = _val;
+        next = _next;
+        random = _random;
+    }
+};
 
 #endif //LEETCODE_ALG_H
