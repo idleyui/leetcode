@@ -45,7 +45,10 @@ string longestPalindrome_dp(const string &s) {
 
     for (int i = 0; i < s.size() - 1; ++i) {
         dp[i][i + 1] = s[i] == s[i + 1];
-        if (dp[i][i + 1]) max = 2;
+        if (dp[i][i + 1]) {
+            max = 2;
+            max_i = i;
+        }
     }
 
     for (int len = 1; len <= s.size(); len++) {
