@@ -124,6 +124,29 @@ struct TreeNode {
     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
 };
 
+TreeNode *mk_tree(vector<int> v) {
+    if (v.size() == 0) return nullptr;
+    TreeNode *root = nullptr;
+    queue<TreeNode *> q;
+    for (auto i: v) {
+        if (q.empty()) {
+            root = new TreeNode(i);
+            q.push(root);
+        } else {
+            auto front = q.front();
+            if (!front->left) {
+                front->left = new TreeNode(i);
+                q.push(front->left);
+            } else if (!front->right) {
+                front->right = new TreeNode(i);
+                q.pop();
+                q.push(front->right);
+            }
+        }
+    }
+    return root;
+}
+
 void print_tree(TreeNode *node) {
     if (!node) return;
     cout << "[";
