@@ -15,6 +15,13 @@ public:
     bool hasNext() {
 
     }
+
+private:
+    stack<TreeNode *> s;
+
+    void set(TreeNode *root){
+        root->left
+    }
 };
 
 int main() {

@@ -102,3 +102,4 @@ add_executable(145_Binary_Tree_Postorder_Traversal solution/145_Binary_Tree_Post
 add_executable(150_Evaluate_Reverse_Polish_Notation solution/150_Evaluate_Reverse_Polish_Notation.cpp)
 add_executable(155_Min_Stack solution/155_Min_Stack.cpp)
 add_executable(173_Binary_Search_Tree_Iterator solution/173_Binary_Search_Tree_Iterator.cpp)
+add_executable(224_Basic_Calculator solution/224_Basic_Calculator.cpp)
