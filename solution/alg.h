@@ -22,9 +22,7 @@
 #include <cmath>
 #include <numeric>
 #include <list>
-
 using namespace std;
-
 vector<int> mkv(vector<int> v) {
     return v;
 }
