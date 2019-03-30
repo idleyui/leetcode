@@ -22,7 +22,9 @@
 #include <cmath>
 #include <numeric>
 #include <list>
+
 using namespace std;
+
 vector<int> mkv(vector<int> v) {
     return v;
 }
@@ -176,5 +178,19 @@ public:
         random = _random;
     }
 };
+
+// https://stackoverflow.com/questions/14265581/parse-split-a-string-in-c-using-string-delimiter-standard-c
+vector<string> split(string s, string delimiter = ",") {
+    size_t pos = 0;
+    string token;
+    vector<string> rt;
+    while ((pos = s.find(delimiter)) != std::string::npos) {
+        token = s.substr(0, pos);
+        rt.push_back(token);
+        s.erase(0, pos + delimiter.length());
+    }
+    rt.push_back(s);
+    return rt;
+}
 
 #endif //LEETCODE_ALG_H
