@@ -1,34 +1,39 @@
 #include "alg.h"
 
-class NestedInteger {
-public:
-    // Return true if this NestedInteger holds a single integer, rather than a nested list.
-    bool isInteger() const;
-
-    // Return the single integer that this NestedInteger holds, if it holds a single integer
-    // The result is undefined if this NestedInteger holds a nested list
-    int getInteger() const;
-
-    // Return the nested list that this NestedInteger holds, if it holds a nested list
-    // The result is undefined if this NestedInteger holds a single integer
-    const vector<NestedInteger> &getList() const;
-};
-
 class NestedIterator {
 public:
     NestedIterator(vector<NestedInteger> &nestedList) {
-
+        int size = nestedList.size();
+        for (auto item = nestedList.rbegin(); item != nestedList.rend(); item++) {
+            nodes.push(*item);
+        }
     }
 
     int next() {
-
+        auto rt = nodes.top().getInteger();
+        nodes.pop();
+        return rt;
     }
 
     bool hasNext() {
+        while (!nodes.empty()) {
+            auto top = nodes.top();
+            if (top.isInteger())return true;
 
+            nodes.pop();
+            const vector<NestedInteger> &in = top.getList();
+            for (auto item = in.rbegin(); item != in.rend(); item++)nodes.push(*item);
+        }
+        return false;
     }
+
+private:
+    stack<NestedInteger> nodes;
 };
 
 int main() {
-
+    vector<int> v = {1, 2, 3};
+    for (auto r = v.rbegin(); r != v.rend(); ++r) {
+        cout << *r;
+    }
 }
