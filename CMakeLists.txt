@@ -110,3 +110,4 @@ add_executable(341_Flatten_Nested_List_Iterator solution/341_Flatten_Nested_List
 add_executable(385_Mini_Parser solution/385_Mini_Parser.cpp)
 add_executable(394_Decode_String solution/394_Decode_String.cpp)
 add_executable(402_Remove_K_Digits solution/402_Remove_K_Digits.cpp)
+add_executable(456_132_Pattern solution/456_132_Pattern.cpp)
