@@ -1,10 +1,9 @@
 #include "alg.h"
 
-bool is_name(char c) {
-    return c != '/' && c != '.';
-}
-
-//https://leetcode.com/problems/simplify-path/discuss/25680/C%2B%2B-10-lines-solution
+// https://leetcode.com/problems/simplify-path/discuss/25680/C%2B%2B-10-lines-solution
+// 1. split by /
+// 2. handle special case("", ".", "..") and common case
+// 3. make new path by path items
 string simplifyPath(string path) {
     string res, tmp;
     vector<string> paths;

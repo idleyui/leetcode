@@ -2,7 +2,7 @@
 
 // two stacks
 vector<vector<int>> zigzagLevelOrder(TreeNode *root) {
-    if (!root) return {{}};
+    if (!root) return {};
     vector<vector<int>> vvi;
     stack<TreeNode *> s1;
     stack<TreeNode *> s2;
@@ -15,20 +15,20 @@ vector<vector<int>> zigzagLevelOrder(TreeNode *root) {
         while (!s->empty()) {
             auto top = s->top();
             v.push_back(top->val);
-            if(left) if (top->left) { s_->push(top->left); }
+            if (left) if (top->left) { s_->push(top->left); }
             if (top->right) { s_->push(top->right); }
-            if(!left) if (top->left) { s_->push(top->left); }
+            if (!left) if (top->left) { s_->push(top->left); }
             s->pop();
         }
-        if (!v.empty()) vvi.push_back(v);
+        vvi.push_back(v);
         left = !left;
     }
     return vvi;
 }
 
 int main() {
-    auto tree = mk_tree({1,2,3,4,5,6,7,8,9,10});
-    for(auto v: zigzagLevelOrder(tree)){
+    auto tree = mk_tree({1, 2, 3, 4, 5, 6, 7, 8, 9, 10});
+    for (auto v: zigzagLevelOrder(tree)) {
         print_container(v);
     }
 }

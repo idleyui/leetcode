@@ -1,5 +1,13 @@
 #include "alg.h"
 
+// two points about the problem:
+// 1. how to find the Nth node from the end
+// 2. how to delete the node
+
+// simple fast and slow solution
+// 1. move fast pointer from 0 -> n(n+1th) & slow in -1
+// 2. move fast pointer to reverse -1 so slow pointer in reverse n(n+1th)
+// 3. remove reverse n node
 ListNode *removeNthFromEnd(ListNode *head, int n) {
     ListNode h(0);
     h.next = head;
@@ -12,9 +20,9 @@ ListNode *removeNthFromEnd(ListNode *head, int n) {
         remove = remove->next;
     }
 
-    ListNode *victim = remove->next;
+//    ListNode *victim = remove->next;
     remove->next = remove->next->next;
-    delete victim;
+//    delete victim;
     return h.next;
 }
 
@@ -27,9 +35,9 @@ ListNode *removeNthFromEnd2(ListNode *head, int n) {
         t1 = &((*t1)->next);
         t2 = t2->next;
     }
-    ListNode *victim = *t1;
+//    ListNode *victim = *t1;
     *t1 = (*t1)->next;
-    delete victim;
+//    delete victim;
     return head;
 }
 

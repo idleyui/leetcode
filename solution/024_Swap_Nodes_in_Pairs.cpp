@@ -1,21 +1,41 @@
 #include "alg.h"
 
+// use three pointers
 ListNode *swapPairs(ListNode *head) {
-    if (head == NULL)return NULL;
-    ListNode *h = new ListNode(0);
-    h->next = head;
+    if (!head) return nullptr;
 
-    ListNode *p = head, *next = p->next, *pre = h;
-    while (next) {
-        pre->next = next;
-        p->next = next->next;
-        next->next = p;
-        pre = p;
-        p = p->next;
-        if (!p)break;
-        next = p->next;
+    ListNode h(0), *left = &h;
+    left->next = head;
+    ListNode *mid = head, *right = mid->next;
+
+    while (right) {
+        left->next = right;
+        mid->next = right->next;
+        right->next = mid;
+
+        left = mid;
+        mid = mid->next;
+        if (!mid) break;
+        right = mid->next;
     }
-    return h->next;
+    return h.next;
+}
+
+// use two pointers
+ListNode *swapPairs_4(ListNode *head) {
+    if (!head) return nullptr;
+    ListNode h(0), *left = &h, *right = head;
+    left->next = right;
+
+    while (right && right->next) {
+        left->next = right->next;
+        right->next = right->next->next;
+        left->next->next = right;
+
+        left = right;
+        right = right->next;
+    }
+    return h.next;
 }
 
 // https://leetcode.com/problems/swap-nodes-in-pairs/discuss/11019/7-8-lines-C%2B%2B-Python-Ruby

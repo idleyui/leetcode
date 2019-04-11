@@ -5,10 +5,19 @@ ListNode *mergeTwoLists(ListNode *l1, ListNode *l2) {
     ListNode *head = new ListNode(0), *p = head;
 
     while (p1 && p2) {
-        if (p1->val > p2->val) swap(p1, p2);
+//        slow and not necessary
+//        if (p1->val > p2->val) swap(p1, p2);
+//
+//        p->next = p1;
+//        p1 = p1->next;
 
-        p->next = p1;
-        p1 = p1->next;
+        if (p1->val < p2->val) {
+            p->next = p1;
+            p1 = p1->next;
+        } else {
+            p->next = p2;
+            p2 = p2->next;
+        }
         p = p->next;
     }
 
