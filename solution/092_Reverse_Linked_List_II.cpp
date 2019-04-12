@@ -22,6 +22,27 @@ ListNode *reverseBetween(ListNode *head, int m, int n) {
     return lnode.next;
 }
 
+// https://leetcode.com/problems/reverse-linked-list-ii/discuss/30709/Talk-is-cheap-show-me-the-code-(and-DRAWING)
+ListNode *reverseBetween2(ListNode *head, int m, int n) {
+    if (!head) return nullptr;
+
+    ListNode dummy(0), *p = &dummy;
+    p->next = head;
+    for (int i = 0; i < m - 1; ++i) { p = p->next; }
+
+    ListNode *tail = p->next;
+
+//    keep p in position m, move after tail after p
+    for (int j = 0; j < n - m; ++j) {
+        ListNode *tmp = p->next;
+        p->next = tail->next;
+        tail->next = tail->next->next;
+        p->next->next = tmp;
+    }
+
+    return dummy.next;
+}
+
 int main() {
     printList(reverseBetween(mklst({1, 2, 3, 4}), 1, 2));
     printList(reverseBetween(mklst({1, 2, 3, 4}), 1, 1));
