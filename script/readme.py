@@ -2,6 +2,33 @@ import requests
 import time
 import os
 
+"""
+LeetCode Problem API:
+https://leetcode.com/api/problems/algorithms/
+    {
+      "stat": {
+        "question_id": 1081,
+        "question__article__live": null,
+        "question__article__slug": null,
+        "question__title": "Video Stitching",
+        "question__title_slug": "video-stitching",  # url display title
+        "question__hide": false,
+        "total_acs": 4583,
+        "total_submitted": 9624,
+        "frontend_question_id": 1024,               # frontend display id
+        "is_new_question": false
+      },
+      "status": null,
+      "difficulty": {
+        "level": 2                                  # 1-3 easy-hard
+      },
+      "paid_only": false,
+      "is_favor": false,
+      "frequency": 0,
+      "progress": 0
+    }
+"""
+
 
 def solution_name(item, suffix):
     return "%03d_%s.%s" % (
@@ -21,21 +48,21 @@ class Config:
     local_path = ''
     github_url = 'https://github.com/leelddd/leetcode/blob/master/'
     leetcode_url = 'https://leetcode.com/problems/'
-    difficulty = ['Easy', 'Medium', 'Hard']
+    difficulty = ['#', 'Easy', 'Medium', 'Hard']
     column = {
         '#': lambda item: "%03d" % item['stat']['frontend_question_id'],
         'Title': lambda item: '[%s](%s%s)' % (
             item['stat']['question__title'], Config.leetcode_url, item['stat']['question__title_slug']),
-        'Difficulty': lambda item: Config.difficulty[item['difficulty']['level'] - 1],
-        'Solution': lambda item: '[cpp](' + Config.github_url + 'solution/' + solution_name(item, 'cpp') + ')'
+        'Difficulty': lambda item: Config.difficulty[item['difficulty']['level']],
+        'Solution': lambda item: '[cpp](%ssolution/%s)' % (Config.github_url, solution_name(item, 'cpp'))
     }
     column_order = ['#', 'Title', 'Difficulty', 'Solution']
 
 
 def table(problem_dic: dict, solution_list: list):
-    """Generate solution table string by problems json
+    """Generate solution table string by problem dict and solution id list
 
-    :param problems: leetcode problems json api
+    :param see get() function docs
     :return: table string
     """
     result = '| ' + ' | '.join(Config.column_order) + ' |\n'
@@ -49,7 +76,6 @@ def table(problem_dic: dict, solution_list: list):
     return result + '\n'.join(lines)
 
 
-# def readme(api_json: json, problems: dict, mine: dict):
 def readme(problem_dic: dict, problem_cnt: dict, solution_list: list, solution_cnt: dict):
     """Generate README.md file
 
@@ -68,8 +94,7 @@ def readme(problem_dic: dict, problem_cnt: dict, solution_list: list, solution_c
     Update:
     1. Update update time 2. Update AC status 3. Update solution table
 
-    :param api: leetcode API class
-    :return:
+    :param see get() function docs
     """
     print('generating README.md file...')
 
@@ -90,7 +115,7 @@ def readme(problem_dic: dict, problem_cnt: dict, solution_list: list, solution_c
     print('generating finish')
 
 
-def get_problems(solution_path):
+def get(solution_path):
     """
     :return:    problem_dic:dict    {1: {problem_json}, 2: {problem_json}}
     :return:    problem_cnt:dict    {'num_total': 973, 'easy': 269, 'medium': 494, 'hard': 210}
@@ -130,7 +155,7 @@ def get_problems(solution_path):
 
 
 def update(solution_path):
-    problem_dic, problem_cnt, solution_list, solution_cnt = get_problems(solution_path)
+    problem_dic, problem_cnt, solution_list, solution_cnt = get(solution_path)
     readme(problem_dic, problem_cnt, solution_list, solution_cnt)
 
 
