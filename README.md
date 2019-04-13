@@ -1,7 +1,7 @@
 # Leetcode Solutions
 This README file was build by [script/readme.py](https://github.com/leelddd/leetcode/blob/master/script/readme.py) file
 
-Update Time:	Sat Apr 13 23:04:58 2019
+Update Time:	Sat Apr 13 23:10:25 2019
 
 Status:	112/973
 

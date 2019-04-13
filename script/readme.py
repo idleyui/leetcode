@@ -1,14 +1,11 @@
 import requests
-import json
 import time
-import re
-import configparser
 import os
-import random
 
 
 def solution_name(item, suffix):
-    return "%03d_%s.%s" % (item['stat']['frontend_question_id'], item['stat']['question__title'].replace(' ', '_'), suffix)
+    return "%03d_%s.%s" % (
+        item['stat']['frontend_question_id'], item['stat']['question__title'].replace(' ', '_'), suffix)
 
 
 class Config:
@@ -27,8 +24,8 @@ class Config:
     difficulty = ['Easy', 'Medium', 'Hard']
     column = {
         '#': lambda item: "%03d" % item['stat']['frontend_question_id'],
-        'Title': lambda item: '[' + item['stat']['question__title'] + '](' + Config.leetcode_url + item['stat'][
-            'question__title_slug'] + ')',
+        'Title': lambda item: '[%s](%s%s)' % (
+            item['stat']['question__title'], Config.leetcode_url, item['stat']['question__title_slug']),
         'Difficulty': lambda item: Config.difficulty[item['difficulty']['level'] - 1],
         'Solution': lambda item: '[cpp](' + Config.github_url + 'solution/' + solution_name(item, 'cpp') + ')'
     }
