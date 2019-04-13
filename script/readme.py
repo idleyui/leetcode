@@ -30,85 +30,16 @@ class Config:
     leetcode_url = 'https://leetcode.com/problems/'
     difficulty = ['Easy', 'Medium', 'Hard']
     column = {
-        '#': lambda item: "%03d" % item['stat']['question_id'],
+        '#': lambda item: "%03d" % item['stat']['frontend_question_id'],
         'Title': lambda item: '[' + item['stat']['question__title'] + '](' + Config.leetcode_url + item['stat'][
             'question__title_slug'] + ')',
         'Difficulty': lambda item: Config.difficulty[item['difficulty']['level'] - 1],
-        'Solution': lambda item: '[cpp](' + Config.github_url + 'latest_submissions/' + solution_name(item, 'cpp') + ')'
+        'Solution': lambda item: '[cpp](' + Config.github_url + 'solution/' + solution_name(item, 'cpp') + ')'
     }
     column_order = ['#', 'Title', 'Difficulty', 'Solution']
 
 
-def init(filename):
-    config = configparser.ConfigParser()
-    config.read(filename)
-    Config.name = config['login']['name']
-    Config.pwd = config['login']['pwd']
-    Config.local_path = config['st']['path']
-
-
-class API:
-    urls = {
-        'base': 'https://leetcode.com',
-        'login': 'https://leetcode.com/accounts/login',
-        'problem': 'https://leetcode.com/api/problems/algorithms',
-        'sub': 'https://leetcode.com/api/submissions/'
-    }
-
-    code_regex = r"(?<=submissionCode: ').*(?=',\n  editCodeUrl)"
-
-    def __init__(self, name, pwd):
-        self.session = self.__login__(name, pwd)
-
-    def __login__(self, name, pwd):
-        login_url = 'https://leetcode.com/accounts/login'
-        headers = {
-            'User-Agent': 'Mozilla/5.0',
-            'Referer': login_url
-        }
-        s = requests.Session()
-        s.get(login_url)
-        csrftoken = s.cookies['csrftoken']
-        payload = {'csrfmiddlewaretoken': csrftoken,
-                   'login': name,
-                   'password': pwd}
-        s.post(login_url, data=payload, headers=headers)
-        return s
-
-    def problems(self, status='ac'):
-        content = self.session.get(self.urls['problem']).content
-        all_questions = json.loads(content)['stat_status_pairs']
-        if status == 'all':
-            return json.loads(content), all_questions
-        else:
-            return json.loads(content), [item for item in all_questions if item['status'] == status]
-
-    def submissions(self, problem, languages=None):
-        if languages is None:
-            languages = {'cpp'}
-        content = self.session.get(self.urls['sub'] + problem).content
-        time.sleep(1)
-        submissions = json.loads(content)['submissions_dump']
-        result = []
-        for submission in submissions:
-            if submission['lang'] in languages:
-                result.append(submission)
-                languages.remove(submission['lang'])
-            if len(languages) == 0: break
-        return result
-
-    def submission(self, url):
-        html = self.session.get(self.urls['base'] + url).text
-        reg = re.compile(self.code_regex)
-        solution = reg.findall(html)[0]
-
-        def cd(matched):
-            return matched.group('value').encode('utf-8').decode('unicode-escape')
-
-        return re.sub('(?P<value>\\\\u[0-9A-F]{4})', cd, solution)
-
-
-def table(problems):
+def table(api_json: json, mine: dict):
     """Generate solution table string by problems json
 
     :param problems: leetcode problems json api
@@ -117,17 +48,29 @@ def table(problems):
     result = '| ' + ' | '.join(Config.column_order) + ' |\n'
     result += '|:---:' * len(Config.column_order) + '|\n'
     lines = []
-    for problem in problems:
-        line = '|' + '|'.join([Config.column[item](problem) for item in Config.column_order]) + '|'
+    for problem in mine['ac_list']:
+        line = '|' + '|'.join([Config.column[item](api_json['stat_status_pairs'][-problem]) for item in Config.column_order]) + '|'
         lines.append(line)
     lines.reverse()
     return result + '\n'.join(lines)
 
 
-def readme(status: json, problems: json):
+def readme(api_json: json, problems: dict, mine: dict):
     """Generate README.md file
+    Format:
 
-    1. Update time 2. Update AC status 3. Update solution table
+    # LeetCode Solutions
+    built by this file
+    update time
+    AC status:
+        - total
+        - easy
+        - medium
+        - hard
+    solution table
+
+    Update:
+    1. Update update time 2. Update AC status 3. Update solution table
 
     :param api: leetcode API class
     :return:
@@ -136,57 +79,75 @@ def readme(status: json, problems: json):
 
     with open(Config.local_path + 'README.md', 'w+') as f:
         f.write('# Leetcode Solutions\n')
-        f.write('This README file was build by [script/readme.py](%sscript/readme.py) file\n\n' % Config.github_url)
+        f.write(
+            'This README file was build by [script/readme.py](%sscript/readme.py) file\n\n' % Config.github_url)
         f.write('Update Time:\t%s\n\n' % time.asctime(time.localtime()))
 
-        f.write('Status:\t%d/%d\n' % (status['num_solved'], status['num_total']))
+        f.write('Status:\t%d/%d\n\n' % (mine['num_total'], problems['num_total']))
+        f.write('Easy:\t%d/%d\n\n' % (mine['easy'], problems['easy']))
+        f.write('Medium:\t%d/%d\n\n' % (mine['medium'], problems['medium']))
+        f.write('Hard:\t%d/%d\n\n' % (mine['hard'], problems['hard']))
 
         f.write('## Solution Table\n')
-        f.write(table(problems))
+        f.write(table(api_json, mine))
 
     print('generating finish')
 
 
-def download(api, problems, language):
-    wrong_list = []
-    for problem in problems:
-        # path = Config.local_path + '/latest_submissions/' + solution_name(problem, solution['lang'])
-        path = Config.local_path + '/latest_submissions/' + solution_name(problem, language)
-        if os.path.exists(path):
-            print("solution %s exists" % solution_name(problem, language))
-            continue
-
-        try:
-            for solution in api.submissions(problem['stat']['question__title_slug']):
-                f = open(path, 'w+')
-                print('downloading submission ', problem['stat']['question__title'])
-                f.write(api.submission(solution['url']))
-                f.close()
-                time.sleep(random.randint(0, 3))
-
-
-        except:
-            wrong_list.append(problem)
-            print('wrong in', problem['stat']['question__title'])
-
-    if len(wrong_list) > 0:
-        download(api, wrong_list, 'cpp')
-
-
-def default_update():
+def default_update(solution_path):
     """Default update
 
     Update README.md and latest submissions
 
     :return:
     """
-    api = API(Config.name, Config.pwd)
-    status, problems = api.problems()
+    api_json, problems = get_problems()
+    mine = get_mine(solution_path, api_json)
 
-    readme(status, problems)
-    download(api, problems, 'cpp')
+    readme(api_json, problems, mine)
+
+
+def get_problems():
+    """
+    :return {'num_total': 973, 'easy': 269, 'medium': 494, 'hard': 210}
+    """
+    api = 'https://leetcode.com/api/problems/algorithms/'
+    api_json = requests.get(url=api).json()
+    problems = {}
+    problems['num_total'] = api_json['num_total']
+
+    def group_by_difficulty(level):
+        return sum([1 if item['difficulty']['level'] == level else 0 for item in api_json['stat_status_pairs']])
+
+    problems['easy'] = group_by_difficulty(1)
+    problems['medium'] = group_by_difficulty(2)
+    problems['hard'] = group_by_difficulty(3)
+    return api_json, problems
+
+
+def get_mine(solution_path: str, api_json: json):
+    """
+    :param api_json:
+    :return: {'num_total': 0, 'easy', 0, 'medium': 0, 'hard': 0}
+    """
+    mine = {}
+    file_list = os.listdir(solution_path)[0:-1]
+    ac_list = [int(item[:3]) for item in file_list]
+    mine['num_total'] = len(file_list)
+
+    def cnt_by_diff(level):
+        return sum([1 if api_json['stat_status_pairs'][-f]['difficulty']['level'] == level else 0
+                    for f in ac_list])
+
+    mine['easy'] = cnt_by_diff(1)
+    mine['medium'] = cnt_by_diff(2)
+    mine['hard'] = cnt_by_diff(3)
+    mine['ac_list'] = ac_list
+    return mine
 
 
 if __name__ == '__main__':
-    init('login.ini')  # read configurations from 'login.ini'
-    default_update()  # update solution table and
+    # api_json, pb = get_problems()
+    # mine = get_mine('../solution/', api_json)
+    # print(pb, mine)
+    default_update('./solution/')  # update solution table and
