@@ -99,9 +99,9 @@ def readme(problem_dic: dict, problem_cnt: dict, solution_list: list, solution_c
     print('generating README.md file...')
 
     with open(Config.local_path + 'README.md', 'w+') as f:
-        f.write('# Leetcode Solutions\n')
+        f.write('# LeetCode Solutions\n')
         f.write(
-            'This README file was build by [script/readme.py](%sscript/readme.py) file\n\n' % Config.github_url)
+            'This README file was built by [script/readme.py](%sscript/readme.py)\n\n' % Config.github_url)
         f.write('Update Time:\t%s\n\n' % time.asctime(time.localtime()))
 
         f.write('Status:\t%d/%d\n\n' % (solution_cnt['num_total'], problem_cnt['num_total']))
