@@ -43,7 +43,27 @@ ListNode *reverseBetween2(ListNode *head, int m, int n) {
     return dummy.next;
 }
 
+ListNode *reverseBetween3(ListNode *head, int m, int n) {
+    ListNode dummy(0), *p = &dummy;
+    p->next = head;
+
+    for (int i = 0; i < m - 1; i++) p = p->next;
+    ListNode *tail = p->next;
+
+    for (int i = 0; i < n - m; i++) {
+        cout << tail->val << endl;
+        ListNode *tmp = tail->next->next;
+        tail->next->next = p->next;
+        p->next = tail->next;
+        tail->next = tmp;
+        cout << tail->val << endl;
+    }
+
+    return dummy.next;
+}
+
 int main() {
+    printList(reverseBetween3(mklst({1, 2, 3, 4, 5}), 2, 4));
     printList(reverseBetween(mklst({1, 2, 3, 4}), 1, 2));
     printList(reverseBetween(mklst({1, 2, 3, 4}), 1, 1));
     printList(reverseBetween(nullptr, 1, 1));

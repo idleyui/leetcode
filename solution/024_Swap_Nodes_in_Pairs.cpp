@@ -38,6 +38,20 @@ ListNode *swapPairs_4(ListNode *head) {
     return h.next;
 }
 
+// one pointers
+ListNode *swapPairs_5(ListNode *head) {
+    ListNode h(0), *p = &h;
+    p->next = head;
+    while (p && p->next && p->next->next) {
+        ListNode *tmp = p->next->next;
+        p->next->next = tmp->next;
+        tmp->next = p->next;
+        p->next = tmp;
+        p = p->next->next;
+    }
+    return h.next;
+}
+
 // https://leetcode.com/problems/swap-nodes-in-pairs/discuss/11019/7-8-lines-C%2B%2B-Python-Ruby
 ListNode *swapPairs3(ListNode *head) {
     ListNode **pp = &head, *a, *b;
@@ -61,6 +75,36 @@ ListNode *swapPairs2(ListNode *head) {
     return tmp;
 }
 
+ListNode *swapPairs7(ListNode *head) {
+    ListNode dummy1(0), dummy2(0), *p1 = &dummy1, *p2 = &dummy2;
+    while (head && head->next) {
+        p1->next = head;
+        head = head->next;
+        p2->next = head;
+        head = head->next;
+        p1 = p1->next;
+        p2 = p2->next;
+    }
+    p1->next = nullptr;
+    p2->next = nullptr;
+    cout << "ok";
+    p1 = &dummy1;
+    p2 = &dummy2;
+    p1=p1->next;
+    p2=p2->next;
+    ListNode dummy(0), *p = &dummy;
+    while (p1) {
+        p->next = p2;
+        p2 = p2->next;
+        p = p->next;
+        p->next = p1;
+        p = p->next;
+        p1 = p1->next;
+    }
+    p->next = head;
+    return dummy.next;
+}
+
 int main() {
     ListNode *l1 = mklst({1, 2, 3, 4});
     ListNode *l2 = mklst({1, 2, 3, 4, 5});
@@ -68,5 +112,5 @@ int main() {
 //    printList(swapPairs(l1));
 //    printList(swapPairs(l2));
 //    printList(swapPairs(l3));
-    printList(swapPairs3(l2));
+    printList(swapPairs7(l1));
 }
