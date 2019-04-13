@@ -8,14 +8,12 @@ import random
 
 
 def solution_name(item, suffix):
-    return "%03d_%s.%s" % (item['stat']['question_id'], item['stat']['question__title'].replace(' ', '_'), suffix)
+    return "%03d_%s.%s" % (item['stat']['frontend_question_id'], item['stat']['question__title'].replace(' ', '_'), suffix)
 
 
 class Config:
     """Basic configurations
         Attributes:
-            name:           leetcode account name
-            pwd:            leetcode account password
             local_path:     path to store algorithms file
             github_url:     your leetcode repository url in github
             leetcode_url:   leetcode url
@@ -23,8 +21,6 @@ class Config:
             column:         generate template for columns
             column_order:   order of your column
     """
-    name = ''
-    pwd = ''
     local_path = ''
     github_url = 'https://github.com/leelddd/leetcode/blob/master/'
     leetcode_url = 'https://leetcode.com/problems/'
@@ -39,7 +35,7 @@ class Config:
     column_order = ['#', 'Title', 'Difficulty', 'Solution']
 
 
-def table(api_json: json, mine: dict):
+def table(problem_dic: dict, solution_list: list):
     """Generate solution table string by problems json
 
     :param problems: leetcode problems json api
@@ -48,15 +44,18 @@ def table(api_json: json, mine: dict):
     result = '| ' + ' | '.join(Config.column_order) + ' |\n'
     result += '|:---:' * len(Config.column_order) + '|\n'
     lines = []
-    for problem in mine['ac_list']:
-        line = '|' + '|'.join([Config.column[item](api_json['stat_status_pairs'][-problem]) for item in Config.column_order]) + '|'
+    for problem in solution_list:
+        line = '|' + '|'.join(
+            [Config.column[item](problem_dic[problem]) for item in Config.column_order]) + '|'
         lines.append(line)
     lines.reverse()
     return result + '\n'.join(lines)
 
 
-def readme(api_json: json, problems: dict, mine: dict):
+# def readme(api_json: json, problems: dict, mine: dict):
+def readme(problem_dic: dict, problem_cnt: dict, solution_list: list, solution_cnt: dict):
     """Generate README.md file
+
     Format:
 
     # LeetCode Solutions
@@ -83,71 +82,60 @@ def readme(api_json: json, problems: dict, mine: dict):
             'This README file was build by [script/readme.py](%sscript/readme.py) file\n\n' % Config.github_url)
         f.write('Update Time:\t%s\n\n' % time.asctime(time.localtime()))
 
-        f.write('Status:\t%d/%d\n\n' % (mine['num_total'], problems['num_total']))
-        f.write('Easy:\t%d/%d\n\n' % (mine['easy'], problems['easy']))
-        f.write('Medium:\t%d/%d\n\n' % (mine['medium'], problems['medium']))
-        f.write('Hard:\t%d/%d\n\n' % (mine['hard'], problems['hard']))
+        f.write('Status:\t%d/%d\n\n' % (solution_cnt['num_total'], problem_cnt['num_total']))
+        f.write('Easy:\t%d/%d\n\n' % (solution_cnt['easy'], problem_cnt['easy']))
+        f.write('Medium:\t%d/%d\n\n' % (solution_cnt['medium'], problem_cnt['medium']))
+        f.write('Hard:\t%d/%d\n\n' % (solution_cnt['hard'], problem_cnt['hard']))
 
         f.write('## Solution Table\n')
-        f.write(table(api_json, mine))
+        f.write(table(problem_dic, solution_list))
 
     print('generating finish')
 
 
-def default_update(solution_path):
-    """Default update
-
-    Update README.md and latest submissions
-
-    :return:
+def get_problems(solution_path):
     """
-    api_json, problems = get_problems()
-    mine = get_mine(solution_path, api_json)
-
-    readme(api_json, problems, mine)
-
-
-def get_problems():
-    """
-    :return {'num_total': 973, 'easy': 269, 'medium': 494, 'hard': 210}
+    :return:    problem_dic:dict    {1: {problem_json}, 2: {problem_json}}
+    :return:    problem_cnt:dict    {'num_total': 973, 'easy': 269, 'medium': 494, 'hard': 210}
+    :return:    solution_list:list  [1,2,3,...]
+    :return:    solution_cnt:dict   {'num_total': 973, 'easy': 269, 'medium': 494, 'hard': 210}
     """
     api = 'https://leetcode.com/api/problems/algorithms/'
     api_json = requests.get(url=api).json()
-    problems = {}
-    problems['num_total'] = api_json['num_total']
+
+    problem_dic = {int(item['stat']['frontend_question_id']): item for item in api_json['stat_status_pairs']}
 
     def group_by_difficulty(level):
         return sum([1 if item['difficulty']['level'] == level else 0 for item in api_json['stat_status_pairs']])
 
-    problems['easy'] = group_by_difficulty(1)
-    problems['medium'] = group_by_difficulty(2)
-    problems['hard'] = group_by_difficulty(3)
-    return api_json, problems
+    problem_cnt = {
+        'num_total': api_json['num_total'],
+        'easy': group_by_difficulty(1),
+        'medium': group_by_difficulty(2),
+        'hard': group_by_difficulty(3)
+    }
 
-
-def get_mine(solution_path: str, api_json: json):
-    """
-    :param api_json:
-    :return: {'num_total': 0, 'easy', 0, 'medium': 0, 'hard': 0}
-    """
-    mine = {}
     file_list = os.listdir(solution_path)[0:-1]
-    ac_list = [int(item[:3]) for item in file_list]
-    mine['num_total'] = len(file_list)
+    solution_list = [int(item[:3]) for item in file_list]
 
     def cnt_by_diff(level):
-        return sum([1 if api_json['stat_status_pairs'][-f]['difficulty']['level'] == level else 0
-                    for f in ac_list])
+        return sum([1 if problem_dic[f]['difficulty']['level'] == level else 0
+                    for f in solution_list])
 
-    mine['easy'] = cnt_by_diff(1)
-    mine['medium'] = cnt_by_diff(2)
-    mine['hard'] = cnt_by_diff(3)
-    mine['ac_list'] = ac_list
-    return mine
+    solution_cnt = {
+        'num_total': len(file_list),
+        'easy': cnt_by_diff(1),
+        'medium': cnt_by_diff(2),
+        'hard': cnt_by_diff(3),
+    }
+
+    return problem_dic, problem_cnt, solution_list, solution_cnt
+
+
+def update(solution_path):
+    problem_dic, problem_cnt, solution_list, solution_cnt = get_problems(solution_path)
+    readme(problem_dic, problem_cnt, solution_list, solution_cnt)
 
 
 if __name__ == '__main__':
-    # api_json, pb = get_problems()
-    # mine = get_mine('../solution/', api_json)
-    # print(pb, mine)
-    default_update('./solution/')  # update solution table and
+    update('./solution/')  # update solution table and

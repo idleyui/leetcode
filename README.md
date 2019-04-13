@@ -1,60 +1,60 @@
 # Leetcode Solutions
 This README file was build by [script/readme.py](https://github.com/leelddd/leetcode/blob/master/script/readme.py) file
 
-Update Time:	Sat Apr 13 17:42:24 2019
+Update Time:	Sat Apr 13 23:04:58 2019
 
 Status:	112/973
 
-Easy:	26/269
+Easy:	29/269
 
-Medium:	61/494
+Medium:	66/494
 
-Hard:	25/210
+Hard:	17/210
 
 ## Solution Table
 | # | Title | Difficulty | Solution |
 |:---:|:---:|:---:|:---:|
-|968|[Binary Tree Cameras](https://leetcode.com/problems/binary-tree-cameras)|Hard|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/1008_Binary_Tree_Cameras.cpp)|
-|967|[Numbers With Same Consecutive Differences](https://leetcode.com/problems/numbers-with-same-consecutive-differences)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/1007_Numbers_With_Same_Consecutive_Differences.cpp)|
-|966|[Vowel Spellchecker](https://leetcode.com/problems/vowel-spellchecker)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/1006_Vowel_Spellchecker.cpp)|
-|965|[Univalued Binary Tree](https://leetcode.com/problems/univalued-binary-tree)|Easy|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/1005_Univalued_Binary_Tree.cpp)|
-|939|[Minimum Area Rectangle](https://leetcode.com/problems/minimum-area-rectangle)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/976_Minimum_Area_Rectangle.cpp)|
-|937|[Reorder Log Files](https://leetcode.com/problems/reorder-log-files)|Easy|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/974_Reorder_Log_Files.cpp)|
-|936|[Stamping The Sequence](https://leetcode.com/problems/stamping-the-sequence)|Hard|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/973_Stamping_The_Sequence.cpp)|
-|928|[Minimize Malware Spread II](https://leetcode.com/problems/minimize-malware-spread-ii)|Hard|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/964_Minimize_Malware_Spread_II.cpp)|
-|872|[Leaf-Similar Trees](https://leetcode.com/problems/leaf-similar-trees)|Easy|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/904_Leaf-Similar_Trees.cpp)|
-|801|[Minimum Swaps To Make Sequences Increasing](https://leetcode.com/problems/minimum-swaps-to-make-sequences-increasing)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/819_Minimum_Swaps_To_Make_Sequences_Increasing.cpp)|
-|799|[Champagne Tower](https://leetcode.com/problems/champagne-tower)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/815_Champagne_Tower.cpp)|
-|789|[Escape The Ghosts](https://leetcode.com/problems/escape-the-ghosts)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/805_Escape_The_Ghosts.cpp)|
-|773|[Sliding Puzzle](https://leetcode.com/problems/sliding-puzzle)|Hard|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/787_Sliding_Puzzle.cpp)|
-|760|[Find Anagram Mappings](https://leetcode.com/problems/find-anagram-mappings)|Easy|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/762_Find_Anagram_Mappings.cpp)|
-|716|[Max Stack](https://leetcode.com/problems/max-stack)|Easy|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/716_Max_Stack.cpp)|
-|536|[Construct Binary Tree from String](https://leetcode.com/problems/construct-binary-tree-from-string)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/536_Construct_Binary_Tree_from_String.cpp)|
-|527|[Word Abbreviation](https://leetcode.com/problems/word-abbreviation)|Hard|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/527_Word_Abbreviation.cpp)|
-|481|[Magical String](https://leetcode.com/problems/magical-string)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/481_Magical_String.cpp)|
-|468|[Validate IP Address](https://leetcode.com/problems/validate-ip-address)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/468_Validate_IP_Address.cpp)|
-|461|[Hamming Distance](https://leetcode.com/problems/hamming-distance)|Easy|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/461_Hamming_Distance.cpp)|
-|453|[Minimum Moves to Equal Array Elements](https://leetcode.com/problems/minimum-moves-to-equal-array-elements)|Easy|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/453_Minimum_Moves_to_Equal_Array_Elements.cpp)|
-|419|[Battleships in a Board](https://leetcode.com/problems/battleships-in-a-board)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/419_Battleships_in_a_Board.cpp)|
-|411|[Minimum Unique Word Abbreviation](https://leetcode.com/problems/minimum-unique-word-abbreviation)|Hard|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/411_Minimum_Unique_Word_Abbreviation.cpp)|
-|409|[Longest Palindrome](https://leetcode.com/problems/longest-palindrome)|Easy|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/409_Longest_Palindrome.cpp)|
+|916|[Word Subsets](https://leetcode.com/problems/word-subsets)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/916_Word_Subsets.cpp)|
+|915|[Partition Array into Disjoint Intervals](https://leetcode.com/problems/partition-array-into-disjoint-intervals)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/915_Partition_Array_into_Disjoint_Intervals.cpp)|
+|914|[X of a Kind in a Deck of Cards](https://leetcode.com/problems/x-of-a-kind-in-a-deck-of-cards)|Easy|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/914_X_of_a_Kind_in_a_Deck_of_Cards.cpp)|
+|913|[Cat and Mouse](https://leetcode.com/problems/cat-and-mouse)|Hard|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/913_Cat_and_Mouse.cpp)|
+|887|[Super Egg Drop](https://leetcode.com/problems/super-egg-drop)|Hard|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/887_Super_Egg_Drop.cpp)|
+|885|[Spiral Matrix III](https://leetcode.com/problems/spiral-matrix-iii)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/885_Spiral_Matrix_III.cpp)|
+|884|[Uncommon Words from Two Sentences](https://leetcode.com/problems/uncommon-words-from-two-sentences)|Easy|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/884_Uncommon_Words_from_Two_Sentences.cpp)|
+|876|[Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list)|Easy|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/876_Middle_of_the_Linked_List.cpp)|
+|817|[Linked List Components](https://leetcode.com/problems/linked-list-components)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/817_Linked_List_Components.cpp)|
+|739|[Daily Temperatures](https://leetcode.com/problems/daily-temperatures)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/739_Daily_Temperatures.cpp)|
+|735|[Asteroid Collision](https://leetcode.com/problems/asteroid-collision)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/735_Asteroid_Collision.cpp)|
+|725|[Split Linked List in Parts](https://leetcode.com/problems/split-linked-list-in-parts)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/725_Split_Linked_List_in_Parts.cpp)|
+|707|[Design Linked List](https://leetcode.com/problems/design-linked-list)|Easy|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/707_Design_Linked_List.cpp)|
+|682|[Baseball Game](https://leetcode.com/problems/baseball-game)|Easy|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/682_Baseball_Game.cpp)|
+|636|[Exclusive Time of Functions](https://leetcode.com/problems/exclusive-time-of-functions)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/636_Exclusive_Time_of_Functions.cpp)|
+|503|[Next Greater Element II](https://leetcode.com/problems/next-greater-element-ii)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/503_Next_Greater_Element_II.cpp)|
+|496|[Next Greater Element I](https://leetcode.com/problems/next-greater-element-i)|Easy|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/496_Next_Greater_Element_I.cpp)|
+|456|[132 Pattern](https://leetcode.com/problems/132-pattern)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/456_132_Pattern.cpp)|
+|445|[Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/445_Add_Two_Numbers_II.cpp)|
+|438|[Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string)|Easy|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/438_Find_All_Anagrams_in_a_String.cpp)|
+|430|[Flatten a Multilevel Doubly Linked List](https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/430_Flatten_a_Multilevel_Doubly_Linked_List.cpp)|
 |402|[Remove K Digits](https://leetcode.com/problems/remove-k-digits)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/402_Remove_K_Digits.cpp)|
-|393|[UTF-8 Validation](https://leetcode.com/problems/utf-8-validation)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/393_UTF-8_Validation.cpp)|
-|358|[Rearrange String k Distance Apart](https://leetcode.com/problems/rearrange-string-k-distance-apart)|Hard|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/358_Rearrange_String_k_Distance_Apart.cpp)|
-|354|[Russian Doll Envelopes](https://leetcode.com/problems/russian-doll-envelopes)|Hard|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/354_Russian_Doll_Envelopes.cpp)|
-|348|[Design Tic-Tac-Toe](https://leetcode.com/problems/design-tic-tac-toe)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/348_Design_Tic-Tac-Toe.cpp)|
-|345|[Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string)|Easy|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/345_Reverse_Vowels_of_a_String.cpp)|
-|326|[Power of Three](https://leetcode.com/problems/power-of-three)|Easy|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/326_Power_of_Three.cpp)|
-|321|[Create Maximum Number](https://leetcode.com/problems/create-maximum-number)|Hard|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/321_Create_Maximum_Number.cpp)|
-|253|[Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/253_Meeting_Rooms_II.cpp)|
-|250|[Count Univalue Subtrees](https://leetcode.com/problems/count-univalue-subtrees)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/250_Count_Univalue_Subtrees.cpp)|
-|248|[Strobogrammatic Number III](https://leetcode.com/problems/strobogrammatic-number-iii)|Hard|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/248_Strobogrammatic_Number_III.cpp)|
-|241|[Different Ways to Add Parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/241_Different_Ways_to_Add_Parentheses.cpp)|
-|240|[Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/240_Search_a_2D_Matrix_II.cpp)|
-|229|[Majority Element II](https://leetcode.com/problems/majority-element-ii)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/229_Majority_Element_II.cpp)|
-|222|[Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/222_Count_Complete_Tree_Nodes.cpp)|
-|219|[Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii)|Easy|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/219_Contains_Duplicate_II.cpp)|
-|214|[Shortest Palindrome](https://leetcode.com/problems/shortest-palindrome)|Hard|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/214_Shortest_Palindrome.cpp)|
+|394|[Decode String](https://leetcode.com/problems/decode-string)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/394_Decode_String.cpp)|
+|392|[Is Subsequence](https://leetcode.com/problems/is-subsequence)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/392_Is_Subsequence.cpp)|
+|385|[Mini Parser](https://leetcode.com/problems/mini-parser)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/385_Mini_Parser.cpp)|
+|376|[Wiggle Subsequence](https://leetcode.com/problems/wiggle-subsequence)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/376_Wiggle_Subsequence.cpp)|
+|341|[Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/341_Flatten_Nested_List_Iterator.cpp)|
+|337|[House Robber III](https://leetcode.com/problems/house-robber-iii)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/337_House_Robber_III.cpp)|
+|331|[Verify Preorder Serialization of a Binary Tree](https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/331_Verify_Preorder_Serialization_of_a_Binary_Tree.cpp)|
+|328|[Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/328_Odd_Even_Linked_List.cpp)|
+|309|[Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/309_Best_Time_to_Buy_and_Sell_Stock_with_Cooldown.cpp)|
+|304|[Range Sum Query 2D - Immutable](https://leetcode.com/problems/range-sum-query-2d-immutable)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/304_Range_Sum_Query_2D_-_Immutable.cpp)|
+|237|[Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list)|Easy|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/237_Delete_Node_in_a_Linked_List.cpp)|
+|234|[Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list)|Easy|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/234_Palindrome_Linked_List.cpp)|
+|232|[Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks)|Easy|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/232_Implement_Queue_using_Stacks.cpp)|
+|225|[Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues)|Easy|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/225_Implement_Stack_using_Queues.cpp)|
+|224|[Basic Calculator](https://leetcode.com/problems/basic-calculator)|Hard|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/224_Basic_Calculator.cpp)|
+|213|[House Robber II](https://leetcode.com/problems/house-robber-ii)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/213_House_Robber_II.cpp)|
+|206|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list)|Easy|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/206_Reverse_Linked_List.cpp)|
+|203|[Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements)|Easy|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/203_Remove_Linked_List_Elements.cpp)|
+|198|[House Robber](https://leetcode.com/problems/house-robber)|Easy|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/198_House_Robber.cpp)|
 |173|[Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/173_Binary_Search_Tree_Iterator.cpp)|
 |160|[Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists)|Easy|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/160_Intersection_of_Two_Linked_Lists.cpp)|
 |155|[Min Stack](https://leetcode.com/problems/min-stack)|Easy|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/155_Min_Stack.cpp)|
