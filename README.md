@@ -1,15 +1,16 @@
 # LeetCode Solutions
+
 This README file was built by [script/readme.py](https://github.com/leelddd/leetcode/blob/master/script/readme.py)
 
-Update Time:	Sat Apr 13 23:44:06 2019
+Update Time:	Sun Apr 14 15:00:43 2019
 
-Status:	112/973
+Status:	111/977
 
-Easy:	29/269
+Easy:	30/270
 
-Medium:	66/494
+Medium:	65/496
 
-Hard:	17/210
+Hard:	16/211
 
 ## Solution Table
 | # | Title | Difficulty | Solution |
@@ -18,17 +19,17 @@ Hard:	17/210
 |915|[Partition Array into Disjoint Intervals](https://leetcode.com/problems/partition-array-into-disjoint-intervals)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/915_Partition_Array_into_Disjoint_Intervals.cpp)|
 |914|[X of a Kind in a Deck of Cards](https://leetcode.com/problems/x-of-a-kind-in-a-deck-of-cards)|Easy|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/914_X_of_a_Kind_in_a_Deck_of_Cards.cpp)|
 |913|[Cat and Mouse](https://leetcode.com/problems/cat-and-mouse)|Hard|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/913_Cat_and_Mouse.cpp)|
-|887|[Super Egg Drop](https://leetcode.com/problems/super-egg-drop)|Hard|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/887_Super_Egg_Drop.cpp)|
-|885|[Spiral Matrix III](https://leetcode.com/problems/spiral-matrix-iii)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/885_Spiral_Matrix_III.cpp)|
-|884|[Uncommon Words from Two Sentences](https://leetcode.com/problems/uncommon-words-from-two-sentences)|Easy|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/884_Uncommon_Words_from_Two_Sentences.cpp)|
+|885|[Spiral Matrix III](https://leetcode.com/problems/spiral-matrix-iii)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/885_Boats_to_Save_People.cpp)|
+|884|[Uncommon Words from Two Sentences](https://leetcode.com/problems/uncommon-words-from-two-sentences)|Easy|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/884_Decoded_String_at_Index.cpp)|
+|883|[Projection Area of 3D Shapes](https://leetcode.com/problems/projection-area-of-3d-shapes)|Easy|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/883_Projection_Area_of_3D_Shapes.cpp)|
 |876|[Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list)|Easy|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/876_Middle_of_the_Linked_List.cpp)|
-|817|[Linked List Components](https://leetcode.com/problems/linked-list-components)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/817_Linked_List_Components.cpp)|
+|817|[Linked List Components](https://leetcode.com/problems/linked-list-components)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/817_Lined_List_Components.cpp)|
 |739|[Daily Temperatures](https://leetcode.com/problems/daily-temperatures)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/739_Daily_Temperatures.cpp)|
 |735|[Asteroid Collision](https://leetcode.com/problems/asteroid-collision)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/735_Asteroid_Collision.cpp)|
 |725|[Split Linked List in Parts](https://leetcode.com/problems/split-linked-list-in-parts)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/725_Split_Linked_List_in_Parts.cpp)|
 |707|[Design Linked List](https://leetcode.com/problems/design-linked-list)|Easy|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/707_Design_Linked_List.cpp)|
 |682|[Baseball Game](https://leetcode.com/problems/baseball-game)|Easy|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/682_Baseball_Game.cpp)|
-|636|[Exclusive Time of Functions](https://leetcode.com/problems/exclusive-time-of-functions)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/636_Exclusive_Time_of_Functions.cpp)|
+|636|[Exclusive Time of Functions](https://leetcode.com/problems/exclusive-time-of-functions)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/636_Exclusive_Time_of_Function.cpp)|
 |503|[Next Greater Element II](https://leetcode.com/problems/next-greater-element-ii)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/503_Next_Greater_Element_II.cpp)|
 |496|[Next Greater Element I](https://leetcode.com/problems/next-greater-element-i)|Easy|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/496_Next_Greater_Element_I.cpp)|
 |456|[132 Pattern](https://leetcode.com/problems/132-pattern)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/456_132_Pattern.cpp)|
@@ -45,7 +46,7 @@ Hard:	17/210
 |331|[Verify Preorder Serialization of a Binary Tree](https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/331_Verify_Preorder_Serialization_of_a_Binary_Tree.cpp)|
 |328|[Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/328_Odd_Even_Linked_List.cpp)|
 |309|[Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/309_Best_Time_to_Buy_and_Sell_Stock_with_Cooldown.cpp)|
-|304|[Range Sum Query 2D - Immutable](https://leetcode.com/problems/range-sum-query-2d-immutable)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/304_Range_Sum_Query_2D_-_Immutable.cpp)|
+|304|[Range Sum Query 2D - Immutable](https://leetcode.com/problems/range-sum-query-2d-immutable)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/304_Range_Sum_Query_2D.cpp)|
 |237|[Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list)|Easy|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/237_Delete_Node_in_a_Linked_List.cpp)|
 |234|[Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list)|Easy|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/234_Palindrome_Linked_List.cpp)|
 |232|[Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks)|Easy|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/232_Implement_Queue_using_Stacks.cpp)|
@@ -72,14 +73,13 @@ Hard:	17/210
 |138|[Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/138_Copy_List_with_Random_Pointer.cpp)|
 |134|[Gas Station](https://leetcode.com/problems/gas-station)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/134_Gas_Station.cpp)|
 |123|[Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii)|Hard|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/123_Best_Time_to_Buy_and_Sell_Stock_III.cpp)|
-|122|[Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii)|Easy|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/122_Best_Time_to_Buy_and_Sell_Stock_II.cpp)|
+|122|[Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii)|Easy|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/122_Best_Time_to_Bug_and_Sell_Stock_II.cpp)|
 |121|[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock)|Easy|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/121_Best_Time_to_Buy_and_Sell_Stock.cpp)|
 |120|[Triangle](https://leetcode.com/problems/triangle)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/120_Triangle.cpp)|
-|115|[Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences)|Hard|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/115_Distinct_Subsequences.cpp)|
+|115|[Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences)|Hard|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/115_Distince_Subsequences.cpp)|
 |109|[Convert Sorted List to Binary Search Tree](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/109_Convert_Sorted_List_to_Binary_Search_Tree.cpp)|
 |103|[Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/103_Binary_Tree_Zigzag_Level_Order_Traversal.cpp)|
-|095|[Unique Binary Search Trees II](https://leetcode.com/problems/unique-binary-search-trees-ii)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/095_Unique_Binary_Search_Trees_II.cpp)|
-|095|[Unique Binary Search Trees II](https://leetcode.com/problems/unique-binary-search-trees-ii)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/095_Unique_Binary_Search_Trees_II.cpp)|
+|095|[Unique Binary Search Trees II](https://leetcode.com/problems/unique-binary-search-trees-ii)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/095_Unique_Binary_Search_Tree_II_.cpp)|
 |094|[Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/094_Binary_Tree_Inorder_Traversal.cpp)|
 |092|[Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/092_Reverse_Linked_List_II.cpp)|
 |087|[Scramble String](https://leetcode.com/problems/scramble-string)|Hard|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/087_Scramble_String.cpp)|
@@ -95,10 +95,10 @@ Hard:	17/210
 |061|[Rotate List](https://leetcode.com/problems/rotate-list)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/061_Rotate_List.cpp)|
 |042|[Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water)|Hard|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/042_Trapping_Rain_Water.cpp)|
 |039|[Combination Sum](https://leetcode.com/problems/combination-sum)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/039_Combination_Sum.cpp)|
-|035|[Search Insert Position](https://leetcode.com/problems/search-insert-position)|Easy|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/035_Search_Insert_Position.cpp)|
+|035|[Search Insert Position](https://leetcode.com/problems/search-insert-position)|Easy|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/035_Count_and_Say.cpp)|
 |033|[Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/033_Search_in_Rotated_Sorted_Array.cpp)|
 |032|[Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses)|Hard|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/032_Longest_Valid_Parentheses.cpp)|
-|031|[Next Permutation](https://leetcode.com/problems/next-permutation)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/031_Next_Permutation.cpp)|
+|031|[Next Permutation](https://leetcode.com/problems/next-permutation)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/031_Next_Permutaion.cpp)|
 |029|[Divide Two Integers](https://leetcode.com/problems/divide-two-integers)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/029_Divide_Two_Integers.cpp)|
 |027|[Remove Element](https://leetcode.com/problems/remove-element)|Easy|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/027_Remove_Element.cpp)|
 |026|[Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array)|Easy|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/026_Remove_Duplicates_from_Sorted_Array.cpp)|
@@ -118,7 +118,7 @@ Hard:	17/210
 |011|[Container With Most Water](https://leetcode.com/problems/container-with-most-water)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/011_Container_With_Most_Water.cpp)|
 |010|[Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching)|Hard|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/010_Regular_Expression_Matching.cpp)|
 |009|[Palindrome Number](https://leetcode.com/problems/palindrome-number)|Easy|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/009_Palindrome_Number.cpp)|
-|008|[String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/008_String_to_Integer_(atoi).cpp)|
+|008|[String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/008_String_to_Integer.cpp)|
 |007|[Reverse Integer](https://leetcode.com/problems/reverse-integer)|Easy|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/007_Reverse_Integer.cpp)|
 |006|[ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/006_ZigZag_Conversion.cpp)|
 |005|[Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/005_Longest_Palindromic_Substring.cpp)|

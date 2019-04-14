@@ -1,3 +1,5 @@
 cmake-build-debug/
 .idea/
 login.ini
+login.ini.example
+readme_from_scratch.py
