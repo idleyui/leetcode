@@ -190,3 +190,4 @@ def default_update():
 if __name__ == '__main__':
     init('login.ini')  # read configurations from 'login.ini'
     default_update()  # update solution table and
+    print(1)
