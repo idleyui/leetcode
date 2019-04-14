@@ -56,6 +56,7 @@ class README:
 
         column_order:   display columns and its order
         column_func:    generate rules
+        reverse:        True: display in reverse order
 
         :return table string
         """
@@ -68,6 +69,7 @@ class README:
             'Difficulty': lambda item, path: difficulty[item['difficulty']],
             'Solution': lambda item, path: '[cpp](%s%s)' % (self.github_url, path)
         }
+        reverse = False
 
         result = '| ' + ' | '.join(column_order) + ' |\n'
         result += '|:---:' * len(column_order) + '|\n'
@@ -76,7 +78,8 @@ class README:
             line = '|' + '|'.join(
                 [column_func[item](self.problem_dic[id], path) for item in column_order]) + '|'
             lines.append(line)
-        lines.reverse()
+        if reverse:
+            lines.reverse()
         return result + '\n'.join(lines)
 
     def readme(self):
