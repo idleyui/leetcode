@@ -7,6 +7,7 @@ bool isPossible(vector<int> nums) {
         for (; i + j < nums.size() && nums[i + j] == nums[i]; ++j);
 
         if (j < seqs.size()) {
+//            seqs change inside, so do not use seqs.size() in for(...)
             size_t n = seqs.size() - j;
             for (int k = 0; k < n; ++k) {
                 if (seqs.front() < 3) return false;
