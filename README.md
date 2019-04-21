@@ -2,15 +2,15 @@
 
 This README file was built by [script/readme.py](https://github.com/leelddd/leetcode/blob/master/script/readme.py)
 
-Update Time:	Sat Apr 20 23:04:45 2019
+Update Time:	Sun Apr 21 13:59:06 2019
 
-Status:	124/978
+Status:	127/982
 
-Easy:	32/270
+Easy:	33/272
 
-Medium:	76/497
+Medium:	78/498
 
-Hard:	16/211
+Hard:	16/212
 
 ## Solution Table
 | # | Title | Difficulty | Solution |
@@ -131,6 +131,9 @@ Hard:	16/211
 |817|[Linked List Components](https://leetcode.com/problems/linked-list-components)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/817_Lined_List_Components.cpp)|
 |842|[Split Array into Fibonacci Sequence](https://leetcode.com/problems/split-array-into-fibonacci-sequence)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/842_Split_Array_into_Fibonacci_Sequence.cpp)|
 |860|[Lemonade Change](https://leetcode.com/problems/lemonade-change)|Easy|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/860_Lemonade_Change.cpp)|
+|861|[Score After Flipping Matrix](https://leetcode.com/problems/score-after-flipping-matrix)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/861_Score_After_Flipping_Matrix.cpp)|
+|870|[Advantage Shuffle](https://leetcode.com/problems/advantage-shuffle)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/870_Advantage_Shuffle.cpp)|
+|874|[Walking Robot Simulation](https://leetcode.com/problems/walking-robot-simulation)|Easy|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/874_Walking_Robot_Simulation.cpp)|
 |876|[Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list)|Easy|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/876_Middle_of_the_Linked_List.cpp)|
 |883|[Projection Area of 3D Shapes](https://leetcode.com/problems/projection-area-of-3d-shapes)|Easy|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/883_Projection_Area_of_3D_Shapes.cpp)|
 |884|[Uncommon Words from Two Sentences](https://leetcode.com/problems/uncommon-words-from-two-sentences)|Easy|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/884_Decoded_String_at_Index.cpp)|
