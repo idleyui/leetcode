@@ -2,13 +2,13 @@
 
 This README file was built by [script/readme.py](https://github.com/leelddd/leetcode/blob/master/script/readme.py)
 
-Update Time:	Sun Apr 21 13:59:06 2019
+Update Time:	Mon Apr 22 21:40:01 2019
 
-Status:	127/982
+Status:	130/982
 
-Easy:	33/272
+Easy:	34/272
 
-Medium:	78/498
+Medium:	80/498
 
 Hard:	16/212
 
@@ -138,7 +138,10 @@ Hard:	16/212
 |883|[Projection Area of 3D Shapes](https://leetcode.com/problems/projection-area-of-3d-shapes)|Easy|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/883_Projection_Area_of_3D_Shapes.cpp)|
 |884|[Uncommon Words from Two Sentences](https://leetcode.com/problems/uncommon-words-from-two-sentences)|Easy|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/884_Decoded_String_at_Index.cpp)|
 |885|[Spiral Matrix III](https://leetcode.com/problems/spiral-matrix-iii)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/885_Boats_to_Save_People.cpp)|
+|910|[Smallest Range II](https://leetcode.com/problems/smallest-range-ii)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/910_Smallest_Range_II.cpp)|
 |913|[Cat and Mouse](https://leetcode.com/problems/cat-and-mouse)|Hard|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/913_Cat_and_Mouse.cpp)|
 |914|[X of a Kind in a Deck of Cards](https://leetcode.com/problems/x-of-a-kind-in-a-deck-of-cards)|Easy|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/914_X_of_a_Kind_in_a_Deck_of_Cards.cpp)|
 |915|[Partition Array into Disjoint Intervals](https://leetcode.com/problems/partition-array-into-disjoint-intervals)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/915_Partition_Array_into_Disjoint_Intervals.cpp)|
 |916|[Word Subsets](https://leetcode.com/problems/word-subsets)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/916_Word_Subsets.cpp)|
+|921|[Minimum Add to Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid)|Medium|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/921_Minimum_Add_to_Make_Parentheses_Valid.cpp)|
+|944|[Delete Columns to Make Sorted](https://leetcode.com/problems/delete-columns-to-make-sorted)|Easy|[cpp](https://github.com/leelddd/leetcode/blob/master/solution/944_Delete_Columns_to_Make_Sorted.cpp)|
