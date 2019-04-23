@@ -164,20 +164,6 @@ void print_tree(TreeNode *node) {
     cout << "]," << endl;
 }
 
-class Node {
-public:
-    int val;
-    Node *next;
-    Node *random;
-
-    Node() {}
-
-    Node(int _val, Node *_next, Node *_random) {
-        val = _val;
-        next = _next;
-        random = _random;
-    }
-};
 
 // https://stackoverflow.com/questions/14265581/parse-split-a-string-in-c-using-string-delimiter-standard-c
 vector<string> split(string s, string delimiter = ",") {
