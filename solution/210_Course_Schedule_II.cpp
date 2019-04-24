@@ -3,7 +3,7 @@
 vector<bool> finish;
 vector<vector<int>> pre_list;
 vector<bool> visited;
-int cnt = 0;
+vector<int> order;
 
 bool dfs(int id) {
     if (finish[id])return true;
@@ -13,12 +13,13 @@ bool dfs(int id) {
         if (!dfs(pre_id))return false;
     }
     visited[id] = false;
-    cnt++;
     finish[id] = true;
+    order.push_back(id);
     return true;
 }
 
-bool findOrder(int numCourses, vector<pair<int, int>> prerequisites) {
+
+vector<int> findOrder(int numCourses, vector<pair<int, int>> prerequisites) {
     pre_list = vector<vector<int>>(numCourses, vector<int>());
     for (auto p: prerequisites) {
         pre_list[p.first].push_back(p.second);
@@ -26,24 +27,22 @@ bool findOrder(int numCourses, vector<pair<int, int>> prerequisites) {
 
     finish = vector<bool>(numCourses, false);
     visited = vector<bool>(numCourses, false);
+    order.clear();
 
 
-    while (cnt < numCourses) {
+    while (order.size() < numCourses) {
         for (int j = 0; j < numCourses; ++j) { visited[j] = false; }
         int i = 0;
         for (; i < numCourses && finish[i]; i++);
-        if (!dfs(i))return false;
+        if (!dfs(i))return {};
     }
-    return true;
+    return order;
 }
 
 
 int main() {
-//    cout << dfs(2, {{1, 0}});
-    cout << findOrder(2, {{1, 0},
-                          {0, 1}});
-    cout << findOrder(4, {{3, 1},
-                          {0, 1},
-                          {1, 3},
-                          {3, 2}});
+    print_container(findOrder(2, {{1, 0}}));
+    print_container(findOrder(2, {{1, 0}, {0, 1}}));
+    print_container(findOrder(4, {{3, 1}, {0, 1}, {1, 3}, {3, 2}}));
+    print_container(findOrder(4, {{1, 0}, {2, 0}, {3, 1}, {3, 2}}));
 }

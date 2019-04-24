@@ -144,3 +144,5 @@ add_executable(921_Minimum_Add_to_Make_Parentheses_Valid solution/921_Minimum_Ad
 add_executable(944_Delete_Columns_to_Make_Sorted solution/944_Delete_Columns_to_Make_Sorted.cpp)
 add_executable(133_Clone_Graph solution/133_Clone_Graph.cpp)
 add_executable(207_Course_Schedule solution/207_Course_Schedule.cpp)
+add_executable(210_Course_Schedule_II solution/210_Course_Schedule_II.cpp)
+add_executable(310_Minimum_Height_Tree solution/310_Minimum_Height_Tree.cpp)
