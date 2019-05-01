@@ -23,7 +23,7 @@ int r(ListNode *l1, ListNode *l2, int shift) {
 }
 
 ListNode *addTwoNumbers(ListNode *l1, ListNode *l2) {
-    int len1 = cnt(l1), len2 = cnt(l2);
+    int len1 = order(l1), len2 = order(l2);
     if (len1 < len2) {
         swap(l1, l2);
         swap(len1, len2);

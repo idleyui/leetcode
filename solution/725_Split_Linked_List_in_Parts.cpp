@@ -8,7 +8,7 @@ int cnt(ListNode *p) {
 
 vector<ListNode *> splitListToParts(ListNode *root, int k) {
     vector<ListNode *> result{};
-    int num = cnt(root);
+    int num = order(root);
     if (num <= k) {
         for (int i = 0; i < k; ++i) {
             if (root) {

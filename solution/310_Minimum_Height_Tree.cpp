@@ -1,5 +1,6 @@
 #include "alg.h"
 
+// https://leetcode.com/problems/minimum-height-trees/discuss/76104/C%2B%2B-Solution.-O(n)-Time-O(n)-Space
 vector<int> findMinHeightTrees(int n, vector<pair<int, int>> edges) {
     vector<vector<int>> neibors(n, vector<int>());
     vector<int> neibor_cnt(n, 0);

@@ -3,7 +3,7 @@
 vector<bool> finish;
 vector<vector<int>> pre_list;
 vector<bool> visited;
-int cnt = 0;
+int order = 0;
 
 bool dfs(int id) {
     if (finish[id])return true;
@@ -13,7 +13,7 @@ bool dfs(int id) {
         if (!dfs(pre_id))return false;
     }
     visited[id] = false;
-    cnt++;
+    order++;
     finish[id] = true;
     return true;
 }
@@ -28,7 +28,7 @@ bool findOrder(int numCourses, vector<pair<int, int>> prerequisites) {
     visited = vector<bool>(numCourses, false);
 
 
-    while (cnt < numCourses) {
+    while (order < numCourses) {
         for (int j = 0; j < numCourses; ++j) { visited[j] = false; }
         int i = 0;
         for (; i < numCourses && finish[i]; i++);
