@@ -63,6 +63,33 @@ string longestPalindrome_dp(const string &s) {
     return s.substr(max_i, max);
 }
 
+// dp by lens
+string longestPalindrome(string s) {
+    if (s.empty()) return "";
+
+    vector<vector<int>> dp(s.size(), vector<int>(s.size() + 1, 0));
+    string rt = s.substr(0, 1);
+
+    for (int i = 0; i < s.size(); i++) dp[i][1] = 1;
+    for (int i = 0; i < s.size() - 1; i++) {
+        if (s[i] == s[i + 1]) {
+            dp[i][2] = 1;
+            rt = s.substr(i, 2);
+        }
+    }
+
+    for (int len = 3; len <= s.size(); len++) {
+        for (int i = 0; i < s.size() - len + 1; i++) {
+            if (dp[i + 1][len - 2] && s[i] == s[i + len - 1]) {
+                dp[i][len] = 1;
+                rt = s.substr(i, len);
+            }
+        }
+    }
+
+    return rt;
+}
+
 // approach 4: expand around center
 int expand(string s, int l, int r) {
     for (; l >= 0 && r < s.size() && s[l] == s[r]; l--, r++);
