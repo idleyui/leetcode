@@ -200,7 +200,7 @@ class README:
 
 if __name__ == '__main__':
     root = 'C:/Users/Leeld/Documents/projects/leetcode/'
-    url = 'https://github.com/leelddd/leetcode/blob/master/'
+    url = 'https://github.com/idleyui/leetcode/blob/master/'
     r = README(root, url)
     r.readme()
     print()
