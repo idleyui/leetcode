@@ -2,13 +2,13 @@
 
 This README file was built by [script/readme.py](https://github.com/idleyui/leetcode/blob/master/script/readme.py)
 
-Update Time:	Tue Oct 15 23:35:23 2019
+Update Time:	Thu Oct 17 18:58:03 2019
 
-Status:	155/1133
+Status:	159/1133
 
-Easy:	38/313
+Easy:	38/312
 
-Medium:	101/579
+Medium:	105/580
 
 Hard:	16/241
 
@@ -76,7 +76,7 @@ Hard:	16/241
 |094|[Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/094_Binary_Tree_Inorder_Traversal.cpp)|
 |095|[Unique Binary Search Trees II](https://leetcode.com/problems/unique-binary-search-trees-ii)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/095_Unique_Binary_Search_Tree_II_.cpp)|
 |096|[Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/096_Unique_Binary_Search_Trees.cpp)|
-|098|[Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/098_Validate_Binary_Search_Tree .cpp)|
+|098|[Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/098_Validate_Binary_Search_Tree.cpp)|
 |101|[Symmetric Tree](https://leetcode.com/problems/symmetric-tree)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/101_Symmetric_Tree.cpp)|
 |102|[Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/102_Binary_Tree_Level_Order_Traversal.cpp)|
 |103|[Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/103_Binary_Tree_Zigzag_Level_Order_Traversal.cpp)|
@@ -90,12 +90,15 @@ Hard:	16/241
 |123|[Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii)|Hard|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/123_Best_Time_to_Buy_and_Sell_Stock_III.cpp)|
 |133|[Clone Graph](https://leetcode.com/problems/clone-graph)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/133_Clone_Graph.cpp)|
 |134|[Gas Station](https://leetcode.com/problems/gas-station)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/134_Gas_Station.cpp)|
+|136|[Single Number](https://leetcode.com/problems/single-number)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/136_Single_Number.cpp)|
 |138|[Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/138_Copy_List_with_Random_Pointer.cpp)|
+|139|[Word Break](https://leetcode.com/problems/word-break)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/139_Word_Break.cpp)|
 |141|[Linked List Cycle](https://leetcode.com/problems/linked-list-cycle)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/141_Linked_List_Cycle.cpp)|
 |142|[Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/142_Linked_List_Cycle_II.cpp)|
 |143|[Reorder List](https://leetcode.com/problems/reorder-list)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/143_Reorder_List.cpp)|
 |144|[Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/144_Binary_Tree_Preorder_Traversal.cpp)|
 |145|[Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal)|Hard|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/145_Binary_Tree_Postorder_Traversal.cpp)|
+|146|[LRU Cache](https://leetcode.com/problems/lru-cache)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/146_LRU_Cache.cpp)|
 |147|[Insertion Sort List](https://leetcode.com/problems/insertion-sort-list)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/147_Insertion_Sort_List.cpp)|
 |148|[Sort List](https://leetcode.com/problems/sort-list)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/148_Sort_List.cpp)|
 |149|[Max Points on a Line](https://leetcode.com/problems/max-points-on-a-line)|Hard|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/149_Max_Points_on_a_Line.cpp)|
@@ -106,6 +109,7 @@ Hard:	16/241
 |160|[Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/160_Intersection_of_Two_Linked_Lists.cpp)|
 |173|[Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/173_Binary_Search_Tree_Iterator.cpp)|
 |198|[House Robber](https://leetcode.com/problems/house-robber)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/198_House_Robber.cpp)|
+|200|[Number of Islands](https://leetcode.com/problems/number-of-islands)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/200_Number_of_Islands.cpp)|
 |203|[Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/203_Remove_Linked_List_Elements.cpp)|
 |206|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/206_Reverse_Linked_List.cpp)|
 |207|[Course Schedule](https://leetcode.com/problems/course-schedule)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/207_Course_Schedule.cpp)|
@@ -145,7 +149,7 @@ Hard:	16/241
 |649|[Dota2 Senate](https://leetcode.com/problems/dota2-senate)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/649_Dota2_Senate.cpp)|
 |659|[Split Array into Consecutive Subsequences](https://leetcode.com/problems/split-array-into-consecutive-subsequences)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/659_Split_Array_into_Consecutive_Subsequences.cpp)|
 |682|[Baseball Game](https://leetcode.com/problems/baseball-game)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/682_Baseball_Game.cpp)|
-|707|[Design Linked List](https://leetcode.com/problems/design-linked-list)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/707_Design_Linked_List.cpp)|
+|707|[Design Linked List](https://leetcode.com/problems/design-linked-list)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/707_Design_Linked_List.cpp)|
 |714|[Best Time to Buy and Sell Stock with Transaction Fee](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/714_Best_Time_to_Buy_and_Sell_Stock_with_Transaction_Fee.cpp)|
 |725|[Split Linked List in Parts](https://leetcode.com/problems/split-linked-list-in-parts)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/725_Split_Linked_List_in_Parts.cpp)|
 |735|[Asteroid Collision](https://leetcode.com/problems/asteroid-collision)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/735_Asteroid_Collision.cpp)|
