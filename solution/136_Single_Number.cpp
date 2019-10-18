@@ -9,6 +9,6 @@ int singleNumber(vector<int> &nums) {
 }
 
 int main() {
-    vector<int> v = {1,2,3};
-    cout << singleNumber(v)
+    vector<int> v = {1, 2, 3};
+    cout << singleNumber(v);
 }
