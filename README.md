@@ -2,13 +2,13 @@
 
 This README file was built by [script/readme.py](https://github.com/idleyui/leetcode/blob/master/script/readme.py)
 
-Update Time:	Tue Oct 29 12:24:35 2019
+Update Time:	Thu Oct 31 12:04:22 2019
 
-Status:	169/1147
+Status:	173/1147
 
 Easy:	42/315
 
-Medium:	109/588
+Medium:	113/588
 
 Hard:	18/244
 
@@ -126,6 +126,10 @@ Hard:	18/244
 |236|[Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/236_Lowest_Common_Ancestor_of_a_Binary_Tree.cpp)|
 |237|[Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/237_Delete_Node_in_a_Linked_List.cpp)|
 |238|[Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/238_Product_of_Array_Except_Self.cpp)|
+|240|[Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/240_Search_a_2D_Matrix_II.cpp)|
+|279|[Perfect Squares](https://leetcode.com/problems/perfect-squares)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/279_Perfect_Squares.cpp)|
+|287|[Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/287_Find_the_Duplicate_Number.cpp)|
+|300|[Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/300_Longest_Increasing_Subsequence.cpp)|
 |304|[Range Sum Query 2D - Immutable](https://leetcode.com/problems/range-sum-query-2d-immutable)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/304_Range_Sum_Query_2D.cpp)|
 |309|[Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/309_Best_Time_to_Buy_and_Sell_Stock_with_Cooldown.cpp)|
 |310|[Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/310_Minimum_Height_Tree.cpp)|
@@ -184,4 +188,3 @@ Hard:	18/244
 |916|[Word Subsets](https://leetcode.com/problems/word-subsets)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/916_Word_Subsets.cpp)|
 |921|[Minimum Add to Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/921_Minimum_Add_to_Make_Parentheses_Valid.cpp)|
 |944|[Delete Columns to Make Sorted](https://leetcode.com/problems/delete-columns-to-make-sorted)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/944_Delete_Columns_to_Make_Sorted.cpp)|
-
