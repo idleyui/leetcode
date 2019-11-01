@@ -184,3 +184,5 @@ add_executable(287_Find_the_Duplicate_Number solution/287_Find_the_Duplicate_Num
 add_executable(300_Longest_Increasing_Subsequence solution/300_Longest_Increasing_Subsequence.cpp)
 add_executable(560_Subarray_Sum_Equals_k solution/560_Subarray_Sum_Equals_k.cpp)
 add_executable(437_Path_Sum_III solution/437_Path_Sum_III.cpp)
+add_executable(322_Coin_Change solution/322_Coin_Change.cpp)
+add_executable(312_Burst_Balloons solution/312_Burst_Balloons.cpp)
