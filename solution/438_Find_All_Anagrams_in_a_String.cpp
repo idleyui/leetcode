@@ -1,62 +1,50 @@
 #include "alg.h"
 
-map<char, int> create_map(string s, int len) {
-    map<char, int> cntp;
-    for (int i = 0; i < len; i++) {
-        char c = s[i];
-        if (cntp.count(c)) {
-            cntp[c] = cntp[c] + 1;
-        } else {
-            cntp[c] = 1;
+void update_dict(unordered_map<char, int> &d, char key, int plus) {
+    if (d.count(key)) {
+        d[key] += plus;
+        if (d[key] == 0) {
+            d.erase(key);
         }
+    } else {
+        d[key] = plus;
     }
-    return cntp;
-}
-
-bool equl(map<char, int> m1, map<char, int> m2) {
-    if (m1.size() != m2.size())return false;
-    for (auto item = m1.begin(); item != m1.end(); item++) {
-        if (item->second != m2[item->first])return false;
-    }
-    return true;
 }
 
 vector<int> findAnagrams(string s, string p) {
-    vector<int> r;
     if (p.size() > s.size()) return {};
-    map<char, int> cntp = create_map(p, p.size());
-    map<char, int> window = create_map(s, p.size());
-    for (int i = p.size(); i < s.size(); i++) {
-        int begin = i - p.size();
-        if (equl(cntp, window)) r.push_back(begin);
-
-        for (auto item: window) {
-            cout << item.first;
-        }
-        cout << endl;
-        s[begin]--;
-//        window.erase(s[begin]);
-        // window.erase()
-        window[s[i]]++;
-
+    unordered_map<char, int> need;
+    unordered_set<char> char_set(p.begin(), p.end());
+    unordered_map<char, int> overflow;
+    for (char c: p) {
+        update_dict(need, c, 1);
     }
-    return r;
+    int i = 0;
+    for (; i < p.size(); i++) {
+        if (char_set.count(s[i])) {
+            update_dict(need, s[i], -1);
+        } else {
+            update_dict(overflow, s[i], 1);
+        }
+    }
+
+    vector<int> rt;
+    for (; i < s.size(); i++) {
+        if (need.size() == 0 && overflow.size() == 0) {
+            rt.push_back(i - p.size());
+        }
+        if (char_set.count(s[i])) { update_dict(need, s[i], -1); }
+        else { update_dict(overflow, s[i], 1); }
+        char left = s[i - p.size()];
+        if (char_set.count(left)) { update_dict(need, left, 1); }
+        else { update_dict(overflow, left, -1); }
+    }
+
+    if (need.size() == 0 && overflow.size() == 0) {
+        rt.push_back(i - p.size());
+    }
+    return rt;
 }
 
 int main() {
-//    string s = "c";
-//    map<char, int> window;
-//    window['a'] = 2;
-//    window['b'] = 1;
-//    window['c'] = 0;
-//    for (auto item = window.begin(); item != window.end(); item++) {
-//        cout << item->first;
-//    }
-//    cout << endl;
-//    window.erase(s[0]);
-//    for (auto item = window.begin(); item != window.end(); item++) {
-//        cout << item->first;
-//    }
-
-    print_container(findAnagrams("cbaebabacd", "abc"));
 }

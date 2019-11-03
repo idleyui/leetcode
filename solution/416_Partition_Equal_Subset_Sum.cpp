@@ -13,7 +13,7 @@ bool search(vector<int> &nums, vector<unordered_set<int>> &dp, int begin, int su
 }
 
 bool canPartition(vector<int> &nums) {
-     sort(nums.begin(), nums.end());
+    sort(nums.begin(), nums.end());
     int sum = 0;
     for (int i: nums) sum += i;
     if (sum % 2 != 0) return false;
@@ -24,5 +24,4 @@ bool canPartition(vector<int> &nums) {
 }
 
 int main() {
-
 }
