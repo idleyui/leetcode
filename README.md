@@ -2,13 +2,13 @@
 
 This README file was built by [script/readme.py](https://github.com/idleyui/leetcode/blob/master/script/readme.py)
 
-Update Time:	Sun Nov  3 19:10:38 2019
+Update Time:	Mon Nov  4 14:03:14 2019
 
-Status:	179/1155
+Status:	182/1155
 
 Easy:	43/316
 
-Medium:	117/593
+Medium:	120/593
 
 Hard:	19/246
 
@@ -54,6 +54,8 @@ Hard:	19/246
 |046|[Permutations](https://leetcode.com/problems/permutations)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/046_Permutations.cpp)|
 |048|[Rotate Image](https://leetcode.com/problems/rotate-image)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/048_Rotate_Image.cpp)|
 |049|[Group Anagrams](https://leetcode.com/problems/group-anagrams)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/049_Group_Anagrams.cpp)|
+|050|[Pow(x, n)](https://leetcode.com/problems/powx-n)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/050_Powx_n.cpp)|
+|054|[Spiral Matrix](https://leetcode.com/problems/spiral-matrix)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/054_Spiral_Matrix.cpp)|
 |056|[Merge Intervals](https://leetcode.com/problems/merge-intervals)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/056_Merge_Intervals.cpp)|
 |058|[Length of Last Word](https://leetcode.com/problems/length-of-last-word)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/058_Length_of_Last_Word.cpp)|
 |061|[Rotate List](https://leetcode.com/problems/rotate-list)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/061_Rotate_List.cpp)|
@@ -141,6 +143,7 @@ Hard:	19/246
 |337|[House Robber III](https://leetcode.com/problems/house-robber-iii)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/337_House_Robber_III.cpp)|
 |338|[Counting Bits](https://leetcode.com/problems/counting-bits)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/338_Counting_Bits.cpp)|
 |341|[Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/341_Flatten_Nested_List_Iterator.cpp)|
+|347|[Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/347_Top_K_Frequent_Elements.cpp)|
 |376|[Wiggle Subsequence](https://leetcode.com/problems/wiggle-subsequence)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/376_Wiggle_Subsequence.cpp)|
 |385|[Mini Parser](https://leetcode.com/problems/mini-parser)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/385_Mini_Parser.cpp)|
 |392|[Is Subsequence](https://leetcode.com/problems/is-subsequence)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/392_Is_Subsequence.cpp)|
