@@ -2,13 +2,13 @@
 
 This README file was built by [script/readme.py](https://github.com/idleyui/leetcode/blob/master/script/readme.py)
 
-Update Time:	Mon Nov  4 14:03:14 2019
+Update Time:	Mon Nov  4 19:22:16 2019
 
-Status:	182/1155
+Status:	185/1155
 
-Easy:	43/316
+Easy:	45/316
 
-Medium:	120/593
+Medium:	121/593
 
 Hard:	19/246
 
@@ -67,6 +67,7 @@ Hard:	19/246
 |067|[Add Binary](https://leetcode.com/problems/add-binary)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/067_Add_Binary.cpp)|
 |071|[Simplify Path](https://leetcode.com/problems/simplify-path)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/071_Simplify_Path.cpp)|
 |072|[Edit Distance](https://leetcode.com/problems/edit-distance)|Hard|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/072_Edit_Distance.cpp)|
+|073|[Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/073_Set_Matrix_Zeroes.cpp)|
 |075|[Sort Colors](https://leetcode.com/problems/sort-colors)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/075_Sort_Colors.cpp)|
 |076|[Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring)|Hard|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/076_Minimum_Window_Substring.cpp)|
 |078|[Subsets](https://leetcode.com/problems/subsets)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/078_Subsets.cpp)|
@@ -76,6 +77,7 @@ Hard:	19/246
 |084|[Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram)|Hard|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/084_Largest_Rectangle_in_Histogram.cpp)|
 |086|[Partition List](https://leetcode.com/problems/partition-list)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/086_Partition_List.cpp)|
 |087|[Scramble String](https://leetcode.com/problems/scramble-string)|Hard|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/087_Scramble_String.cpp)|
+|088|[Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/088_Merge_Sorted_Array.cpp)|
 |092|[Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/092_Reverse_Linked_List_II.cpp)|
 |094|[Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/094_Binary_Tree_Inorder_Traversal.cpp)|
 |095|[Unique Binary Search Trees II](https://leetcode.com/problems/unique-binary-search-trees-ii)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/095_Unique_Binary_Search_Tree_II_.cpp)|
@@ -85,6 +87,7 @@ Hard:	19/246
 |102|[Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/102_Binary_Tree_Level_Order_Traversal.cpp)|
 |103|[Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/103_Binary_Tree_Zigzag_Level_Order_Traversal.cpp)|
 |105|[Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/105_Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal.cpp)|
+|108|[Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/108_Convert_Sorted_Array_to_Binary_Search_Tree.cpp)|
 |109|[Convert Sorted List to Binary Search Tree](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/109_Convert_Sorted_List_to_Binary_Search_Tree.cpp)|
 |114|[Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/114_Flatten_Binary_Tree_to_Linked_List.cpp)|
 |115|[Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences)|Hard|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/115_Distince_Subsequences.cpp)|
