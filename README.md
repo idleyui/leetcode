@@ -2,13 +2,13 @@
 
 This README file was built by [script/readme.py](https://github.com/idleyui/leetcode/blob/master/script/readme.py)
 
-Update Time:	Mon Nov  4 19:22:16 2019
+Update Time:	Mon Nov  4 21:58:00 2019
 
-Status:	185/1155
+Status:	187/1155
 
-Easy:	45/316
+Easy:	46/316
 
-Medium:	121/593
+Medium:	122/593
 
 Hard:	19/246
 
@@ -65,6 +65,7 @@ Hard:	19/246
 |065|[Valid Number](https://leetcode.com/problems/valid-number)|Hard|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/065_Valid_Number.cpp)|
 |066|[Plus One](https://leetcode.com/problems/plus-one)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/066_Plus_One.cpp)|
 |067|[Add Binary](https://leetcode.com/problems/add-binary)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/067_Add_Binary.cpp)|
+|069|[Sqrt(x)](https://leetcode.com/problems/sqrtx)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/069_Sqrtx.cpp)|
 |071|[Simplify Path](https://leetcode.com/problems/simplify-path)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/071_Simplify_Path.cpp)|
 |072|[Edit Distance](https://leetcode.com/problems/edit-distance)|Hard|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/072_Edit_Distance.cpp)|
 |073|[Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/073_Set_Matrix_Zeroes.cpp)|
@@ -78,6 +79,7 @@ Hard:	19/246
 |086|[Partition List](https://leetcode.com/problems/partition-list)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/086_Partition_List.cpp)|
 |087|[Scramble String](https://leetcode.com/problems/scramble-string)|Hard|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/087_Scramble_String.cpp)|
 |088|[Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/088_Merge_Sorted_Array.cpp)|
+|091|[Decode Ways](https://leetcode.com/problems/decode-ways)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/091_Decode_Ways.cpp)|
 |092|[Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/092_Reverse_Linked_List_II.cpp)|
 |094|[Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/094_Binary_Tree_Inorder_Traversal.cpp)|
 |095|[Unique Binary Search Trees II](https://leetcode.com/problems/unique-binary-search-trees-ii)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/095_Unique_Binary_Search_Tree_II_.cpp)|
