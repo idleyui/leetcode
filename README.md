@@ -2,13 +2,13 @@
 
 This README file was built by [script/readme.py](https://github.com/idleyui/leetcode/blob/master/script/readme.py)
 
-Update Time:	Mon Nov  4 21:58:00 2019
+Update Time:	Tue Nov  5 13:25:47 2019
 
-Status:	187/1155
+Status:	191/1155
 
-Easy:	46/316
+Easy:	48/315
 
-Medium:	122/593
+Medium:	124/594
 
 Hard:	19/246
 
@@ -93,10 +93,14 @@ Hard:	19/246
 |109|[Convert Sorted List to Binary Search Tree](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/109_Convert_Sorted_List_to_Binary_Search_Tree.cpp)|
 |114|[Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/114_Flatten_Binary_Tree_to_Linked_List.cpp)|
 |115|[Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences)|Hard|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/115_Distince_Subsequences.cpp)|
+|116|[Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/116_Populating_Next_Right_Pointers_in_Each_Node.cpp)|
+|118|[Pascal's Triangle](https://leetcode.com/problems/pascals-triangle)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/118_Pascals_Triangle.cpp)|
 |120|[Triangle](https://leetcode.com/problems/triangle)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/120_Triangle.cpp)|
 |121|[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/121_Best_Time_to_Buy_and_Sell_Stock.cpp)|
 |122|[Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/122_Best_Time_to_Bug_and_Sell_Stock_II.cpp)|
 |123|[Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii)|Hard|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/123_Best_Time_to_Buy_and_Sell_Stock_III.cpp)|
+|125|[Valid Palindrome](https://leetcode.com/problems/valid-palindrome)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/125_Valid_Palindrome.cpp)|
+|127|[Word Ladder](https://leetcode.com/problems/word-ladder)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/127_Word_Ladder.cpp)|
 |133|[Clone Graph](https://leetcode.com/problems/clone-graph)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/133_Clone_Graph.cpp)|
 |134|[Gas Station](https://leetcode.com/problems/gas-station)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/134_Gas_Station.cpp)|
 |136|[Single Number](https://leetcode.com/problems/single-number)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/136_Single_Number.cpp)|
