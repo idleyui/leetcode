@@ -24,7 +24,7 @@ int ladderLength(string beginWord, string endWord, vector<string> &wordList) {
     }
     if (tgt == -1) return 0;
 
-    vector<int> begin_list = {wordList.size() - 1};
+    vector<int> begin_list = {static_cast<int>(wordList.size() - 1)};
     unordered_set<int> visited;
     visited.insert(wordList.size() - 1);
     int len = 1;
