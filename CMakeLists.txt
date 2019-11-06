@@ -201,3 +201,5 @@ add_executable(116_Populating_Next_Right_Pointers_in_Each_Node solution/116_Popu
 add_executable(125_Valid_Palindrome solution/125_Valid_Palindrome.cpp)
 add_executable(127_Word_Ladder solution/127_Word_Ladder.cpp)
 add_executable(130_Surrounded_Regions solution/130_Surrounded_Regions.cpp)
+add_executable(189_Rotate_Array solution/189_Rotate_Array.cpp)
+add_executable(162_Find_Peak_Element solution/162_Find_Peak_Element.cpp)
