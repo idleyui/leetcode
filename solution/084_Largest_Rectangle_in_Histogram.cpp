@@ -1,17 +1,23 @@
 #include "alg.h"
 
-vector<int> largestRectangleArea(vector<int> height) {
-    vector<int> incr;
-    int area = 0;
+
+int largestRectangleArea_(vector<int> &height) {
+    int ret = 0;
+    height.push_back(0);
+    vector<int> index;
+
     for (int i = 0; i < height.size(); ++i) {
-        while (!incr.empty() && height[*(incr.end() - 1)] > height[i]) {
-            incr.pop_back();
+        while (index.size() > 0 && height[index.back()] >= height[i]) {
+            int h = height[index.back()];
+            index.pop_back();
+
+            int sidx = index.size() > 0 ? index.back() : -1;
+            if (h * (i - sidx - 1) > ret) ret = h * (i - sidx - 1);
         }
-        incr.push_back(i);
+        index.push_back(i);
     }
-    return incr;
+    return ret;
 }
 
 int main() {
-    print_container(largestRectangleArea({2, 1, 5, 6, 2, 3}));
 }
