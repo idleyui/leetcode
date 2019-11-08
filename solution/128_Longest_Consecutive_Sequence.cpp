@@ -1,5 +1,6 @@
 #include "alg.h"
 
+//https://leetcode.com/problems/longest-consecutive-sequence/discuss/41088/Possibly-shortest-cpp-solution-only-6-lines.
 int longestConsecutive(vector<int> &nums) {
     unordered_map<int, int> val2len;
     int max_len = 0;
