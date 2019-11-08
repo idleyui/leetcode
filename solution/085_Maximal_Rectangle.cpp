@@ -1,7 +1,6 @@
 #include "alg.h"
 
-//https://leetcode.com/problems/largest-rectangle-in-histogram/discuss/28905/My-concise-C%2B%2B-solution-AC-90-ms
-int largestRectangleArea_(vector<int> height) {
+int largestRectangleArea(vector<int> &height) {
     int ret = 0;
     height.push_back(0);
     vector<int> index;
@@ -19,7 +18,19 @@ int largestRectangleArea_(vector<int> height) {
     return ret;
 }
 
+int maximalRectangle(vector<vector<char>> &matrix) {
+    int n = matrix.size(), m = n > 0 ? matrix[0].size() : 0, max_val = 0;
+    vector<int> height(n, 0);
+    for (int i = 0; i < n; ++i) {
+        for (int j = 0; j < m; ++j) {
+            if (matrix[i][j] == '0') height[j] = 0;
+            else height[j] += 1;
+        }
+        max_val = max(max_val, largestRectangleArea(height));
+    }
+    return max_val;
+}
+
 int main() {
-    cout << largestRectangleArea_({2, 1, 5, 6, 2, 3});
-    cout << largestRectangleArea_({1, 0, 1, 0, 0, 0});
+
 }
