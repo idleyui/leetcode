@@ -2,15 +2,15 @@
 
 This README file was built by [script/readme.py](https://github.com/idleyui/leetcode/blob/master/script/readme.py)
 
-Update Time:	Fri Nov  8 21:08:51 2019
+Update Time:	Sun Nov 10 17:33:58 2019
 
-Status:	200/1155
+Status:	204/1159
 
-Easy:	50/315
+Easy:	50/316
 
-Medium:	128/594
+Medium:	129/596
 
-Hard:	22/246
+Hard:	25/247
 
 ## Solution Table
 | # | Title | Difficulty | Solution |
@@ -139,6 +139,7 @@ Hard:	22/246
 |210|[Course Schedule II](https://leetcode.com/problems/course-schedule-ii)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/210_Course_Schedule_II.cpp)|
 |213|[House Robber II](https://leetcode.com/problems/house-robber-ii)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/213_House_Robber_II.cpp)|
 |215|[Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/215_Kth_Largest_Element_in_an_Array.cpp)|
+|221|[Maximal Square](https://leetcode.com/problems/maximal-square)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/221_Maximal_Square.cpp)|
 |224|[Basic Calculator](https://leetcode.com/problems/basic-calculator)|Hard|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/224_Basic_Calculator.cpp)|
 |225|[Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/225_Implement_Stack_using_Queues.cpp)|
 |232|[Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/232_Implement_Queue_using_Stacks.cpp)|
@@ -146,9 +147,12 @@ Hard:	22/246
 |236|[Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/236_Lowest_Common_Ancestor_of_a_Binary_Tree.cpp)|
 |237|[Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/237_Delete_Node_in_a_Linked_List.cpp)|
 |238|[Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/238_Product_of_Array_Except_Self.cpp)|
+|239|[Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum)|Hard|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/239_Sliding_Window_Maximum.cpp)|
 |240|[Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/240_Search_a_2D_Matrix_II.cpp)|
 |279|[Perfect Squares](https://leetcode.com/problems/perfect-squares)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/279_Perfect_Squares.cpp)|
 |287|[Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/287_Find_the_Duplicate_Number.cpp)|
+|295|[Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream)|Hard|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/295_Find_Median_from_Data_Stream.cpp)|
+|297|[Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree)|Hard|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/297_Serialize_and_Deserialize_Binary_Tree.cpp)|
 |300|[Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/300_Longest_Increasing_Subsequence.cpp)|
 |304|[Range Sum Query 2D - Immutable](https://leetcode.com/problems/range-sum-query-2d-immutable)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/304_Range_Sum_Query_2D.cpp)|
 |309|[Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/309_Best_Time_to_Buy_and_Sell_Stock_with_Cooldown.cpp)|
