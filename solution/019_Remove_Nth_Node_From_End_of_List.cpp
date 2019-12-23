@@ -9,21 +9,16 @@
 // 2. move fast pointer to reverse -1 so slow pointer in reverse n(n+1th)
 // 3. remove reverse n node
 ListNode *removeNthFromEnd(ListNode *head, int n) {
-    ListNode h(0);
-    h.next = head;
-    ListNode *front = h.next, *remove = &h;
-
-    for (int i = 0; i < n; ++i) { front = front->next; }
-
-    while (front) {
-        front = front->next;
-        remove = remove->next;
+    ListNode dummy(0);
+    dummy.next = head;
+    ListNode *fast = dummy.next, *slow = &dummy;
+    for (int i = 0; i < n; ++i) { fast = fast->next; }
+    while (fast) {
+        fast = fast->next;
+        slow = slow->next;
     }
-
-//    ListNode *victim = remove->next;
-    remove->next = remove->next->next;
-//    delete victim;
-    return h.next;
+    slow->next = slow->next->next;
+    return dummy.next;
 }
 
 // double pointer trick
@@ -35,9 +30,7 @@ ListNode *removeNthFromEnd2(ListNode *head, int n) {
         t1 = &((*t1)->next);
         t2 = t2->next;
     }
-//    ListNode *victim = *t1;
     *t1 = (*t1)->next;
-//    delete victim;
     return head;
 }
 
@@ -54,6 +47,7 @@ void remove_list_entry(ListNode *head, ListNode *entry) {
     *indirect = entry->next;
     free(entry);
 }
+
 
 int main() {
     ListNode *head = mklst({1, 2, 3});

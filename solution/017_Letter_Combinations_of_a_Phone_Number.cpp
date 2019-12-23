@@ -3,22 +3,20 @@
 vector<string> letterCombinations(string digits) {
     if (digits.size() == 0)return {};
     string arr[9]{"*", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
-    vector<string> v;
-    for (char c: arr[digits[0] - '1']) v.push_back(string(1, c));
-    for (int i = 1; i < digits.size(); ++i) {
-        string append = arr[digits[i] - '1'];
-        vector<string> v1;
-        for (char c: append) {
-            for (string s: v) {
-                s.push_back(c);
-                v1.push_back(s);
+    vector<string> result = {""};
+    for (char c: digits) {
+        int num = c - '1';
+        vector<string> new_result = {};
+        for (char c1: arr[num]) {
+            for (string rt: result) {
+                new_result.push_back(rt + c1);
             }
         }
-        v.clear();
-        v.assign(v1.begin(), v1.end());
+        result = new_result;
     }
-    return v;
+    return result;
 }
+
 
 int main() {
     string s = "12345";

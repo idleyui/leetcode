@@ -1,16 +1,20 @@
 #include "alg.h"
 
+//     begin, max, v2p
 int lengthOfLongestSubstring(string s) {
-    map<int, int> s2p{};
-    int max = 0;
-    for (int begin = 0, i = 0; i < s.size(); i++) {
-        if (s2p.find(s[i]) != s2p.end())
-            begin = std::max(begin, s2p[s[i]] + 1);
-        s2p[s[i]] = i;
-        max = std::max(i - begin + 1, max);
+    map<char, int> v2p;
+    int begin = 0, max_len = 0;
+    for (int i = 0; i < s.size(); i++) {
+        char item = s[i];
+        if (v2p.count(item)) {
+            begin = max(begin, v2p[item] + 1);
+        }
+        v2p[item] = i;
+        max_len = max(max_len, i - begin + 1);
     }
-    return max;
+    return max_len;
 }
+
 
 int main() {
     cout << lengthOfLongestSubstring("abc");

@@ -1,29 +1,21 @@
 #include "alg.h"
 
 ListNode *mergeTwoLists(ListNode *l1, ListNode *l2) {
-    ListNode *p1 = l1, *p2 = l2;
-    ListNode *head = new ListNode(0), *p = head;
-
-    while (p1 && p2) {
-//        slow and not necessary
-//        if (p1->val > p2->val) swap(p1, p2);
-//
-//        p->next = p1;
-//        p1 = p1->next;
-
-        if (p1->val < p2->val) {
-            p->next = p1;
-            p1 = p1->next;
+    ListNode dummy(0), *p = &dummy;
+    while (l1 && l2) {
+        if (l1->val < l2->val) {
+            p->next = l1;
+            l1 = l1->next;
         } else {
-            p->next = p2;
-            p2 = p2->next;
+            p->next = l2;
+            l2 = l2->next;
         }
         p = p->next;
     }
-
-    p->next = p1 ? p1 : p2;
-    return head->next;
+    p->next = l1 ? l1 : l2;
+    return dummy.next;
 }
+
 
 // https://leetcode.com/problems/merge-two-sorted-lists/discuss/9814/3-lines-C%2B%2B-(12ms)-and-C-(4ms)
 ListNode *mergeTwoLists_2(ListNode *l1, ListNode *l2) {

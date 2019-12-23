@@ -1,14 +1,15 @@
 #include "alg.h"
 
 vector<int> twoSum(vector<int> &nums, int target) {
-    map<int, int> comp_map = {};
+    map<int, int> v2p;
     for (int i = 0; i < nums.size(); i++) {
-        int comp = target - nums[i];
-        if (comp_map.find(comp) != comp_map.end()) {
-            return {comp_map[comp], i};
+        int to_target = target - nums[i];
+        if (v2p.count(to_target)) {
+            return {v2p[to_target], i};
         }
-        comp_map[nums[i]] = i;
+        v2p[nums[i]] = i;
     }
+    return {};
 }
 
 int main() {
