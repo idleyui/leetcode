@@ -98,17 +98,17 @@ int expand(string s, int l, int r) {
 
 string longestPalindrome_exp(const string &s) {
     if (s.size() == 0) return "";
-    int start = 0, end = 0;
+    int start = 0, max_size = 0;
     for (int i = 0; i < s.size(); i++) {
         int len1 = expand(s, i, i);
         int len2 = expand(s, i, i + 1);
         int len = max(len1, len2);
-        if (len > end - start + 1) {
+        if (len > max_size) {
+            max_size = len;
             start = i - (len - 1) / 2;
-            end = i + len / 2;
         }
     }
-    return s.substr(start, end - start + 1);
+    return s.substr(start, max_size);
 }
 
 int main() {

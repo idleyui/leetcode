@@ -16,8 +16,7 @@ void combinationSum(vector<int> &candidates, int target, vector<vector<int>> &re
 vector<vector<int>> combinationSum(vector<int> &candidates, int target) {
     sort(candidates.begin(), candidates.end());
     vector<vector<int>> res;
-    vector<int> combination;
-    combinationSum(candidates, target, res, combination, 0);
+    combinationSum(candidates, target, res, {}, 0);
     return res;
 }
 
@@ -27,7 +26,7 @@ set<vector<int>> uniqSum(vector<int> &candidates, int target) {
         if (target == i)rt.insert({i});
         else if (target > i) {
             set<vector<int>> append = uniqSum(candidates, target - i);
-            for(vector<int> s: append){
+            for (vector<int> s: append) {
                 if (i > s.back()) continue;
                 s.push_back(i);
                 rt.insert(s);

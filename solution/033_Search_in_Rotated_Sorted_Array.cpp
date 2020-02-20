@@ -53,6 +53,7 @@ bool out(int high, int low, int target) {
     return target >= high || target <= low;
 }
 
+//https://leetcode.com/problems/search-in-rotated-sorted-array/discuss/14472/Java-AC-Solution-using-once-binary-search
 int search(vector<int> &nums, int target) {
     if (nums.size() == 0) return -1;
     int low = 0, high = nums.size() - 1;

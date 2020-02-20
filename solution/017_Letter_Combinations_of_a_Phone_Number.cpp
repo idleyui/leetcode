@@ -1,5 +1,24 @@
 #include "alg.h"
 
+//https://leetcode.com/problems/letter-combinations-of-a-phone-number/discuss/8064/My-java-solution-with-FIFO-queue
+vector<string> letterCombinationsFIFO(string digits) {
+    if (digits.empty())return {};
+    string digits2str[] = {"*", "*", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
+    deque<string> result = {""};
+    for (char c: digits) {
+        int digit = c - '0';
+        int current_size = result.front().size();
+        while (result.front().size() == current_size) {
+            string s = result.front();
+            for (char c: digits2str[digit]) {
+                result.push_back(s + c);
+            }
+            result.pop_front();
+        }
+    }
+    return vector<string>(result.begin(), result.end());
+}
+
 vector<string> letterCombinations(string digits) {
     if (digits.size() == 0)return {};
     string arr[9]{"*", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};

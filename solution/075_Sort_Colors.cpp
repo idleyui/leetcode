@@ -1,19 +1,24 @@
 #include "alg.h"
 
+// Solution 1: Two-pass-counting
+// too simple
+
+
+// Solution 2: Two-Pointer
+// https://leetcode.com/problems/sort-colors/discuss/26500/Four-different-solutions
 void sortColors(vector<int> &nums) {
-    int cur = 0, one = 0, two = nums.size() - 1;
-    for (; two >= 0 && nums[two] == 2; two--);
-    while (cur <= two) {
-//        print_container(nums);
-        if (nums[cur] == 0) {
-            swap(nums[one], nums[cur]);
-            one += 1;
-            cur += 1;
-        } else if (nums[cur] == 2) {
-            swap(nums[two], nums[cur]);
+    int i = 0, zero = 0, two = nums.size() - 1;
+//    for (; two >= 0 && nums[two] == 2; two--);
+    while (i <= two) {
+        if (nums[i] == 0) {
+            swap(nums[zero], nums[i]);
+            zero += 1;
+            i += 1;
+        } else if (nums[i] == 2) {
+            swap(nums[two], nums[i]);
             two -= 1;
         } else {
-            cur += 1;
+            i += 1;
         }
     }
 }

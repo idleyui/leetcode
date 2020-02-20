@@ -1,23 +1,34 @@
 #include "alg.h"
 
-int numTrees(int n, vector<int> &dp) {
+// Solution 1: Top-Down Dp
+int numTrees1(int n, vector<int> &dp) {
     if (dp[n] > 0) return dp[n];
-    int sum = 0;
     for (int i = 0; i < n; ++i) {
-        sum += numTrees(i, dp) * numTrees(n - 1 - i, dp);
+        dp[n] += numTrees(i, dp) * numTrees(n - 1 - i, dp);
     }
-    dp[n] = sum;
-    return sum;
+    return dp[n];
 }
 
-int numTrees(int n) {
-    vector<int> dp(n + 1, -1);
+int numTrees1(int n) {
+    vector<int> dp(n + 1, 0);
     dp[0] = 1;
-    return numTrees(n, dp);
+    return numTrees1(n, dp);
+}
+
+// Solution 2: Bottom-Up Dp
+int numTrees2(int n) {
+    vector<int> dp(n + 1, 0);
+    dp[0] = dp[1] = 1;
+    for (int i = 2; i <= n; i++) {
+        for (int left = 0; left < i; left++) {
+            dp[i] += dp[left] * dp[i - left - 1];
+        }
+    }
+    return dp[n];
 }
 
 int main() {
     for (int i = 0; i < 10; ++i) {
-        cout << numTrees(i) << endl;
+        cout << numTrees1(i) << endl;
     }
 }

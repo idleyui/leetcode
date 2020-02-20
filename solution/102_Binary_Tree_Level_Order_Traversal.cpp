@@ -1,31 +1,59 @@
 #include "alg.h"
 
-vector<vector<int>> levelOrder(TreeNode *root) {
-    if (!root) return {};
+// Solution 1: use deque size
+vector<vector<int>> levelOrder1(TreeNode *root) {
     vector<vector<int>> result;
-    queue<TreeNode *> q;
-    q.push(root);
-    int size = 1;
-    vector<int> v;
-    while (!q.empty()) {
-        auto node = q.front();
-        v.push_back(node->val);
-        q.pop();
-        if (node->left)q.push(node->left);
-        if (node->right)q.push(node->right);
-        size -= 1;
-        if (size == 0) {
-            result.push_back(v);
-            v = vector<int>();
-            size = q.size();
+    deque<TreeNode *> level = {root};
+    while (!level.empty()) {
+        int n = level.size();
+        vector<int> cur;
+        for (int i = 0; i < n; i++) {
+            auto front = level.front();
+            level.pop_front();
+            if (!front) continue;
+
+            cur.push_back(front->val);
+            level.push_back(front->left);
+            level.push_back(front->right);
         }
+        if (!cur.empty()) result.push_back(cur);
     }
     return result;
 }
 
+// Solution 2: push NULL as mark
+// https://leetcode.com/problems/binary-tree-level-order-traversal/discuss/33443/C%2B%2B-solution-using-only-one-queue-use-a-marker-NULL
+vector<vector<int>> levelOrder(TreeNode *root) {
+    if (!root) return {};
+    vector<vector<int>> result;
+    vector<int> cur;
+    deque<TreeNode *> level = {root, nullptr};
+
+    while (!level.empty()) {
+        auto front = level.front();
+        level.pop_front();
+        if (!front) {
+            result.push_back(cur);
+            cur.clear();
+            if (level.empty()) break;
+
+            level.push_back(nullptr);
+            continue;
+        }
+
+        cur.push_back(front->val);
+        if (front->left) level.push_back(front->left);
+        if (front->right) level.push_back(front->right);
+    }
+    return result;
+}
+
+// preorder traversal but get result
+// https://leetcode.com/problems/binary-tree-level-order-traversal/discuss/33468/One-of-C%2B%2B-solutions-(preorder)
+
 int main() {
 //    auto rt = mk_tree({1, 2, 3, 4, 5, 6});
     auto rt = mk_tree({1});
-    for (auto v: levelOrder(rt))
+    for (auto v: levelOrder1(rt))
         print_container(v);
 }

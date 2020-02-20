@@ -1,5 +1,34 @@
 #include "alg.h"
 
+// Solution 1: backtrack
+// https://leetcode.com/problems/permutations/discuss/18239/A-general-approach-to-backtracking-questions-in-Java-(Subsets-Permutations-Combination-Sum-Palindrome-Partioning)
+bool isPalidrome(string &s, int i, int j) {
+    for (; i < j; i++, j--) {
+        if (s[i] != s[j]) return false;
+    }
+    return true;
+}
+
+void backtrack(vector<vector<string>> &result, string &s, vector<string> tmp, int start) {
+    if (start >= s.size()) {
+        result.push_back(tmp);
+        return;
+    }
+    for (int i = start; i < s.size(); i++) {
+        if (!isPalidrome(s, start, i)) continue;
+        tmp.push_back(s.substr(start, i - start + 1));
+        backtrack(result, s, tmp, i + 1);
+        tmp.pop_back();
+    }
+}
+
+vector<vector<string>> partition1(string s) {
+    vector<vector<string>> result;
+    backtrack(result, s, {}, 0);
+
+    return result;
+}
+
 
 bool eq(string &s, char c) {
     if (s.size() > 1) return false;

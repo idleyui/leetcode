@@ -1,26 +1,22 @@
 #include "alg.h"
 
+// Solution 1: hashmap with counting sort
+// https://leetcode.com/problems/group-anagrams/discuss/19200/C%2B%2B-unordered_map-and-counting-sort
 string cnt_sort(string s) {
-    int counter[26] = {0};
+    int count[26] = {0};
     for (char c: s)
-        counter[c - 'a']++;
-    string rt;
+        count[c - 'a'] = 1;
+    string ss;
     for (int i = 0; i < 26; i++)
-        rt += string(counter[i], i + 'a');
-    return rt;
+        ss += string(count[i], 'a' + i);
+    return ss;
 }
 
 vector<vector<string>> groupAnagrams(vector<string> &strs) {
     unordered_map<string, vector<string>> s2v = {};
     for (string s: strs) {
-//        string s1 = s;
-//        sort(s1.begin(), s1.end());
         string s1 = cnt_sort(s);
-        if (s2v.count(s1)) {
-            s2v[s1].push_back(s);
-        } else {
-            s2v[s1] = {s};
-        }
+        s2v[s1].push_back(s);
     }
     vector<vector<string>> rt = {};
     for (auto v: s2v)

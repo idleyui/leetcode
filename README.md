@@ -2,15 +2,15 @@
 
 This README file was built by [script/readme.py](https://github.com/idleyui/leetcode/blob/master/script/readme.py)
 
-Update Time:	Sun Nov 10 17:33:58 2019
+Update Time:	Thu Feb 20 16:28:41 2020
 
-Status:	204/1159
+Status:	215/1244
 
-Easy:	50/316
+Easy:	53/334
 
-Medium:	129/596
+Medium:	135/643
 
-Hard:	25/247
+Hard:	27/267
 
 ## Solution Table
 | # | Title | Difficulty | Solution |
@@ -45,17 +45,22 @@ Hard:	25/247
 |031|[Next Permutation](https://leetcode.com/problems/next-permutation)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/031_Next_Permutaion.cpp)|
 |032|[Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses)|Hard|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/032_Longest_Valid_Parentheses.cpp)|
 |033|[Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/033_Search_in_Rotated_Sorted_Array.cpp)|
+|034|[Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/034_Find_First_and_Last_Position_of_Element_in_Sorted_Array.cpp)|
 |035|[Search Insert Position](https://leetcode.com/problems/search-insert-position)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/035_Count_and_Say.cpp)|
 |039|[Combination Sum](https://leetcode.com/problems/combination-sum)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/039_Combination_Sum.cpp)|
 |040|[Combination Sum II](https://leetcode.com/problems/combination-sum-ii)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/040_Combination_Sum_II.cpp)|
 |041|[First Missing Positive](https://leetcode.com/problems/first-missing-positive)|Hard|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/041_First_Missing_Positive.cpp)|
 |042|[Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water)|Hard|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/042_Trapping_Rain_Water.cpp)|
 |043|[Multiply Strings](https://leetcode.com/problems/multiply-strings)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/043_Multiply_Strings.cpp)|
+|045|[Jump Game II](https://leetcode.com/problems/jump-game-ii)|Hard|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/045_Jump_Game_II.cpp)|
 |046|[Permutations](https://leetcode.com/problems/permutations)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/046_Permutations.cpp)|
+|047|[Permutations II](https://leetcode.com/problems/permutations-ii)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/047_Permutations_II.cpp)|
 |048|[Rotate Image](https://leetcode.com/problems/rotate-image)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/048_Rotate_Image.cpp)|
 |049|[Group Anagrams](https://leetcode.com/problems/group-anagrams)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/049_Group_Anagrams.cpp)|
 |050|[Pow(x, n)](https://leetcode.com/problems/powx-n)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/050_Powx_n.cpp)|
+|053|[Maximum Subarray](https://leetcode.com/problems/maximum-subarray)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/053_Maximum_Subarray.cpp)|
 |054|[Spiral Matrix](https://leetcode.com/problems/spiral-matrix)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/054_Spiral_Matrix.cpp)|
+|055|[Jump Game](https://leetcode.com/problems/jump-game)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/055_Jump_Game.cpp)|
 |056|[Merge Intervals](https://leetcode.com/problems/merge-intervals)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/056_Merge_Intervals.cpp)|
 |058|[Length of Last Word](https://leetcode.com/problems/length-of-last-word)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/058_Length_of_Last_Word.cpp)|
 |061|[Rotate List](https://leetcode.com/problems/rotate-list)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/061_Rotate_List.cpp)|
@@ -66,6 +71,7 @@ Hard:	25/247
 |066|[Plus One](https://leetcode.com/problems/plus-one)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/066_Plus_One.cpp)|
 |067|[Add Binary](https://leetcode.com/problems/add-binary)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/067_Add_Binary.cpp)|
 |069|[Sqrt(x)](https://leetcode.com/problems/sqrtx)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/069_Sqrtx.cpp)|
+|070|[Climbing Stairs](https://leetcode.com/problems/climbing-stairs)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/070_Climbing_Stairs.cpp)|
 |071|[Simplify Path](https://leetcode.com/problems/simplify-path)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/071_Simplify_Path.cpp)|
 |072|[Edit Distance](https://leetcode.com/problems/edit-distance)|Hard|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/072_Edit_Distance.cpp)|
 |073|[Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/073_Set_Matrix_Zeroes.cpp)|
@@ -80,6 +86,7 @@ Hard:	25/247
 |086|[Partition List](https://leetcode.com/problems/partition-list)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/086_Partition_List.cpp)|
 |087|[Scramble String](https://leetcode.com/problems/scramble-string)|Hard|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/087_Scramble_String.cpp)|
 |088|[Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/088_Merge_Sorted_Array.cpp)|
+|090|[Subsets II](https://leetcode.com/problems/subsets-ii)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/090_Subsets_II.cpp)|
 |091|[Decode Ways](https://leetcode.com/problems/decode-ways)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/091_Decode_Ways.cpp)|
 |092|[Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/092_Reverse_Linked_List_II.cpp)|
 |094|[Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/094_Binary_Tree_Inorder_Traversal.cpp)|
@@ -89,6 +96,7 @@ Hard:	25/247
 |101|[Symmetric Tree](https://leetcode.com/problems/symmetric-tree)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/101_Symmetric_Tree.cpp)|
 |102|[Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/102_Binary_Tree_Level_Order_Traversal.cpp)|
 |103|[Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/103_Binary_Tree_Zigzag_Level_Order_Traversal.cpp)|
+|104|[Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/104_Maximum_Depth_of_Binary_Tree.cpp)|
 |105|[Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/105_Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal.cpp)|
 |108|[Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/108_Convert_Sorted_Array_to_Binary_Search_Tree.cpp)|
 |109|[Convert Sorted List to Binary Search Tree](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/109_Convert_Sorted_List_to_Binary_Search_Tree.cpp)|
@@ -123,6 +131,7 @@ Hard:	25/247
 |150|[Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/150_Evaluate_Reverse_Polish_Notation.cpp)|
 |151|[Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/151_Reverse_Words_in_a_String.cpp)|
 |152|[Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/152_Maximum_Product_Subarray.cpp)|
+|153|[Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/153_Find_Minimum_in_Rotated_Sorted_Array.cpp)|
 |155|[Min Stack](https://leetcode.com/problems/min-stack)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/155_Min_Stack.cpp)|
 |160|[Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/160_Intersection_of_Two_Linked_Lists.cpp)|
 |162|[Find Peak Element](https://leetcode.com/problems/find-peak-element)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/162_Find_Peak_Element.cpp)|
@@ -151,9 +160,11 @@ Hard:	25/247
 |240|[Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/240_Search_a_2D_Matrix_II.cpp)|
 |279|[Perfect Squares](https://leetcode.com/problems/perfect-squares)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/279_Perfect_Squares.cpp)|
 |287|[Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/287_Find_the_Duplicate_Number.cpp)|
+|289|[Game of Life](https://leetcode.com/problems/game-of-life)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/289_Game_of_Life.cpp)|
 |295|[Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream)|Hard|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/295_Find_Median_from_Data_Stream.cpp)|
 |297|[Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree)|Hard|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/297_Serialize_and_Deserialize_Binary_Tree.cpp)|
 |300|[Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/300_Longest_Increasing_Subsequence.cpp)|
+|301|[Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses)|Hard|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/301_Remove_Invalid_Parentheses.cpp)|
 |304|[Range Sum Query 2D - Immutable](https://leetcode.com/problems/range-sum-query-2d-immutable)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/304_Range_Sum_Query_2D.cpp)|
 |309|[Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/309_Best_Time_to_Buy_and_Sell_Stock_with_Cooldown.cpp)|
 |310|[Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/310_Minimum_Height_Tree.cpp)|

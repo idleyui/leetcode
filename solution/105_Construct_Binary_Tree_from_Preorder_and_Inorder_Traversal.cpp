@@ -1,23 +1,22 @@
 #include "alg.h"
 
-int r = 0;
-
-TreeNode *buildTree(vector<int> &preorder, vector<int> &inorder, int low, int high) {
-    TreeNode *root = new TreeNode(preorder[r]);
-    if (r >= preorder.size())return nullptr;
-    int new_root = low;
-    for (; new_root < high && inorder[new_root] != preorder[r]; new_root++);
-    if (new_root == high) return nullptr;
-    r++;
-    root->left = buildTree(preorder, inorder, low, new_root);
-    root->right = buildTree(preorder, inorder, new_root + 1, high);
+TreeNode *buildTree(vector<int> &preorder, int &start, vector<int> &inorder, int low, int high) {
+    int i = low;
+    for (; i <= high && inorder[i] != preorder[start]; i++);
+    if (i > high) return nullptr;
+    TreeNode *root = new TreeNode(preorder[start]);
+    start++;
+    root->left = buildTree(preorder, start, inorder, low, i - 1);
+    root->right = buildTree(preorder, start, inorder, i + 1, high);
     return root;
 }
 
 TreeNode *buildTree(vector<int> &preorder, vector<int> &inorder) {
-    r = 0;
-    return buildTree(preorder, inorder, 0, inorder.size());
+    int start = 0;
+    return buildTree(preorder, start, inorder, 0, inorder.size() - 1);
 }
+
+// todo
 
 int main() {
 //    vector<int> pv = {3, 9, 20, 15, 7};
