@@ -4,7 +4,7 @@
 int numTrees1(int n, vector<int> &dp) {
     if (dp[n] > 0) return dp[n];
     for (int i = 0; i < n; ++i) {
-        dp[n] += numTrees(i, dp) * numTrees(n - 1 - i, dp);
+        dp[n] += numTrees1(i, dp) * numTrees1(n - 1 - i, dp);
     }
     return dp[n];
 }
