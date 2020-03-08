@@ -2,15 +2,15 @@
 
 This README file was built by [script/readme.py](https://github.com/idleyui/leetcode/blob/master/script/readme.py)
 
-Update Time:	Thu Feb 20 16:28:41 2020
+Update Time:	Sun Mar  8 19:51:18 2020
 
-Status:	215/1244
+Status:	223/1260
 
-Easy:	53/334
+Easy:	54/338
 
-Medium:	135/643
+Medium:	142/651
 
-Hard:	27/267
+Hard:	27/271
 
 ## Solution Table
 | # | Title | Difficulty | Solution |
@@ -178,6 +178,7 @@ Hard:	27/267
 |341|[Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/341_Flatten_Nested_List_Iterator.cpp)|
 |347|[Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/347_Top_K_Frequent_Elements.cpp)|
 |376|[Wiggle Subsequence](https://leetcode.com/problems/wiggle-subsequence)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/376_Wiggle_Subsequence.cpp)|
+|377|[Combination Sum IV](https://leetcode.com/problems/combination-sum-iv)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/377_Combination_Sum_IV.cpp)|
 |385|[Mini Parser](https://leetcode.com/problems/mini-parser)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/385_Mini_Parser.cpp)|
 |392|[Is Subsequence](https://leetcode.com/problems/is-subsequence)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/392_Is_Subsequence.cpp)|
 |394|[Decode String](https://leetcode.com/problems/decode-string)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/394_Decode_String.cpp)|
@@ -194,6 +195,8 @@ Hard:	27/267
 |452|[Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/452_Minimum_Number_of_Arrows_to_Burst_Balloons.cpp)|
 |455|[Assign Cookies](https://leetcode.com/problems/assign-cookies)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/455_Assign_Cookies.cpp)|
 |456|[132 Pattern](https://leetcode.com/problems/132-pattern)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/456_132_Pattern.cpp)|
+|474|[Ones and Zeroes](https://leetcode.com/problems/ones-and-zeroes)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/474_Ones_and_Zeroes.cpp)|
+|494|[Target Sum](https://leetcode.com/problems/target-sum)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/494_Target_Sum.cpp)|
 |496|[Next Greater Element I](https://leetcode.com/problems/next-greater-element-i)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/496_Next_Greater_Element_I.cpp)|
 |503|[Next Greater Element II](https://leetcode.com/problems/next-greater-element-ii)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/503_Next_Greater_Element_II.cpp)|
 |543|[Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/543_Diameter_of_Binary_Tree.cpp)|
@@ -203,14 +206,17 @@ Hard:	27/267
 |621|[Task Scheduler](https://leetcode.com/problems/task-scheduler)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/621_Task_Scheduler.cpp)|
 |636|[Exclusive Time of Functions](https://leetcode.com/problems/exclusive-time-of-functions)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/636_Exclusive_Time_of_Function.cpp)|
 |649|[Dota2 Senate](https://leetcode.com/problems/dota2-senate)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/649_Dota2_Senate.cpp)|
+|650|[2 Keys Keyboard](https://leetcode.com/problems/2-keys-keyboard)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/650_2_Keys_Keyboard.cpp)|
 |659|[Split Array into Consecutive Subsequences](https://leetcode.com/problems/split-array-into-consecutive-subsequences)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/659_Split_Array_into_Consecutive_Subsequences.cpp)|
 |682|[Baseball Game](https://leetcode.com/problems/baseball-game)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/682_Baseball_Game.cpp)|
+|688|[Knight Probability in Chessboard](https://leetcode.com/problems/knight-probability-in-chessboard)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/688_Knight_Probability_in_Chessboard.cpp)|
 |707|[Design Linked List](https://leetcode.com/problems/design-linked-list)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/707_Design_Linked_List.cpp)|
 |714|[Best Time to Buy and Sell Stock with Transaction Fee](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/714_Best_Time_to_Buy_and_Sell_Stock_with_Transaction_Fee.cpp)|
 |725|[Split Linked List in Parts](https://leetcode.com/problems/split-linked-list-in-parts)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/725_Split_Linked_List_in_Parts.cpp)|
 |735|[Asteroid Collision](https://leetcode.com/problems/asteroid-collision)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/735_Asteroid_Collision.cpp)|
 |738|[Monotone Increasing Digits](https://leetcode.com/problems/monotone-increasing-digits)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/738_Monotone_Increasing_Digits.cpp)|
 |739|[Daily Temperatures](https://leetcode.com/problems/daily-temperatures)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/739_Daily_Temperatures.cpp)|
+|746|[Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/746_Min_Cost_Climbing_Stairs.cpp)|
 |763|[Partition Labels](https://leetcode.com/problems/partition-labels)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/763_Partition_Labels.cpp)|
 |767|[Reorganize String](https://leetcode.com/problems/reorganize-string)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/767_Reorganize_String.cpp)|
 |817|[Linked List Components](https://leetcode.com/problems/linked-list-components)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/817_Lined_List_Components.cpp)|
@@ -229,4 +235,6 @@ Hard:	27/267
 |915|[Partition Array into Disjoint Intervals](https://leetcode.com/problems/partition-array-into-disjoint-intervals)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/915_Partition_Array_into_Disjoint_Intervals.cpp)|
 |916|[Word Subsets](https://leetcode.com/problems/word-subsets)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/916_Word_Subsets.cpp)|
 |921|[Minimum Add to Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/921_Minimum_Add_to_Make_Parentheses_Valid.cpp)|
+|931|[Minimum Falling Path Sum](https://leetcode.com/problems/minimum-falling-path-sum)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/931_Minimum_Falling_Path_Sum.cpp)|
 |944|[Delete Columns to Make Sorted](https://leetcode.com/problems/delete-columns-to-make-sorted)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/944_Delete_Columns_to_Make_Sorted.cpp)|
+|983|[Minimum Cost For Tickets](https://leetcode.com/problems/minimum-cost-for-tickets)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/983_Minimum_Cost_For_Tickets.cpp)|

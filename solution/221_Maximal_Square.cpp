@@ -33,6 +33,31 @@ int maximalSquare(vector<vector<char>> &matrix) {
     return max_sq;
 }
 
+// https://leetcode.com/problems/maximal-square/discuss/61935/6-lines-Visual-Explanation-O(mn)
+//https://leetcode.com/problems/maximal-square/discuss/61802/Extremely-Simple-Java-Solution-%3A)
+int maximalSquare_2(vector<vector<char>> &matrix) {
+    int n = matrix.size();
+    if (n == 0) return 0;
+    int m = matrix[0].size();
+    vector<vector<int>> dp(n, vector<int>(m, 0));
+    int sq = 0;
+
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < m; j++) {
+            dp[i][j] = matrix[i][j] - '0';
+            if (matrix[i][j] == '1' && i && j) {
+                dp[i][j] += min({dp[i - 1][j - 1], dp[i - 1][j], dp[i][j - 1]});
+            }
+            sq = max(sq, dp[i][j]);
+        }
+    }
+
+    return sq * sq;
+}
+
+//space optim
+//https://leetcode.com/problems/maximal-square/discuss/61803/C%2B%2B-space-optimized-DP
+
 int main() {
 
 }
