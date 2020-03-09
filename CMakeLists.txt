@@ -237,3 +237,5 @@ add_executable(1155_Number_of_Dice_Rolls_With_Target_Sum solution/1155_Number_of
 add_executable(688_Knight_Probability_in_Chessboard solution/688_Knight_Probability_in_Chessboard.cpp)
 add_executable(494_Target_Sum solution/494_Target_Sum.cpp)
 add_executable(377_Combination_Sum_IV solution/377_Combination_Sum_IV.cpp)
+add_executable(935_Knight_Dialer solution/935_Knight_Dialer.cpp)
+add_executable(1223_Dice_Roll_Simulation solution/1223_Dice_Roll_Simulation.cpp)
