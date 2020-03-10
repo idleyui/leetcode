@@ -46,7 +46,7 @@ class README:
         """
         relative_path = 'solution/'
         file_list = os.listdir(self.root + relative_path)
-        self.solution_dict = {int(filename[:3]): (relative_path + filename)
+        self.solution_dict = {int(filename[:4]): (relative_path + filename)
                               for filename in file_list if filename[-3:] == 'cpp'}
 
     def table(self):
@@ -64,7 +64,7 @@ class README:
         difficulty = ['#', 'Easy', 'Medium', 'Hard']
         column_order = ['#', 'Title', 'Difficulty', 'Solution']
         column_func = {
-            '#': lambda item, path: "%03d" % item['id'],
+            '#': lambda item, path: "%04d" % item['id'],
             'Title': lambda item, path: '[%s](%s%s)' % (item['title'], self.leetcode_url, item['title_slug']),
             'Difficulty': lambda item, path: difficulty[item['difficulty']],
             'Solution': lambda item, path: '[cpp](%s%s)' % (self.github_url, path)
