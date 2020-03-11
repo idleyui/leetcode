@@ -2,11 +2,11 @@
 
 This README file was built by [script/readme.py](https://github.com/idleyui/leetcode/blob/master/script/readme.py)
 
-Update Time:	Wed Mar 11 14:18:04 2020
+Update Time:	Wed Mar 11 17:02:48 2020
 
-Status:	239/1264
+Status:	243/1264
 
-Easy:	65/339
+Easy:	69/339
 
 Medium:	147/653
 
@@ -169,9 +169,13 @@ Hard:	27/272
 |0238|[Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0238_Product_of_Array_Except_Self.cpp)|
 |0239|[Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum)|Hard|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0239_Sliding_Window_Maximum.cpp)|
 |0240|[Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0240_Search_a_2D_Matrix_II.cpp)|
+|0257|[Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0257_Binary_Tree_Paths.cpp)|
+|0268|[Missing Number](https://leetcode.com/problems/missing-number)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0268_Missing_Number.cpp)|
+|0278|[First Bad Version](https://leetcode.com/problems/first-bad-version)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0278_First_Bad_Version.cpp)|
 |0279|[Perfect Squares](https://leetcode.com/problems/perfect-squares)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0279_Perfect_Squares.cpp)|
 |0287|[Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0287_Find_the_Duplicate_Number.cpp)|
 |0289|[Game of Life](https://leetcode.com/problems/game-of-life)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0289_Game_of_Life.cpp)|
+|0290|[Word Pattern](https://leetcode.com/problems/word-pattern)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0290_Word_Pattern.cpp)|
 |0295|[Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream)|Hard|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0295_Find_Median_from_Data_Stream.cpp)|
 |0297|[Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree)|Hard|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0297_Serialize_and_Deserialize_Binary_Tree.cpp)|
 |0300|[Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0300_Longest_Increasing_Subsequence.cpp)|
