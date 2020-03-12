@@ -2,13 +2,13 @@
 
 This README file was built by [script/readme.py](https://github.com/idleyui/leetcode/blob/master/script/readme.py)
 
-Update Time:	Wed Mar 11 17:02:48 2020
+Update Time:	Thu Mar 12 22:38:48 2020
 
-Status:	243/1264
+Status:	252/1265
 
-Easy:	69/339
+Easy:	78/339
 
-Medium:	147/653
+Medium:	147/654
 
 Hard:	27/272
 
@@ -178,6 +178,7 @@ Hard:	27/272
 |0290|[Word Pattern](https://leetcode.com/problems/word-pattern)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0290_Word_Pattern.cpp)|
 |0295|[Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream)|Hard|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0295_Find_Median_from_Data_Stream.cpp)|
 |0297|[Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree)|Hard|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0297_Serialize_and_Deserialize_Binary_Tree.cpp)|
+|0299|[Bulls and Cows](https://leetcode.com/problems/bulls-and-cows)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0299_Bulls_and_Cows.cpp)|
 |0300|[Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0300_Longest_Increasing_Subsequence.cpp)|
 |0301|[Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses)|Hard|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0301_Remove_Invalid_Parentheses.cpp)|
 |0304|[Range Sum Query 2D - Immutable](https://leetcode.com/problems/range-sum-query-2d-immutable)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0304_Range_Sum_Query_2D.cpp)|
@@ -185,16 +186,24 @@ Hard:	27/272
 |0310|[Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0310_Minimum_Height_Tree.cpp)|
 |0312|[Burst Balloons](https://leetcode.com/problems/burst-balloons)|Hard|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0312_Burst_Balloons.cpp)|
 |0322|[Coin Change](https://leetcode.com/problems/coin-change)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0322_Coin_Change.cpp)|
+|0326|[Power of Three](https://leetcode.com/problems/power-of-three)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0326_Power_of_Three.cpp)|
 |0328|[Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0328_Odd_Even_Linked_List.cpp)|
 |0331|[Verify Preorder Serialization of a Binary Tree](https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0331_Verify_Preorder_Serialization_of_a_Binary_Tree.cpp)|
 |0332|[Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0332_Reconstruct_Itinerary.cpp)|
 |0337|[House Robber III](https://leetcode.com/problems/house-robber-iii)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0337_House_Robber_III.cpp)|
 |0338|[Counting Bits](https://leetcode.com/problems/counting-bits)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0338_Counting_Bits.cpp)|
 |0341|[Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0341_Flatten_Nested_List_Iterator.cpp)|
+|0342|[Power of Four](https://leetcode.com/problems/power-of-four)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0342_Power_of_Four.cpp)|
+|0345|[Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0345_Reverse_Vowels_of_a_String.cpp)|
 |0347|[Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0347_Top_K_Frequent_Elements.cpp)|
+|0367|[Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0367_Valid_Perfect_Square.cpp)|
+|0374|[Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0374_Guess_Number_Higher_or_Lower.cpp)|
 |0376|[Wiggle Subsequence](https://leetcode.com/problems/wiggle-subsequence)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0376_Wiggle_Subsequence.cpp)|
 |0377|[Combination Sum IV](https://leetcode.com/problems/combination-sum-iv)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0377_Combination_Sum_IV.cpp)|
+|0383|[Ransom Note](https://leetcode.com/problems/ransom-note)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0383_Ransom_Note.cpp)|
 |0385|[Mini Parser](https://leetcode.com/problems/mini-parser)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0385_Mini_Parser.cpp)|
+|0387|[First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0387_First_Unique_Character_in_a_String.cpp)|
+|0389|[Find the Difference](https://leetcode.com/problems/find-the-difference)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0389_Find_the_Difference.cpp)|
 |0392|[Is Subsequence](https://leetcode.com/problems/is-subsequence)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0392_Is_Subsequence.cpp)|
 |0394|[Decode String](https://leetcode.com/problems/decode-string)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0394_Decode_String.cpp)|
 |0399|[Evaluate Division](https://leetcode.com/problems/evaluate-division)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0399_Evaluate_Division.cpp)|
