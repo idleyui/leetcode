@@ -2,11 +2,11 @@
 
 This README file was built by [script/readme.py](https://github.com/idleyui/leetcode/blob/master/script/readme.py)
 
-Update Time:	Thu Mar 12 22:38:48 2020
+Update Time:	Fri Mar 13 14:39:20 2020
 
-Status:	252/1265
+Status:	261/1265
 
-Easy:	78/339
+Easy:	87/339
 
 Medium:	147/654
 
@@ -207,13 +207,22 @@ Hard:	27/272
 |0392|[Is Subsequence](https://leetcode.com/problems/is-subsequence)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0392_Is_Subsequence.cpp)|
 |0394|[Decode String](https://leetcode.com/problems/decode-string)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0394_Decode_String.cpp)|
 |0399|[Evaluate Division](https://leetcode.com/problems/evaluate-division)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0399_Evaluate_Division.cpp)|
+|0401|[Binary Watch](https://leetcode.com/problems/binary-watch)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0401_Binary_Watch.cpp)|
 |0402|[Remove K Digits](https://leetcode.com/problems/remove-k-digits)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0402_Remove_K_Digits.cpp)|
+|0404|[Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0404_Sum_of_Left_Leaves.cpp)|
+|0405|[Convert a Number to Hexadecimal](https://leetcode.com/problems/convert-a-number-to-hexadecimal)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0405_Convert_a_Number_to_Hexadecimal.cpp)|
 |0406|[Queue Reconstruction by Height](https://leetcode.com/problems/queue-reconstruction-by-height)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0406_Queue_Reconstruction_by_Height.cpp)|
+|0409|[Longest Palindrome](https://leetcode.com/problems/longest-palindrome)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0409_Longest_Palindrome.cpp)|
+|0412|[Fizz Buzz](https://leetcode.com/problems/fizz-buzz)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0412_Fizz_Buzz.cpp)|
+|0414|[Third Maximum Number](https://leetcode.com/problems/third-maximum-number)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0414_Third_Maximum_Number.cpp)|
+|0415|[Add Strings](https://leetcode.com/problems/add-strings)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0415_Add_Strings.cpp)|
 |0416|[Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0416_Partition_Equal_Subset_Sum.cpp)|
 |0430|[Flatten a Multilevel Doubly Linked List](https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0430_Flatten_a_Multilevel_Doubly_Linked_List.cpp)|
+|0434|[Number of Segments in a String](https://leetcode.com/problems/number-of-segments-in-a-string)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0434_Number_of_Segments_in_a_String.cpp)|
 |0435|[Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0435_Non-overlapping_Intervals.cpp)|
 |0437|[Path Sum III](https://leetcode.com/problems/path-sum-iii)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0437_Path_Sum_III.cpp)|
 |0438|[Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0438_Find_All_Anagrams_in_a_String.cpp)|
+|0441|[Arranging Coins](https://leetcode.com/problems/arranging-coins)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0441_Arranging_Coins.cpp)|
 |0445|[Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0445_Add_Two_Numbers_II.cpp)|
 |0448|[Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0448_Find_All_Numbers_Disappeared_in_an_Array.cpp)|
 |0452|[Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0452_Minimum_Number_of_Arrows_to_Burst_Balloons.cpp)|

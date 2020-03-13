@@ -21,6 +21,7 @@
     - dp
     - math
         - power and sqrt
+        - conversion of number system
 - bag of tricks
     - bit
         - power of two
@@ -40,6 +41,7 @@
 - [383 ransom note](solution/0383_Ransom_Note.cpp)
 - [387 first unique character in a string](solution/0387_First_Unique_Character_in_a_String.cpp)
 - [389 find the difference](solution/0389_Find_the_Difference.cpp)
+- [409 longest palindrome](solution/0409_Longest_Palindrome.cpp)
 
 ##### string pattern match
 - [290 word pattern](solution/0290_Word_Pattern.cpp)
@@ -55,8 +57,12 @@
 
 #### backtrack
 
+- top-down backtrack
 > [A general approach to backtracking questions in Java (Subsets, Permutations, Combination Sum, Palindrome Partitioning)](https://leetcode.com/problems/combination-sum/discuss/16502/A-general-approach-to-backtracking-questions-in-Java-\(Subsets-Permutations-Combination-Sum-Palindrome-Partitioning\))
 
+- combination problem
+- bottom up combination and filter by condition
+- [401 binary watch](solution/0401_Binary_Watch.cpp)
 
 #### greedy
 
@@ -65,6 +71,9 @@
 ##### 0-1 knapsack
 
 #### math
+
+- [441 arranging coins](solution/0441_Arranging_Coins.cpp)
+
 ##### power and sqrt
 
 **basic**
@@ -77,6 +86,11 @@ calculate sqrt [367 valid perfect square](solution/0367_Valid_Perfect_Square.cpp
 - [326 power of three](solution/0326_Power_of_Three.cpp)
 - [342 power of four](solution/0342_Power_of_Four.cpp)
 
+##### binary, decimal and hexadecimal
+
+- [405 convert a number to hexadecimal](solution/0405_Convert_a_Number_to_Hexadecimal.cpp)
+- [441 arranging coins](solution/0441_Arranging_Coins.cpp)
+
 ### tricks
 #### bit
 ##### power of two
@@ -85,4 +99,23 @@ calculate sqrt [367 valid perfect square](solution/0367_Valid_Perfect_Square.cpp
 ##### xor
 - [389 find the difference](solution/0389_Find_the_Difference.cpp)
 
+##### hex
+
+- [405 convert a number to hexadecimal](solution/0405_Convert_a_Number_to_Hexadecimal.cpp)
+
+##### other
+
+- [401 binary watch](solution/0401_Binary_Watch.cpp)
+
+
+### appendix
+
+#### Easter Egg
+
+- [donald trump](https://leetcode.com/problems/convert-a-number-to-hexadecimal/discuss/89253/Simple-Java-solution-with-comment)
+- "love live! mu'sic forever" in 434 test case
+
+#### dalao
+
+https://leetcode.com/mzchen/
 
