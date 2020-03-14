@@ -13,6 +13,7 @@
     - string
         - char hash
         - string pattern match
+    - hash
 - algorithms
     - binary search
     - sort
@@ -46,6 +47,10 @@
 ##### string pattern match
 - [290 word pattern](solution/0290_Word_Pattern.cpp)
 - [205 isomorphic strings](solution/0205_Isomorphic_Strings.cpp)
+
+#### hash
+
+- [447 number of boomerangs](solution/0447_Number_of_Boomerangs.cpp)
 
 ### algorithms
 
@@ -109,6 +114,10 @@ calculate sqrt [367 valid perfect square](solution/0367_Valid_Perfect_Square.cpp
 
 
 ### appendix
+
+#### awesome solution post
+
+- 459 https://leetcode.com/problems/repeated-substring-pattern/discuss/94334/Easy-python-solution-with-explaination
 
 #### Easter Egg
 
