@@ -2,15 +2,15 @@
 
 This README file was built by [script/readme.py](https://github.com/idleyui/leetcode/blob/master/script/readme.py)
 
-Update Time:	Sat Mar 14 11:06:37 2020
+Update Time:	Tue Mar 17 13:32:46 2020
 
-Status:	266/1265
+Status:	270/1269
 
-Easy:	92/339
+Easy:	96/340
 
-Medium:	147/654
+Medium:	147/656
 
-Hard:	27/272
+Hard:	27/273
 
 ## Solution Table
 | # | Title | Difficulty | Solution |
@@ -234,6 +234,10 @@ Hard:	27/272
 |0459|[Repeated Substring Pattern](https://leetcode.com/problems/repeated-substring-pattern)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0459_Repeated_Substring_Pattern.cpp)|
 |0463|[Island Perimeter](https://leetcode.com/problems/island-perimeter)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0463_Island_Perimeter.cpp)|
 |0474|[Ones and Zeroes](https://leetcode.com/problems/ones-and-zeroes)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0474_Ones_and_Zeroes.cpp)|
+|0476|[Number Complement](https://leetcode.com/problems/number-complement)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0476_Number_Complement.cpp)|
+|0482|[License Key Formatting](https://leetcode.com/problems/license-key-formatting)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0482_License_Key_Formatting.cpp)|
+|0485|[Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0485_Max_Consecutive_Ones.cpp)|
+|0492|[Construct the Rectangle](https://leetcode.com/problems/construct-the-rectangle)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0492_Construct_the_Rectangle.cpp)|
 |0494|[Target Sum](https://leetcode.com/problems/target-sum)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0494_Target_Sum.cpp)|
 |0496|[Next Greater Element I](https://leetcode.com/problems/next-greater-element-i)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0496_Next_Greater_Element_I.cpp)|
 |0503|[Next Greater Element II](https://leetcode.com/problems/next-greater-element-ii)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0503_Next_Greater_Element_II.cpp)|
