@@ -145,6 +145,7 @@ calculate sqrt [367 valid perfect square](solution/0367_Valid_Perfect_Square.cpp
 ### awesome solution post
 
 - 459 https://leetcode.com/problems/repeated-substring-pattern/discuss/94334/Easy-python-solution-with-explaination
+- 48 https://leetcode.com/problems/rotate-image/discuss/18872/A-common-method-to-rotate-the-image
 
 ### Easter Egg
 

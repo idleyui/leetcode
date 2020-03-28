@@ -96,6 +96,7 @@ int expand(string s, int l, int r) {
     return r - l - 1;
 }
 
+
 string longestPalindrome_exp(const string &s) {
     if (s.size() == 0) return "";
     int start = 0, max_size = 0;
@@ -110,6 +111,8 @@ string longestPalindrome_exp(const string &s) {
     }
     return s.substr(start, max_size);
 }
+
+
 
 int main() {
 //    assert(longestPalindrome_lcs("a") == "a");
