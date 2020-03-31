@@ -2,15 +2,15 @@
 
 This README file was built by [script/readme.py](https://github.com/idleyui/leetcode/blob/master/script/readme.py)
 
-Update Time:	Tue Mar 17 13:32:46 2020
+Update Time:	Tue Mar 31 22:18:47 2020
 
-Status:	270/1269
+Status:	283/1281
 
-Easy:	96/340
+Easy:	103/343
 
-Medium:	147/656
+Medium:	153/662
 
-Hard:	27/273
+Hard:	27/276
 
 ## Solution Table
 | # | Title | Difficulty | Solution |
@@ -146,6 +146,7 @@ Hard:	27/273
 |0171|[Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0171_Excel_Sheet_Column_Number.cpp)|
 |0172|[Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0172_Factorial_Trailing_Zeroes.cpp)|
 |0173|[Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0173_Binary_Search_Tree_Iterator.cpp)|
+|0179|[Largest Number](https://leetcode.com/problems/largest-number)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0179_Largest_Number.cpp)|
 |0189|[Rotate Array](https://leetcode.com/problems/rotate-array)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0189_Rotate_Array.cpp)|
 |0190|[Reverse Bits](https://leetcode.com/problems/reverse-bits)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0190_Reverse_Bits.cpp)|
 |0198|[House Robber](https://leetcode.com/problems/house-robber)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0198_House_Robber.cpp)|
@@ -158,7 +159,9 @@ Hard:	27/273
 |0210|[Course Schedule II](https://leetcode.com/problems/course-schedule-ii)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0210_Course_Schedule_II.cpp)|
 |0213|[House Robber II](https://leetcode.com/problems/house-robber-ii)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0213_House_Robber_II.cpp)|
 |0215|[Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0215_Kth_Largest_Element_in_an_Array.cpp)|
+|0217|[Contains Duplicate](https://leetcode.com/problems/contains-duplicate)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0217_Contains_duplicate.cpp)|
 |0219|[Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0219_Contains_Duplicate_II.cpp)|
+|0220|[Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0220_Contains_Duplicate_III.cpp)|
 |0221|[Maximal Square](https://leetcode.com/problems/maximal-square)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0221_Maximal_Square.cpp)|
 |0224|[Basic Calculator](https://leetcode.com/problems/basic-calculator)|Hard|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0224_Basic_Calculator.cpp)|
 |0225|[Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0225_Implement_Stack_using_Queues.cpp)|
@@ -169,10 +172,14 @@ Hard:	27/273
 |0238|[Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0238_Product_of_Array_Except_Self.cpp)|
 |0239|[Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum)|Hard|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0239_Sliding_Window_Maximum.cpp)|
 |0240|[Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0240_Search_a_2D_Matrix_II.cpp)|
+|0252|[Meeting Rooms](https://leetcode.com/problems/meeting-rooms)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0252_Meeting_Rooms.cpp)|
+|0253|[Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0253_Meeting_Rooms_II.cpp)|
 |0257|[Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0257_Binary_Tree_Paths.cpp)|
 |0268|[Missing Number](https://leetcode.com/problems/missing-number)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0268_Missing_Number.cpp)|
+|0274|[H-Index](https://leetcode.com/problems/h-index)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0274_H-Index.cpp)|
 |0278|[First Bad Version](https://leetcode.com/problems/first-bad-version)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0278_First_Bad_Version.cpp)|
 |0279|[Perfect Squares](https://leetcode.com/problems/perfect-squares)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0279_Perfect_Squares.cpp)|
+|0280|[Wiggle Sort](https://leetcode.com/problems/wiggle-sort)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0280_Wiggle_Sort.cpp)|
 |0287|[Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0287_Find_the_Duplicate_Number.cpp)|
 |0289|[Game of Life](https://leetcode.com/problems/game-of-life)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0289_Game_of_Life.cpp)|
 |0290|[Word Pattern](https://leetcode.com/problems/word-pattern)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0290_Word_Pattern.cpp)|
@@ -186,6 +193,7 @@ Hard:	27/273
 |0310|[Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0310_Minimum_Height_Tree.cpp)|
 |0312|[Burst Balloons](https://leetcode.com/problems/burst-balloons)|Hard|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0312_Burst_Balloons.cpp)|
 |0322|[Coin Change](https://leetcode.com/problems/coin-change)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0322_Coin_Change.cpp)|
+|0324|[Wiggle Sort II](https://leetcode.com/problems/wiggle-sort-ii)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0324_Wiggle_Sort_II.cpp)|
 |0326|[Power of Three](https://leetcode.com/problems/power-of-three)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0326_Power_of_Three.cpp)|
 |0328|[Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0328_Odd_Even_Linked_List.cpp)|
 |0331|[Verify Preorder Serialization of a Binary Tree](https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0331_Verify_Preorder_Serialization_of_a_Binary_Tree.cpp)|
@@ -277,11 +285,16 @@ Hard:	27/273
 |0915|[Partition Array into Disjoint Intervals](https://leetcode.com/problems/partition-array-into-disjoint-intervals)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0915_Partition_Array_into_Disjoint_Intervals.cpp)|
 |0916|[Word Subsets](https://leetcode.com/problems/word-subsets)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0916_Word_Subsets.cpp)|
 |0921|[Minimum Add to Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0921_Minimum_Add_to_Make_Parentheses_Valid.cpp)|
+|0922|[Sort Array By Parity II](https://leetcode.com/problems/sort-array-by-parity-ii)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0922_Sort_Array_By_Parity_II.cpp)|
 |0931|[Minimum Falling Path Sum](https://leetcode.com/problems/minimum-falling-path-sum)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0931_Minimum_Falling_Path_Sum.cpp)|
 |0935|[Knight Dialer](https://leetcode.com/problems/knight-dialer)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0935_Knight_Dialer.cpp)|
 |0944|[Delete Columns to Make Sorted](https://leetcode.com/problems/delete-columns-to-make-sorted)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0944_Delete_Columns_to_Make_Sorted.cpp)|
 |0983|[Minimum Cost For Tickets](https://leetcode.com/problems/minimum-cost-for-tickets)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0983_Minimum_Cost_For_Tickets.cpp)|
+|1030|[Matrix Cells in Distance Order](https://leetcode.com/problems/matrix-cells-in-distance-order)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/1030_Matrix_Cells_in_Distance_Order.cpp)|
 |1049|[Last Stone Weight II](https://leetcode.com/problems/last-stone-weight-ii)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/1049_Last_Stone_Weight_II.cpp)|
+|1122|[Relative Sort Array](https://leetcode.com/problems/relative-sort-array)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/1122_Relative_Sort_Array.cpp)|
 |1155|[Number of Dice Rolls With Target Sum](https://leetcode.com/problems/number-of-dice-rolls-with-target-sum)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/1155_Number_of_Dice_Rolls_With_Target_Sum.cpp)|
 |1223|[Dice Roll Simulation](https://leetcode.com/problems/dice-roll-simulation)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/1223_Dice_Roll_Simulation.cpp)|
 |1306|[Jump Game III](https://leetcode.com/problems/jump-game-iii)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/1306_Jump_Game_III.cpp)|
+|1356|[Sort Integers by The Number of 1 Bits](https://leetcode.com/problems/sort-integers-by-the-number-of-1-bits)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/1356_Sort_Integers_by_The_Number_of_1_Bits.cpp)|
+|1370|[Increasing Decreasing String](https://leetcode.com/problems/increasing-decreasing-string)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/1370_Increasing_Decreasing_String.cpp)|
