@@ -86,6 +86,14 @@
 **counting sort**
 - [75 sort colors](solution/0075_Sort_Colors.cpp)
 
+**topk problem**
+- [973 K Closest Points to Origin](solution/0973_K_Closest_Points_to_Origin.cpp)
+
+Solution:
+- just sort and get first k
+- maintain a size K heap: stream data
+- quick select: based on quick sort
+
 
 ### backtrack
 
