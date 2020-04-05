@@ -1,7 +1,7 @@
 #include "alg.h"
 
 // iteratively approach
-ListNode *reverseList(ListNode *head) {
+ListNode *reverseList_1(ListNode *head) {
     ListNode *new_head = nullptr, *p = head;
     while (p) {
         ListNode *tmp = p->next;
@@ -11,6 +11,19 @@ ListNode *reverseList(ListNode *head) {
     }
 
     return new_head;
+}
+
+// use dummy head
+ListNode *reverseList_2(ListNode *head) {
+    ListNode dummy(0);
+    dummy.next = nullptr;
+    while (head) {
+        auto next = head->next;
+        head->next = dummy.next;
+        dummy.next = head;
+        head = next;
+    }
+    return dummy.next;
 }
 
 //// recursively approach

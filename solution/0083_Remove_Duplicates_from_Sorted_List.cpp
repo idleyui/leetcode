@@ -1,5 +1,6 @@
 #include "alg.h"
 
+// naive code
 ListNode *deleteDuplicates_unorder(ListNode *head) {
     unordered_set<int> val_set;
     ListNode **p = &head;
@@ -18,8 +19,9 @@ ListNode *deleteDuplicates_unorder(ListNode *head) {
     return head;
 }
 
+// Solution 1
 // https://leetcode.com/problems/remove-duplicates-from-sorted-list/discuss/28730/Concise-solution-and-memory-freeing/194583/
-ListNode *deleteDuplicates(ListNode *head) {
+ListNode *deleteDuplicates_1(ListNode *head) {
     ListNode *p = head;
 
     while (p) {
@@ -32,7 +34,7 @@ ListNode *deleteDuplicates(ListNode *head) {
     return head;
 }
 
-ListNode *deleteDuplicates2(ListNode *head) {
+ListNode *deleteDuplicates_2(ListNode *head) {
     ListNode *p = head;
 
     while (p) {
@@ -44,6 +46,14 @@ ListNode *deleteDuplicates2(ListNode *head) {
     return head;
 }
 
+// Solution 3: recursion
+// https://leetcode.com/problems/remove-duplicates-from-sorted-list/discuss/28625/3-Line-JAVA-recursive-solution
+ListNode *deleteDuplicates_3(ListNode *head) {
+    if (!head || !head->next) return head;
+    head->next = deleteDuplicates_3(head->next);
+    return head->val == head->next->val ? head->next : head;
+}
+
 int main() {
     vector<vector<int>> vv = {
             {},
@@ -52,7 +62,7 @@ int main() {
     };
 
     for (auto v: vv) {
-        printList(deleteDuplicates2(mklst(v)));
+        printList(deleteDuplicates_3(mklst(v)));
     }
 
 }

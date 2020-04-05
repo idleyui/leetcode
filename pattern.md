@@ -56,6 +56,8 @@
 
 ### linked list
 
+
+
 ### queue
 
 ### stack
@@ -154,6 +156,7 @@ calculate sqrt [367 valid perfect square](solution/0367_Valid_Perfect_Square.cpp
 
 - 459 https://leetcode.com/problems/repeated-substring-pattern/discuss/94334/Easy-python-solution-with-explaination
 - 48 https://leetcode.com/problems/rotate-image/discuss/18872/A-common-method-to-rotate-the-image
+- 160 amazing XOR solution: https://leetcode.com/problems/intersection-of-two-linked-lists/discuss/49899/C%2B%2B-solution-using-XOR-trick
 
 ### Easter Egg
 

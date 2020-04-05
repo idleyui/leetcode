@@ -1,12 +1,12 @@
 #include "alg.h"
 
-void deleteNode(ListNode *node) {
+void deleteNode_1(ListNode *node) {
     int val = node->next->val;
     node->next = node->next->next;
     node->val = val;
 }
 
-void deleteNode2(ListNode *node) {
+void deleteNode_2(ListNode *node) {
     *node = *node->next;
 }
 
