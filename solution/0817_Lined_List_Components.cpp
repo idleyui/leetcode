@@ -19,6 +19,19 @@ int numComponents(ListNode *head, vector<int> G) {
     return cnt;
 }
 
+// https://leetcode.com/problems/linked-list-components/discuss/123842/C%2B%2BJavaPython-Easy-and-Concise-Solution-with-Explanation
+int numComponents(ListNode *head, vector<int> &G) {
+    int cnt = 0;
+    unordered_set<int> gset(G.begin(), G.end());
+    while (head) {
+        if (gset.count(head->val)
+            && (!head->next || !gset.count(head->next->val)))
+            cnt++;
+        head = head->next;
+    }
+    return cnt;
+}
+
 int main() {
     cout << numComponents(mklst({0}), {0});
     cout << numComponents(mklst({0, 1, 2, 3}), {0});

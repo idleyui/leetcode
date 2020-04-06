@@ -1,6 +1,6 @@
 #include "alg.h"
 
-ListNode *mergeTwoLists(ListNode *l1, ListNode *l2) {
+ListNode *mergeTwoLists_1(ListNode *l1, ListNode *l2) {
     ListNode dummy(0), *p = &dummy;
     while (l1 && l2) {
         if (l1->val < l2->val) {
@@ -36,7 +36,7 @@ ListNode *mergeTwoList_3(ListNode *l1, ListNode *l2) {
 int main() {
     ListNode *l1 = mklst({});
     ListNode *l2 = mklst({1});
-    ListNode *merge = mergeTwoLists(l1, l2);
+    ListNode *merge = mergeTwoLists_1(l1, l2);
     while (merge) {
         cout << merge->val << ",";
         merge = merge->next;
