@@ -1,7 +1,7 @@
 #include "alg.h"
 
 // use three pointers
-ListNode *swapPairs(ListNode *head) {
+ListNode *swapPairs_1(ListNode *head) {
     if (!head) return nullptr;
 
     ListNode h(0), *left = &h;
@@ -22,7 +22,7 @@ ListNode *swapPairs(ListNode *head) {
 }
 
 // use two pointers
-ListNode *swapPairs_4(ListNode *head) {
+ListNode *swapPairs_2(ListNode *head) {
     if (!head) return nullptr;
     ListNode h(0), *left = &h, *right = head;
     left->next = right;
@@ -39,7 +39,7 @@ ListNode *swapPairs_4(ListNode *head) {
 }
 
 // one pointers
-ListNode *swapPairs_5(ListNode *head) {
+ListNode *swapPairs_3(ListNode *head) {
     ListNode h(0), *p = &h;
     p->next = head;
     while (p && p->next && p->next->next) {
@@ -53,7 +53,7 @@ ListNode *swapPairs_5(ListNode *head) {
 }
 
 // https://leetcode.com/problems/swap-nodes-in-pairs/discuss/11019/7-8-lines-C%2B%2B-Python-Ruby
-ListNode *swapPairs3(ListNode *head) {
+ListNode *swapPairs_4(ListNode *head) {
     ListNode **pp = &head, *a, *b;
     while ((a = *pp) && (b = a->next)) {
         a->next = b->next;
@@ -65,7 +65,7 @@ ListNode *swapPairs3(ListNode *head) {
 }
 
 // https://leetcode.com/problems/swap-nodes-in-pairs/discuss/11271/Simple-implementation-with-C%2B%2B
-ListNode *swapPairs2(ListNode *head) {
+ListNode *swapPairs_5(ListNode *head) {
     if (!head || !head->next) return head;
 
     ListNode *tmp = head->next;
@@ -75,7 +75,7 @@ ListNode *swapPairs2(ListNode *head) {
     return tmp;
 }
 
-ListNode *swapPairs7(ListNode *head) {
+ListNode *swapPairs_6(ListNode *head) {
     ListNode dummy1(0), dummy2(0), *p1 = &dummy1, *p2 = &dummy2;
     while (head && head->next) {
         p1->next = head;
@@ -90,8 +90,8 @@ ListNode *swapPairs7(ListNode *head) {
     cout << "ok";
     p1 = &dummy1;
     p2 = &dummy2;
-    p1=p1->next;
-    p2=p2->next;
+    p1 = p1->next;
+    p2 = p2->next;
     ListNode dummy(0), *p = &dummy;
     while (p1) {
         p->next = p2;

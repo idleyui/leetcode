@@ -1,46 +1,40 @@
 #include "alg.h"
 
-int cnt(ListNode *p) {
-    int num = 0;
-    for (; p; p = p->next, num++);
-    return num;
+int len(ListNode *head) {
+    int cnt = 0;
+    while (head) {
+        cnt++;
+        head = head->next;
+    }
+    return cnt;
 }
 
 vector<ListNode *> splitListToParts(ListNode *root, int k) {
-    vector<ListNode *> result{};
-    int num = order(root);
-    if (num <= k) {
-        for (int i = 0; i < k; ++i) {
-            if (root) {
-                ListNode *p = root;
-                root = root->next;
-                p->next = nullptr;
-                result.push_back(p);
-            } else {
-                result.push_back({});
-            }
+    int l = len(root);
+    int each_len = l / k, remainder = l % k;
+    vector<ListNode *> ans;
+
+    ListNode *group_head = root, *p = root;
+    int tmp_len = 0;
+    while (p) {
+        tmp_len++;
+        if (tmp_len == each_len + (remainder ? 1 : 0)) {
+            ans.push_back(group_head);
+            auto next = p->next;
+            p->next = nullptr;
+            p = next;
+            group_head = p;
+            tmp_len = 0;
+            if (remainder > 0) remainder--;
+        } else {
+            p = p->next;
         }
-        return result;
     }
-
-    int piece = num / k;
-    int overflow = num - piece * k;
-
-
-    for (int i = 0; i < k; ++i, overflow--) {
-        ListNode *h = root, *p = root;
-        int bound = overflow > 0 ? 1 : 0;
-        for (int j = 0; j < piece + bound - 1; ++j) {
-            root = root->next;
-        }
-        p = root;
-        root = root->next;
-        p->next = nullptr;
-        result.push_back(h);
-    }
-    return result;
-
+    int n = k - ans.size();
+    for (int i = 0; i < n; i++) ans.push_back({});
+    return ans;
 }
+
 
 int main() {
     for (auto node: splitListToParts(mklst({1, 2, 3}), 5)) {

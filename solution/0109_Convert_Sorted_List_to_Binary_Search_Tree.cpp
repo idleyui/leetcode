@@ -1,7 +1,7 @@
 #include "alg.h"
 
 // approach 1: recursion
-TreeNode *sortedListToBST(ListNode *head) {
+TreeNode *sortedListToBST_1(ListNode *head) {
     if (!head)return nullptr;
     ListNode *fast = head, *slow = head, *preslow = nullptr;
     while (fast && fast->next) {
@@ -20,10 +20,29 @@ TreeNode *sortedListToBST(ListNode *head) {
     return root;
 }
 
+ListNode *mid(ListNode *head, ListNode *tail) {
+    ListNode dummy(0), *slow = &dummy, *fast = slow;
+    dummy.next = head;
+    while (fast != tail && fast->next != tail) {
+        slow = slow->next;
+        fast = fast->next->next;
+    }
+    return slow;
+}
+
+TreeNode *sortedListToBST_2(ListNode *head, ListNode *tail = nullptr) {
+    if (head == tail) return nullptr;
+    auto midNode = mid(head, tail);
+    TreeNode *root = new TreeNode(midNode->val);
+    root->left = sortedListToBST(head, midNode);
+    root->right = sortedListToBST(midNode->next, tail);
+    return root;
+}
+
 // approach 2: recursion + conversion to array
 vector<int> values = {};
 
-TreeNode *sortedListToBST2(int low, int high) {
+TreeNode *sortedListToBST_3(int low, int high) {
     if (low > high) return nullptr;
     int mid = (low + high) / 2;
     TreeNode *root = new TreeNode(values[mid]);
@@ -34,7 +53,7 @@ TreeNode *sortedListToBST2(int low, int high) {
     return root;
 }
 
-TreeNode *sortedListToBST2(ListNode *head) {
+TreeNode *sortedListToBST_3(ListNode *head) {
     if (!head) return nullptr;
 
     for (; head; head = head->next) values.push_back(head->val);
@@ -48,8 +67,8 @@ TreeNode *sortedListToBST3(ListNode *head) {
 }
 
 int main() {
-    auto root1 = sortedListToBST(mklst({1, 3, 4, 5}));
-    auto root2 = sortedListToBST2(mklst({1, 3, 4, 5}));
+    auto root1 = sortedListToBST_1(mklst({1, 3, 4, 5}));
+    auto root2 = sortedListToBST_1(mklst({1, 3, 4, 5}));
     print_tree(root1);
     print_tree(root2);
 }
