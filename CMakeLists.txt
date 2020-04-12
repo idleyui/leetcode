@@ -324,3 +324,7 @@ add_executable(501_Find_Mode_in_Binary_Search_Tree solution/0501_Find_Mode_in_Bi
 add_executable(504_Base_7 solution/0504_Base_7.cpp)
 add_executable(506_Relative_Ranks solution/0506_Relative_Ranks.cpp)
 add_executable(507_Perfect_Number solution/0507_Perfect_Number.cpp)
+add_executable(0520_Detect_Capital solution/0520_Detect_Capital.cpp)
+add_executable(521_Longest_Uncommon_Subsequence_I solution/0521_Longest_Uncommon_Subsequence_I.cpp)
+add_executable(530_Minimum_Absolute_Difference_in_BST solution/0530_Minimum_Absolute_Difference_in_BST.cpp)
+add_executable(0532_K-diff_Pairs_in_an_Array solution/0532_K-diff_Pairs_in_an_Array.cpp)
