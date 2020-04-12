@@ -50,6 +50,21 @@ ListNode *insertionSortList_2(ListNode *head) {
     return dummy.next;
 }
 
+ListNode *insertionSortList_3(ListNode *head) {
+    if (!head) return head;
+    ListNode dummy(0), *p = head;
+    dummy.next = head;
+    while (p->next) {
+        auto cur = p->next;
+        p->next = cur->next;
+        auto pre = &dummy;
+        for (; pre != next && pre->next->val < cur->val; pre = pre->next);
+        auto next = pre->next;
+        cur->next = pre->next;
+        pre->next = cur;
+        if (pre == p) p = p->next;
+    }
+    return dummy.next;
 }
 
 
