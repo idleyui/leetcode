@@ -20,6 +20,30 @@ vector<vector<int>> subsetsWithDup1(vector<int> &nums) {
     return result;
 }
 
+void backtrace(vector<vector<int>> &result, vector<int> &tmp, vector<int> &nums, int begin) {
+    if (begin >= nums.size()) {
+        result.push_back(tmp);
+        return;
+    }
+
+    tmp.push_back(nums[begin]);
+    backtrace(result, tmp, nums, begin + 1);
+    tmp.pop_back();
+
+    int begin_val = nums[begin];
+    for (begin = begin + 1; begin < nums.size() && nums[begin] == begin_val; begin++);
+    backtrace(result, tmp, nums, begin);
+}
+
+// bit thought
+vector<vector<int>> subsetsWithDup(vector<int> &nums) {
+    sort(nums.begin(), nums.end());
+    vector<vector<int>> result;
+    vector<int> tmp;
+    backtrace(result, tmp, nums, 0);
+    return result;
+}
+
 // Solution 2: iterative
 // https://leetcode.com/problems/subsets-ii/discuss/30137/Simple-iterative-solution
 vector<vector<int>> subsetsWithDup2(vector<int> &nums) {

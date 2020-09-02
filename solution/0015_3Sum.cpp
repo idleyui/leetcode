@@ -4,6 +4,8 @@ vector<vector<int>> threeSum(vector<int> &nums) {
     set<vector<int>> result = {};
     sort(nums.begin(), nums.end());
     if (nums.size() < 3)return {};
+    // this nums.size() - 2 will overflow!!!
+    // use i+2 < nums.size() instead
     for (int i = 0; i < nums.size() - 2; ++i) {
         for (int low = i + 1, high = nums.size() - 1; low < high;) {
             int sum = nums[i] + nums[low] + nums[high];
@@ -41,6 +43,24 @@ vector<vector<int>> threeSumBest(vector<int> &nums) {
         }
         int i_val = nums[i];
         while (i < nums.size() && nums[i] == i_val) i++;
+    }
+    return result;
+}
+
+vector<vector<int>> threeSumBestCompress(vector<int> &nums) {
+    sort(nums.begin(), nums.end());
+    vector<vector<int>> result;
+    for (int i = 0; i + 2 < nums.size(); i++) {
+        if (i > 0 && nums[i] == nums[i - 1]) continue;
+        int target = nums[i];
+        for (int l = i + 1, h = nums.size() - 1; l < h;) {
+            if (l > i + 1 && nums[l] == nums[l - 1]) { l++; continue; }
+            if (h < nums.size() - 1 && nums[h] == nums[h + 1]) { h--; continue; }
+            int sum = target + nums[l] + nums[h];
+            if (sum == 0) result.push_back({target, nums[l++], nums[h--]});
+            else if (sum < 0) l++;
+            else h--;
+        }
     }
     return result;
 }

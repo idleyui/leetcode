@@ -2,46 +2,33 @@
 
 class MinStack {
 public:
+    /** initialize your data structure here. */
     MinStack() {
-        arr = new int[10];
-        size = 0;
-        capable = 10;
+
     }
 
     void push(int x) {
-        if (size == capable) { resize(); }
-        arr[size++] = x;
+        stk.push(x);
+        if (min_stk.empty() || min_stk.top() >= x) min_stk.push(x);
     }
 
     void pop() {
-        if (size > 0)size--;
+        if (stk.top() == min_stk.top()) min_stk.pop();
+        stk.pop();
     }
 
     int top() {
-        return arr[size - 1];
+        return stk.top();
     }
 
     int getMin() {
-        int min = INT_MAX;
-        for (int i = 0; i < size; ++i) {
-            if (arr[i] < min)
-                min = arr[i];
-        }
-        return min;
+        return min_stk.top();
     }
 
 private:
-    int *arr;
-    int size;
-    int capable;
 
-    void resize() {
-        capable = capable * 2;
-        int *p = new int[capable];
-        copy(arr, arr + size, p);
-        delete[] arr;
-        arr = p;
-    }
+    stack<int> stk;
+    stack<int> min_stk;
 };
 
 int main() {

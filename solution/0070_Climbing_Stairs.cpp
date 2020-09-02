@@ -30,6 +30,28 @@ int climbStairs2(int n) {
     return last;
 }
 
+// wo tai nb le, no last buffer needed
+int climbStarts3(int n){
+    if (n == 1) return 1;
+    int one = 1, two = 2;
+
+    for(int i = 2; i < n; i++){
+        one = one + two;
+        swap(one, two);
+    }
+    return two;
+}
+
+int climbStarts_4(int n) {
+    int one = 1, two = 1;
+    for(int i = 0; i < n; i++) {
+        int sum = one + two;
+        one = two;
+        two = sum;
+    }
+    return one;
+}
+
 int main() {
 
 }

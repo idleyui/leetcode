@@ -16,7 +16,26 @@ TreeNode *buildTree(vector<int> &preorder, vector<int> &inorder) {
     return buildTree(preorder, start, inorder, 0, inorder.size() - 1);
 }
 
-// todo
+
+TreeNode *
+traversal(vector<int> &preorder, int &pre_idx, vector<int> &inorder, int low, int high, unordered_map<int, int> &v2p) {
+    if (pre_idx >= preorder.size() || low > high) return nullptr;
+    TreeNode *root = new TreeNode(preorder[pre_idx]);
+    int root_idx = v2p[preorder[pre_idx]];
+    pre_idx += 1;
+    root->left = traversal(preorder, pre_idx, inorder, low, root_idx - 1, v2p);
+    root->right = traversal(preorder, pre_idx, inorder, root_idx + 1, high, v2p);
+    return root;
+}
+
+TreeNode *buildTree_2(vector<int> &preorder, vector<int> &inorder) {
+    int pre_idx = 0;
+    unordered_map<int, int> v2p;
+    for (int i = 0; i < inorder.size(); i++) {
+        v2p[inorder[i]] = i;
+    }
+    return traversal(preorder, pre_idx, inorder, 0, inorder.size() - 1, v2p);
+}
 
 int main() {
 //    vector<int> pv = {3, 9, 20, 15, 7};

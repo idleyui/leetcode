@@ -1,7 +1,7 @@
 #include "alg.h"
 
 // Solution 1: backtrack
-void backtrack(vector<vector<int>> &result, vector<int> &candidates, vector<int> tmp, int target, int start) {
+void backtrack(vector<vector<int>> &result, vector<int> &candidates, vector<int> &tmp, int target, int start) {
     if (target == 0) {
         result.push_back(tmp);
         return;
@@ -17,7 +17,8 @@ void backtrack(vector<vector<int>> &result, vector<int> &candidates, vector<int>
 vector<vector<int>> combinationSum2(vector<int> &candidates, int target) {
     sort(candidates.begin(), candidates.end());
     vector<vector<int>> result;
-    backtrack(result, candidates, {}, target, 0);
+    vector<int> tmp;
+    backtrack(result, candidates, tmp, target, 0);
     return result;
 }
 

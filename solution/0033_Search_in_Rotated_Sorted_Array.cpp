@@ -20,26 +20,24 @@ int searchInf(vector<int> &nums, int target) {
 // use twice binary search
 // https://leetcode.com/problems/search-in-rotated-sorted-array/discuss/14425/Concise-O(log-N)-Binary-search-solution
 int searchTwice(vector<int> &nums, int target) {
-    if (nums.empty()) return -1;
-    int low = 0, high = nums.size() - 1;
-    while (low < high) {
-        int mid = (low + high) / 2;
-        if (nums[mid] > nums[high]) low = mid + 1;
-        else high = mid;
+    int l = 0, h = nums.size() - 1;
+    while (l < h) {
+        int mid = l + (h - l) / 2;
+        if (nums[mid] <= nums[h]) { h = mid; }
+        else { l = mid + 1; }
     }
-    int lowest = low;
-    if (target >= nums[0]) {
-        low = 0;
-        high = lowest == 0 ? (nums.size() - 1) : (lowest - 1);
-    } else {
-        high = nums.size() - 1;
+
+    if (l == 0 || target < nums[0]) { h = nums.size() - 1; }
+    else {
+        h = l - 1;
+        l = 0;
     }
-    cout << low << high;
-    while (low <= high) {
-        int mid = (low + high) / 2;
-        if (nums[mid] < target) low = mid + 1;
-        else if (nums[mid] > target) high = mid - 1;
-        else return mid;
+
+    while (l <= h) {
+        int mid = l + (h - l) / 2;
+        if (nums[mid] == target) { return mid; }
+        else if (nums[mid] > target) { h = mid - 1; }
+        else { l = mid + 1; }
     }
     return -1;
 }
@@ -69,6 +67,29 @@ int search(vector<int> &nums, int target) {
         else if (nums[mid] > nums[high] && out(nums[mid], nums[high], target))
             low = mid + 1;
         else return -1;
+    }
+    return -1;
+}
+
+int search4(vector<int> &nums, int target) {
+    if (nums.empty()) return -1;
+    int l = 0, h = nums.size() - 1;
+    bool inleft = target >= nums[0];
+    while (l <= h) {
+        int mid = l + (h - l) / 2;
+        //cout << l << ' ' << h << ' ' << mid << endl;
+
+        bool midinleft = nums[mid] >= nums[0];
+        if (nums[mid] == target) return mid;
+        else if (nums[mid] < target) {
+            if (inleft && midinleft) l = mid + 1;
+            if (!inleft && !midinleft) l = mid + 1;
+            if (inleft && !midinleft) h = mid - 1;
+        } else if (nums[mid] > target) {
+            if (inleft && midinleft) h = mid - 1;
+            if (!inleft && !midinleft) h = mid - 1;
+            if (!inleft && midinleft) l = mid + 1;
+        }
     }
     return -1;
 }

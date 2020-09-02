@@ -1,18 +1,14 @@
 #include "alg.h"
 
 int fib(int N) {
-    int one = 0;
-    int two = 1;
-    if (N == 0) return one;
-    if (N == 1) return two;
-    for (int i = 2; i <= N; i++) {
-        int tmp = two;
-        two = one + two;
-        one = tmp;
+    int one = 0, two = 1;
+    for (int i = 0; i < N; i++) {
+        int sum = one + two;
+        one = two;
+        two = sum;
     }
-    return two;
+    return one;
 }
 
 int main() {
-
 }

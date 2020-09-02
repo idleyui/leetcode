@@ -17,6 +17,25 @@ vector<vector<int>> subsets_1(vector<int> &nums) {
     return result;
 }
 
+void subsets(vector<vector<int>> &result, vector<int> &nums, vector<int> &tmp, int idx) {
+    if (idx == nums.size()) {
+        result.push_back(tmp);
+        return;
+    }
+
+    subsets(result, nums, tmp, idx + 1);
+    tmp.push_back(nums[idx]);
+    subsets(result, nums, tmp, idx + 1);
+    tmp.pop_back();
+}
+
+vector<vector<int>> subsets(vector<int> &nums) {
+    vector<vector<int>> result;
+    vector<int> tmp;
+    subsets(result, nums, tmp, 0);
+    return result;
+}
+
 
 // Solution 2: iterative
 vector<vector<int>> subsets_2(vector<int> &nums) {

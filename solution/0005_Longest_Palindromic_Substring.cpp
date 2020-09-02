@@ -1,6 +1,7 @@
 #include "alg.h"
 
 // approach 1: Longest Common Substring
+// check aab/baa condition
 bool palind(string s) {
     for (int i = 0; i < s.size() / 2; i++) {
         if (s[i] != s[s.size() - 1 - i])return false;
@@ -106,6 +107,7 @@ string longestPalindrome_exp(const string &s) {
         int len = max(len1, len2);
         if (len > max_size) {
             max_size = len;
+            // OPO OPOO pos relative to start is equal and (len-1)/2 is equal
             start = i - (len - 1) / 2;
         }
     }

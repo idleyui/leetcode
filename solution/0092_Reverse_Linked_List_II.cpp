@@ -68,3 +68,14 @@ int main() {
     printList(reverseBetween(mklst({1, 2, 3, 4}), 1, 1));
     printList(reverseBetween(nullptr, 1, 1));
 }
+10
+84 302
+275 327
+364 538
+26 364
+29 386
+545 955
+715 965
+404 415
+903 942
+150 402

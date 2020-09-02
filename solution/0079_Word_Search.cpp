@@ -1,39 +1,56 @@
 #include "alg.h"
 
-unordered_set<string> visited = {};
-
-string _hash(int x, int y) {
-    return to_string(x) + "," + to_string(y);
+bool find(vector<vector<char>> &board, vector<vector<int>> &visit, string &word, int pos, int i, int j, int n, int m) {
+    if (pos == word.size()) return true;
+    if (i < 0 || i >= n || j < 0 || j >= m) return false;
+    if (visit[i][j]) return false;
+    if (word[pos] != board[i][j]) return false;
+    visit[i][j] = 1;
+    bool ans = find(board, visit, word, pos + 1, i + 1, j, n, m)
+               || find(board, visit, word, pos + 1, i - 1, j, n, m)
+               || find(board, visit, word, pos + 1, i, j + 1, n, m)
+               || find(board, visit, word, pos + 1, i, j - 1, n, m);
+    visit[i][j] = 0;
+    return ans;
 }
 
-bool find(vector<vector<char>> &board, int x, int y, string word, int pos) {
-    if (pos == word.size()) return true;
-    char c = word[pos];
-    if (visited.count(_hash(x, y)) || x < 0 || x == board.size() || y < 0 || y == board[0].size() ||
-        board[x][y] != c)
-        return false;
-    visited.insert(_hash(x, y));
-    if (find(board, x - 1, y, word, pos + 1)) return true;
-    if (find(board, x + 1, y, word, pos + 1))return true;
-    if (find(board, x, y - 1, word, pos + 1))return true;
-    if (find(board, x, y + 1, word, pos + 1))return true;
-    visited.erase(_hash(x, y));
+
+bool exist(vector<vector<char>> &board, string word) {
+    int n = board.size(), m = board[0].size();
+    vector<vector<int>> visit(n, vector<int>(m, 0));
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < m; j++) {
+            if (find(board, visit, word, 0, i, j, n, m)) return true;
+        }
+    }
     return false;
 }
 
+
+bool search(vector<vector<char>> &board, string &word, int m, int n, int i, int j, int pos) {
+    if (pos == word.size()) return true;
+    if (i < 0 || i >= n || j < 0 || j >= m) return false;
+    if (board[i][j] != word[pos]) return false;
+
+    board[i][j] = '#';
+    bool ans = search(board, word, m, n, i + 1, j, pos + 1) ||
+               search(board, word, m, n, i - 1, j, pos + 1) ||
+               search(board, word, m, n, i, j + 1, pos + 1) ||
+               search(board, word, m, n, i, j - 1, pos + 1);
+    board[i][j] = word[pos];
+    return ans;
+}
+
 bool exist(vector<vector<char>> &board, string word) {
-    for (int i = 0; i < board.size(); ++i) {
-        for (int j = 0; j < board[i].size(); j++) {
-//            todo empty visited
-            if (board[i][j] == word[0]) {
-                visited.clear();
-                bool f = find(board, i, j, word, 0);
-                if (f)return true;
+    int n = board.size(), m = board[0].size();
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < m; j++) {
+            if (search(board, word, m, n, i, j, 0)) {
+                return true;
             }
         }
     }
     return false;
-
 }
 
 int main() {

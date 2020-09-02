@@ -37,6 +37,7 @@ vector<int> inorderTraversal2(TreeNode *root) {
 }
 
 // without visited set
+// pop mid node before visit right
 // https://leetcode.com/problems/binary-tree-inorder-traversal/discuss/31213/Iterative-solution-in-Java-simple-and-readable
 // https://leetcode.com/problems/binary-tree-inorder-traversal/discuss/31231/C%2B%2B-Iterative-Recursive-and-Morris
 vector<int> inroderTraversal2_(TreeNode *root) {
