@@ -1,23 +1,21 @@
 #include "alg.h"
 
+// without duplicates --> use map
 vector<int> nextGreaterElement(vector<int> nums1, vector<int> nums2) {
     unordered_map<int, int> gt;
-    stack<int> st;
+    stack<int> stk;
     for (int i: nums2) {
-        while (!st.empty() && st.top() < i) {
-            gt[st.top()] = i;
-            st.pop();
+        while (!stk.empty() && stk.top() < i) {
+            gt[stk.top()] = i;
+            stk.pop();
         }
-        st.push(i);
+        stk.push(i);
     }
 
     vector<int> result;
     for (int i : nums1) {
-        if (gt.count(i)) {
-            result.push_back(gt[i]);
-        } else {
-            result.push_back(-1);
-        }
+        if (gt.count(i)) { result.push_back(gt[i]);
+        } else { result.push_back(-1); }
     }
     return result;
 }

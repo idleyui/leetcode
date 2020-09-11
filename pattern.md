@@ -52,6 +52,10 @@
 - [290 word pattern](solution/0290_Word_Pattern.cpp)
 - [205 isomorphic strings](solution/0205_Isomorphic_Strings.cpp)
 
+#### palindromic string
+- [5 longest palindromic substring](solution/0005_Longest_Palindromic_Substring.cpp)
+- [647 palindromic substring](solution/0647_Palindromic_Substrings.cpp)
+
 ### array
 
 ### linked list
@@ -61,6 +65,13 @@
 ### queue
 
 ### stack
+
+> https://leetcode.com/problems/next-greater-element-ii/discuss/98270/JavaC%2B%2BPython-Loop-Twice
+
+next greater element
+- [496 next greater element I](solution/0496_Next_Greater_Element_I.cpp)
+- [503 next greater element II](solution/0503_Next_Greater_Element_II.cpp)
+- [739 daily temperatures](solution/0739_Daily_Temperatures.cpp)
 
 ### tree
 
@@ -96,7 +107,6 @@ Solution:
 - maintain a size K heap: stream data
 - quick select: based on quick sort
 
-
 ### backtrack
 
 - top-down backtrack
@@ -106,7 +116,17 @@ Solution:
 - bottom up combination and filter by condition
 - [401 binary watch](solution/0401_Binary_Watch.cpp)
 
+use self matrix to log visit info
+- [79 work search](solution/0079_Word_Search.cpp)
+
+### two-pointers
+- [763 partition labels](solution/0763_Partition_Labels.cpp)
+
 ### greedy
+
+merge interval
+- [56 merge intervals](solution/0056_Merge_Intervals.cpp)
+- [763 partition labels](solution/0763_Partition_Labels.cpp)
 
 ### dp
 
@@ -148,6 +168,15 @@ calculate sqrt [367 valid perfect square](solution/0367_Valid_Perfect_Square.cpp
 #### other
 
 - [401 binary watch](solution/0401_Binary_Watch.cpp)
+
+## problem
+
+### permutation ans combination
+
+#### next permutation
+
+- [31 next permutation](solution/0031_Next_Permutaion.cpp)
+- [556 next greater element III](solution/0556_Next_Greater_Element_III.cpp)
 
 
 ## appendix
