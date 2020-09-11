@@ -2,15 +2,15 @@
 
 This README file was built by [script/readme.py](https://github.com/idleyui/leetcode/blob/master/script/readme.py)
 
-Update Time:	Tue Mar 31 22:18:47 2020
+Update Time:	Fri Sep 11 22:12:12 2020
 
-Status:	283/1281
+Status:	324/1441
 
-Easy:	103/343
+Easy:	120/374
 
-Medium:	153/662
+Medium:	177/752
 
-Hard:	27/276
+Hard:	27/315
 
 ## Solution Table
 | # | Title | Difficulty | Solution |
@@ -63,6 +63,7 @@ Hard:	27/276
 |0055|[Jump Game](https://leetcode.com/problems/jump-game)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0055_Jump_Game.cpp)|
 |0056|[Merge Intervals](https://leetcode.com/problems/merge-intervals)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0056_Merge_Intervals.cpp)|
 |0058|[Length of Last Word](https://leetcode.com/problems/length-of-last-word)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0058_Length_of_Last_Word.cpp)|
+|0059|[Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0059_Spiral_Matrix_II.cpp)|
 |0061|[Rotate List](https://leetcode.com/problems/rotate-list)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0061_Rotate_List.cpp)|
 |0062|[Unique Paths](https://leetcode.com/problems/unique-paths)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0062_Unique_Paths.cpp)|
 |0063|[Unique Paths II](https://leetcode.com/problems/unique-paths-ii)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0063_Unique_Paths_II.cpp)|
@@ -104,6 +105,7 @@ Hard:	27/276
 |0110|[Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0110_Balanced_Binary_Tree.cpp)|
 |0111|[Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0111_Minimum_Depth_of_Binary_Tree.cpp)|
 |0112|[Path Sum](https://leetcode.com/problems/path-sum)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0112_Path_Sum.cpp)|
+|0113|[Path Sum II](https://leetcode.com/problems/path-sum-ii)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0113_Path_Sum_II.cpp)|
 |0114|[Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0114_Flatten_Binary_Tree_to_Linked_List.cpp)|
 |0115|[Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences)|Hard|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0115_Distince_Subsequences.cpp)|
 |0116|[Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0116_Populating_Next_Right_Pointers_in_Each_Node.cpp)|
@@ -128,7 +130,7 @@ Hard:	27/276
 |0142|[Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0142_Linked_List_Cycle_II.cpp)|
 |0143|[Reorder List](https://leetcode.com/problems/reorder-list)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0143_Reorder_List.cpp)|
 |0144|[Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0144_Binary_Tree_Preorder_Traversal.cpp)|
-|0145|[Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal)|Hard|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0145_Binary_Tree_Postorder_Traversal.cpp)|
+|0145|[Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0145_Binary_Tree_Postorder_Traversal.cpp)|
 |0146|[LRU Cache](https://leetcode.com/problems/lru-cache)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0146_LRU_Cache.cpp)|
 |0147|[Insertion Sort List](https://leetcode.com/problems/insertion-sort-list)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0147_Insertion_Sort_List.cpp)|
 |0148|[Sort List](https://leetcode.com/problems/sort-list)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0148_Sort_List.cpp)|
@@ -137,6 +139,7 @@ Hard:	27/276
 |0151|[Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0151_Reverse_Words_in_a_String.cpp)|
 |0152|[Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0152_Maximum_Product_Subarray.cpp)|
 |0153|[Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0153_Find_Minimum_in_Rotated_Sorted_Array.cpp)|
+|0154|[Find Minimum in Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii)|Hard|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0154_Find_Minimum_in_Rotated_Sorted_Array_II.cpp)|
 |0155|[Min Stack](https://leetcode.com/problems/min-stack)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0155_Min_Stack.cpp)|
 |0160|[Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0160_Intersection_of_Two_Linked_Lists.cpp)|
 |0162|[Find Peak Element](https://leetcode.com/problems/find-peak-element)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0162_Find_Peak_Element.cpp)|
@@ -149,6 +152,7 @@ Hard:	27/276
 |0179|[Largest Number](https://leetcode.com/problems/largest-number)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0179_Largest_Number.cpp)|
 |0189|[Rotate Array](https://leetcode.com/problems/rotate-array)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0189_Rotate_Array.cpp)|
 |0190|[Reverse Bits](https://leetcode.com/problems/reverse-bits)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0190_Reverse_Bits.cpp)|
+|0191|[Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0191_Number_of_1_Bits.cpp)|
 |0198|[House Robber](https://leetcode.com/problems/house-robber)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0198_House_Robber.cpp)|
 |0200|[Number of Islands](https://leetcode.com/problems/number-of-islands)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0200_Number_of_Islands.cpp)|
 |0203|[Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0203_Remove_Linked_List_Elements.cpp)|
@@ -165,6 +169,7 @@ Hard:	27/276
 |0221|[Maximal Square](https://leetcode.com/problems/maximal-square)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0221_Maximal_Square.cpp)|
 |0224|[Basic Calculator](https://leetcode.com/problems/basic-calculator)|Hard|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0224_Basic_Calculator.cpp)|
 |0225|[Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0225_Implement_Stack_using_Queues.cpp)|
+|0226|[Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0226_Invert_Binary_Tree.cpp)|
 |0232|[Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0232_Implement_Queue_using_Stacks.cpp)|
 |0234|[Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0234_Palindrome_Linked_List.cpp)|
 |0236|[Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0236_Lowest_Common_Ancestor_of_a_Binary_Tree.cpp)|
@@ -202,9 +207,11 @@ Hard:	27/276
 |0338|[Counting Bits](https://leetcode.com/problems/counting-bits)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0338_Counting_Bits.cpp)|
 |0341|[Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0341_Flatten_Nested_List_Iterator.cpp)|
 |0342|[Power of Four](https://leetcode.com/problems/power-of-four)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0342_Power_of_Four.cpp)|
+|0343|[Integer Break](https://leetcode.com/problems/integer-break)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0343_Integer_Break.cpp)|
 |0345|[Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0345_Reverse_Vowels_of_a_String.cpp)|
 |0347|[Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0347_Top_K_Frequent_Elements.cpp)|
 |0367|[Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0367_Valid_Perfect_Square.cpp)|
+|0369|[Plus One Linked List](https://leetcode.com/problems/plus-one-linked-list)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0369_Plus_One_Linked_List.cpp)|
 |0374|[Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0374_Guess_Number_Higher_or_Lower.cpp)|
 |0376|[Wiggle Subsequence](https://leetcode.com/problems/wiggle-subsequence)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0376_Wiggle_Subsequence.cpp)|
 |0377|[Combination Sum IV](https://leetcode.com/problems/combination-sum-iv)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0377_Combination_Sum_IV.cpp)|
@@ -225,10 +232,11 @@ Hard:	27/276
 |0414|[Third Maximum Number](https://leetcode.com/problems/third-maximum-number)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0414_Third_Maximum_Number.cpp)|
 |0415|[Add Strings](https://leetcode.com/problems/add-strings)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0415_Add_Strings.cpp)|
 |0416|[Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0416_Partition_Equal_Subset_Sum.cpp)|
+|0426|[Convert Binary Search Tree to Sorted Doubly Linked List](https://leetcode.com/problems/convert-binary-search-tree-to-sorted-doubly-linked-list)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0426_Convert_Binary_Search_Tree_to_Sorted_Doubly_Linked_List.cpp)|
 |0430|[Flatten a Multilevel Doubly Linked List](https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0430_Flatten_a_Multilevel_Doubly_Linked_List.cpp)|
 |0434|[Number of Segments in a String](https://leetcode.com/problems/number-of-segments-in-a-string)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0434_Number_of_Segments_in_a_String.cpp)|
 |0435|[Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0435_Non-overlapping_Intervals.cpp)|
-|0437|[Path Sum III](https://leetcode.com/problems/path-sum-iii)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0437_Path_Sum_III.cpp)|
+|0437|[Path Sum III](https://leetcode.com/problems/path-sum-iii)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0437_Path_Sum_III.cpp)|
 |0438|[Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0438_Find_All_Anagrams_in_a_String.cpp)|
 |0441|[Arranging Coins](https://leetcode.com/problems/arranging-coins)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0441_Arranging_Coins.cpp)|
 |0443|[String Compression](https://leetcode.com/problems/string-compression)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0443_String_Compression.cpp)|
@@ -248,13 +256,30 @@ Hard:	27/276
 |0492|[Construct the Rectangle](https://leetcode.com/problems/construct-the-rectangle)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0492_Construct_the_Rectangle.cpp)|
 |0494|[Target Sum](https://leetcode.com/problems/target-sum)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0494_Target_Sum.cpp)|
 |0496|[Next Greater Element I](https://leetcode.com/problems/next-greater-element-i)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0496_Next_Greater_Element_I.cpp)|
+|0500|[Keyboard Row](https://leetcode.com/problems/keyboard-row)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0500_Keyboard_Row.cpp)|
+|0501|[Find Mode in Binary Search Tree](https://leetcode.com/problems/find-mode-in-binary-search-tree)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0501_Find_Mode_in_Binary_Search_Tree.cpp)|
 |0503|[Next Greater Element II](https://leetcode.com/problems/next-greater-element-ii)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0503_Next_Greater_Element_II.cpp)|
+|0504|[Base 7](https://leetcode.com/problems/base-7)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0504_Base_7.cpp)|
+|0506|[Relative Ranks](https://leetcode.com/problems/relative-ranks)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0506_Relative_Ranks.cpp)|
+|0507|[Perfect Number](https://leetcode.com/problems/perfect-number)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0507_Perfect_Number.cpp)|
+|0509|[Fibonacci Number](https://leetcode.com/problems/fibonacci-number)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0509_Fibonacci_Number.cpp)|
+|0520|[Detect Capital](https://leetcode.com/problems/detect-capital)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0520_Detect_Capital.cpp)|
+|0521|[Longest Uncommon Subsequence I](https://leetcode.com/problems/longest-uncommon-subsequence-i)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0521_Longest_Uncommon_Subsequence_I.cpp)|
+|0524|[Longest Word in Dictionary through Deleting](https://leetcode.com/problems/longest-word-in-dictionary-through-deleting)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0524_Longest_Wrod_in_Dictionary_through_Deleting.cpp)|
+|0530|[Minimum Absolute Difference in BST](https://leetcode.com/problems/minimum-absolute-difference-in-bst)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0530_Minimum_Absolute_Difference_in_BST.cpp)|
+|0532|[K-diff Pairs in an Array](https://leetcode.com/problems/k-diff-pairs-in-an-array)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0532_K-diff_Pairs_in_an_Array.cpp)|
+|0538|[Convert BST to Greater Tree](https://leetcode.com/problems/convert-bst-to-greater-tree)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0538_Convert_BST_to_Greater_Tree.cpp)|
+|0541|[Reverse String II](https://leetcode.com/problems/reverse-string-ii)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0541_Reverse_String_II.cpp)|
 |0543|[Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0543_Diameter_of_Binary_Tree.cpp)|
+|0551|[Student Attendance Record I](https://leetcode.com/problems/student-attendance-record-i)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0551_Student_Attendance_Record_I.cpp)|
+|0556|[Next Greater Element III](https://leetcode.com/problems/next-greater-element-iii)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0556_Next_Greater_Element_III.cpp)|
+|0557|[Reverse Words in a String III](https://leetcode.com/problems/reverse-words-in-a-string-iii)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0557_Reverse_Words_in_a_String_III.cpp)|
 |0560|[Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0560_Subarray_Sum_Equals_k.cpp)|
 |0581|[Shortest Unsorted Continuous Subarray](https://leetcode.com/problems/shortest-unsorted-continuous-subarray)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0581_Shortest_Unsorted_Continuous_Subarray.cpp)|
 |0617|[Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0617_Merge_Two_Binary_Trees.cpp)|
 |0621|[Task Scheduler](https://leetcode.com/problems/task-scheduler)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0621_Task_Scheduler.cpp)|
 |0636|[Exclusive Time of Functions](https://leetcode.com/problems/exclusive-time-of-functions)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0636_Exclusive_Time_of_Function.cpp)|
+|0647|[Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0647_Palindromic_Substrings.cpp)|
 |0649|[Dota2 Senate](https://leetcode.com/problems/dota2-senate)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0649_Dota2_Senate.cpp)|
 |0650|[2 Keys Keyboard](https://leetcode.com/problems/2-keys-keyboard)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0650_2_Keys_Keyboard.cpp)|
 |0659|[Split Array into Consecutive Subsequences](https://leetcode.com/problems/split-array-into-consecutive-subsequences)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0659_Split_Array_into_Consecutive_Subsequences.cpp)|
@@ -271,6 +296,7 @@ Hard:	27/276
 |0767|[Reorganize String](https://leetcode.com/problems/reorganize-string)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0767_Reorganize_String.cpp)|
 |0817|[Linked List Components](https://leetcode.com/problems/linked-list-components)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0817_Lined_List_Components.cpp)|
 |0842|[Split Array into Fibonacci Sequence](https://leetcode.com/problems/split-array-into-fibonacci-sequence)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0842_Split_Array_into_Fibonacci_Sequence.cpp)|
+|0853|[Car Fleet](https://leetcode.com/problems/car-fleet)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0853_Car_Fleet.cpp)|
 |0860|[Lemonade Change](https://leetcode.com/problems/lemonade-change)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0860_Lemonade_Change.cpp)|
 |0861|[Score After Flipping Matrix](https://leetcode.com/problems/score-after-flipping-matrix)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0861_Score_After_Flipping_Matrix.cpp)|
 |0870|[Advantage Shuffle](https://leetcode.com/problems/advantage-shuffle)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0870_Advantage_Shuffle.cpp)|
@@ -289,12 +315,27 @@ Hard:	27/276
 |0931|[Minimum Falling Path Sum](https://leetcode.com/problems/minimum-falling-path-sum)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0931_Minimum_Falling_Path_Sum.cpp)|
 |0935|[Knight Dialer](https://leetcode.com/problems/knight-dialer)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0935_Knight_Dialer.cpp)|
 |0944|[Delete Columns to Make Sorted](https://leetcode.com/problems/delete-columns-to-make-sorted)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0944_Delete_Columns_to_Make_Sorted.cpp)|
+|0946|[Validate Stack Sequences](https://leetcode.com/problems/validate-stack-sequences)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0946_Validate_Stack_Sequences.cpp)|
+|0969|[Pancake Sorting](https://leetcode.com/problems/pancake-sorting)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0969_Pancake_Sorting.cpp)|
+|0973|[K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0973_K_Closest_Points_to_Origin.cpp)|
+|0976|[Largest Perimeter Triangle](https://leetcode.com/problems/largest-perimeter-triangle)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0976_Largest_Perimeter_Triangle.cpp)|
 |0983|[Minimum Cost For Tickets](https://leetcode.com/problems/minimum-cost-for-tickets)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/0983_Minimum_Cost_For_Tickets.cpp)|
+|1019|[Next Greater Node In Linked List](https://leetcode.com/problems/next-greater-node-in-linked-list)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/1019_Next_Greater_Node_In_Linked_List.cpp)|
 |1030|[Matrix Cells in Distance Order](https://leetcode.com/problems/matrix-cells-in-distance-order)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/1030_Matrix_Cells_in_Distance_Order.cpp)|
 |1049|[Last Stone Weight II](https://leetcode.com/problems/last-stone-weight-ii)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/1049_Last_Stone_Weight_II.cpp)|
+|1054|[Distant Barcodes](https://leetcode.com/problems/distant-barcodes)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/1054_Distant_Barcodes.cpp)|
 |1122|[Relative Sort Array](https://leetcode.com/problems/relative-sort-array)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/1122_Relative_Sort_Array.cpp)|
+|1143|[Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/1143_Longest_Common_Subsequence.cpp)|
 |1155|[Number of Dice Rolls With Target Sum](https://leetcode.com/problems/number-of-dice-rolls-with-target-sum)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/1155_Number_of_Dice_Rolls_With_Target_Sum.cpp)|
+|1171|[Remove Zero Sum Consecutive Nodes from Linked List](https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/1171_Remove_Zero_Sum_Consecutive_Nodes_from_Linked_List.cpp)|
 |1223|[Dice Roll Simulation](https://leetcode.com/problems/dice-roll-simulation)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/1223_Dice_Roll_Simulation.cpp)|
+|1290|[Convert Binary Number in a Linked List to Integer](https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/1290_Convert_Binary_Number_in_a_Linked_List_to_Integer.cpp)|
+|1305|[All Elements in Two Binary Search Trees](https://leetcode.com/problems/all-elements-in-two-binary-search-trees)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/1305_All_Elements_in_Two_Binary_Search_Trees.cpp)|
 |1306|[Jump Game III](https://leetcode.com/problems/jump-game-iii)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/1306_Jump_Game_III.cpp)|
+|1329|[Sort the Matrix Diagonally](https://leetcode.com/problems/sort-the-matrix-diagonally)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/1329_Sort_the_Matrix_Diagonally.cpp)|
+|1333|[Filter Restaurants by Vegan-Friendly, Price and Distance](https://leetcode.com/problems/filter-restaurants-by-vegan-friendly-price-and-distance)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/1333_Filter_Restaurants_by_Vegan-Friendly_Price_and_Distance.cpp)|
+|1353|[Maximum Number of Events That Can Be Attended](https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/1353_Maximum_Number_of_Events_That_Can_Be_Attended.cpp)|
 |1356|[Sort Integers by The Number of 1 Bits](https://leetcode.com/problems/sort-integers-by-the-number-of-1-bits)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/1356_Sort_Integers_by_The_Number_of_1_Bits.cpp)|
+|1366|[Rank Teams by Votes](https://leetcode.com/problems/rank-teams-by-votes)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/1366_Rank_Teams_by_Votes.cpp)|
+|1367|[Linked List in Binary Tree](https://leetcode.com/problems/linked-list-in-binary-tree)|Medium|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/1367_Linked_List_in_Binary_Tree.cpp)|
 |1370|[Increasing Decreasing String](https://leetcode.com/problems/increasing-decreasing-string)|Easy|[cpp](https://github.com/idleyui/leetcode/blob/master/solution/1370_Increasing_Decreasing_String.cpp)|

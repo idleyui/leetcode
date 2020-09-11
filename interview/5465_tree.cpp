@@ -1,4 +1,4 @@
-#include "alg.h"
+#include "../solution/alg.h"
 
 unordered_map<char, int> label2id;
 
