@@ -53,10 +53,18 @@
 - [205 isomorphic strings](solution/0205_Isomorphic_Strings.cpp)
 
 #### palindromic string
+
+tricks: reverse, expansion
+
 - [5 longest palindromic substring](solution/0005_Longest_Palindromic_Substring.cpp)
+- [516 longest palindromic subsequence](solution/0516_Longest_Palindromic_Subsequence.cpp)
 - [647 palindromic substring](solution/0647_Palindromic_Substrings.cpp)
 
 ### array
+
+running sum & target sum: `sum[i...j] = sum[0...j] - sum[0...i]`
+https://leetcode.com/problems/subarray-sum-equals-k/discuss/190674/Python-O(n)-Based-on-%22running_sum%22-concept-of-%22Cracking-the-coding-interview%22-book
+- [560 subarray sum equals k](solution/0560_Subarray_Sum_Equals_k.cpp)
 
 ### linked list
 
@@ -120,6 +128,9 @@ use self matrix to log visit info
 - [79 work search](solution/0079_Word_Search.cpp)
 
 ### two-pointers
+
+https://leetcode.com/problems/subarray-sum-equals-k/discuss/301242/General-summary-of-what-kind-of-problem-can-cannot-solved-by-Two-Pointers
+- [3 longest substring without repeating characters](solution/0003_Longest_Substring_Without_Repeating_Characters.cpp)
 - [763 partition labels](solution/0763_Partition_Labels.cpp)
 
 ### greedy
@@ -129,6 +140,13 @@ merge interval
 - [763 partition labels](solution/0763_Partition_Labels.cpp)
 
 ### dp
+
+#### longest common substring
+- [5 longest palindromic substring](solution/0005_Longest_Palindromic_Substring.cpp)
+
+#### longest common subsequence
+- [1143 longest common subsequence](solution/1143_Longest_Common_Subsequence.cpp)
+- [516 longest palindromic subsequence](solution/0516_Longest_Palindromic_Subsequence.cpp)
 
 #### 0-1 knapsack
 

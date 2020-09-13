@@ -18,5 +18,37 @@ int subarraySum(vector<int> &nums, int k) {
     return cnt;
 }
 
+int subarraySum_2(vector<int> &nums, int k) {
+    int n = nums.size(), cnt = 0;
+
+    for (int i = 0; i < n; i++) {
+        int base = 0;
+        for (int j = i; j < n; j++) {
+            base += nums[j];
+            if (base == k) cnt++;
+        }
+    }
+    return cnt;
+}
+
+// https://leetcode.com/problems/subarray-sum-equals-k/discuss/102106/Java-Solution-PreSum-%2B-HashMap
+// https://leetcode.com/problems/subarray-sum-equals-k/discuss/190674/Python-O(n)-Based-on-%22running_sum%22-concept-of-%22Cracking-the-coding-interview%22-book
+// sum[i...j] = sum[0...j]-sum[0...i]
+int subarraySum_3(vector<int> &nums, int k) {
+    int n = nums.size(), cnt = 0;
+    unordered_map<int, int> sum2idx;
+    sum2idx[0] = 1;
+
+    int sum = 0;
+    for (int i = 0; i < n; i++) {
+        sum += nums[i];
+        if (sum2idx.count(sum - k)) {
+            cnt += sum2idx[sum - k];
+        }
+        sum2idx[sum] += 1;
+    }
+    return cnt;
+}
+
 int main() {
 }

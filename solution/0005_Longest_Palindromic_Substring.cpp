@@ -1,7 +1,7 @@
 #include "alg.h"
 
 // approach 1: Longest Common Substring
-// check aab/baa condition
+// check SxxxS'(aabcbaa) condition
 bool palind(string s) {
     for (int i = 0; i < s.size() / 2; i++) {
         if (s[i] != s[s.size() - 1 - i])return false;
@@ -115,18 +115,8 @@ string longestPalindrome_exp(const string &s) {
 }
 
 
-
 int main() {
-//    assert(longestPalindrome_lcs("a") == "a");
-//    assert(longestPalindrome_lcs("abab") == "aba");
-//    assert(longestPalindrome_lcs("abba") == "abba");
-//    assert(longestPalindrome_exp("a") == "a");
-//    assert(longestPalindrome_exp("abab") == "aba");
-//    assert(longestPalindrome_exp("abba") == "abba");
-//    assert(longestPalindrome_dp("a") == "a");
     cout << longestPalindrome_dp("a");
-//    cout << longestPalindrome_dp("abab");
     cout << longestPalindrome_dp("abba");
-//    assert(longestPalindrome_dp("abab") == "aba");
-//    assert(longestPalindrome_dp("abba") == "abba");
+    cout << longestPalindrome_dp("abbcbba");
 }

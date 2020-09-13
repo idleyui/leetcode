@@ -17,6 +17,20 @@ int diameterOfBinaryTree(TreeNode *root) {
     return max(v[1], v[0] - 1);
 }
 
+int depth(TreeNode *root, int &diameter) {
+    if (!root) return 0;
+    int left = depth(root->left, diameter);
+    int right = depth(root->right, diameter);
+    diameter = max(left + right, diameter);
+    return max(left, right) + 1;
+}
+
+int diameterOfBinaryTree(TreeNode *root) {
+    int diameter = 0;
+    depth(root, diameter);
+    return diameter;
+}
+
 int main() {
 
 }
