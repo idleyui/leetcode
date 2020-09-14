@@ -364,3 +364,6 @@ add_executable(1143_Longest_Common_Subsequence solution/1143_Longest_Common_Subs
 add_executable(0516_Longest_Palindromic_Subsequence solution/0516_Longest_Palindromic_Subsequence.cpp)
 add_executable(monkey interview/monkey.cpp)
 add_executable(monkey2 interview/monkey2.cpp)
+add_executable(iqiyi interview/iqiyi.cpp)
+add_executable(merge algo101/sort/merge.cpp)
+add_executable(binary algo101/search/binary.cpp)
