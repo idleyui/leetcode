@@ -1,5 +1,6 @@
 #include "alg.h"
 
+// abandon
 int divide(int dividend, int divisor) {
     if (dividend == INT32_MIN && divisor == -1)return INT32_MAX;
     int reverse = dividend > 0 && divisor < 0 || dividend < 0 && divisor > 0;
@@ -9,7 +10,7 @@ int divide(int dividend, int divisor) {
     while (dividend <= divisor) {
         int minuend = divisor;
         int cnt = 1;
-        while (dividend <= (minuend + minuend)){
+        while (dividend <= (minuend + minuend)) {
             minuend += minuend;
             cnt += cnt;
         }
@@ -17,6 +18,25 @@ int divide(int dividend, int divisor) {
         i += cnt;
     }
     return reverse ? -i : i;
+}
+
+// https://leetcode.com/problems/divide-two-integers/discuss/13407/C%2B%2B-bit-manipulations
+// use long directly
+int divide_2(int dividend, int divisor) {
+    if (dividend == INT_MIN && divisor == -1) return INT_MAX;
+    long l = abs(dividend), r = abs(divisor);
+    long ans = 0;
+    while (r <= l) {
+        long base = r, cnt = 1;
+        while (l >= (base << 1)) {
+            base <<= 1;
+            cnt <<= 1;
+        }
+        l -= base;
+        ans += cnt;
+    }
+
+    return (dividend > 0) == (divisor > 0) ? ans : -ans;
 }
 
 

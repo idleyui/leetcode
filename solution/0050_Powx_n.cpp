@@ -1,18 +1,29 @@
 #include "alg.h"
 
-double myPow(double x, int n, unordered_map<int, double> &n2val) {
-    if (n2val.count(n)) return n2val[n];
-    double val = myPow(x, n / 2, n2val) * myPow(x, n / 2, n2val) * (n % 2 == 0 ? 1 : x);
-    n2val[n] = val;
-    return val;
+// https://leetcode.com/problems/powx-n/discuss/19544/5-different-choices-when-talk-with-interviewers
+double myPow(double x, int n) {
+    if (n == 0) return 1;
+    if (n < 0) return 1 / x * myPow(1 / x, -(n + 1));
+    double val = myPow(x, n / 2);
+    if (n % 2 == 0) return val * val;
+    return val * val * x;
 }
 
-double myPow(double x, int n) {
-    if (x == 1) return 1;
-    unordered_map<int, double> n2val = {{0, 1}};
-    double val = myPow(x, n, n2val);
-    return n >= 0 ? val : 1 / val;
+// iterative
+double myPow_2(double x, int n) {
+    if (n == 0) return 1;
+    if (n < 0) return 1 / x * myPow_2(1 / x, -(n + 1));
+    double ans = 1;
+    while (n > 0) {
+        if (n & 1) ans *= x;
+        x *= x;
+        n >>= 1;
+    }
+    return ans;
 }
+
+// bit operation //todo
+// https://leetcode.com/problems/powx-n/discuss/19571/My-answer-using-bit-operation-(C%2B%2B-implementation)
 
 int main() {
 

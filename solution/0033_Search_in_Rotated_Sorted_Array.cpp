@@ -20,14 +20,14 @@ int searchInf(vector<int> &nums, int target) {
 // use twice binary search
 // https://leetcode.com/problems/search-in-rotated-sorted-array/discuss/14425/Concise-O(log-N)-Binary-search-solution
 int searchTwice(vector<int> &nums, int target) {
-    int l = 0, h = nums.size() - 1;
+    int n = nums.size(), l = 0, h = n - 1;
     while (l < h) {
         int mid = l + (h - l) / 2;
         if (nums[mid] <= nums[h]) { h = mid; }
         else { l = mid + 1; }
     }
 
-    if (l == 0 || target < nums[0]) { h = nums.size() - 1; }
+    if (target <= nums[0]) { h = n - 1; }
     else {
         h = l - 1;
         l = 0;

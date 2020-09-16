@@ -93,9 +93,7 @@ next greater element
 
 ## algorithms
 
-### binary search
-
-- [374 guess number higher or lower](solution/0374_Guess_Number_Higher_or_Lower.cpp)
+[import:binary search](algo101/search/binary_search.md)
 
 ### sort
 
@@ -187,6 +185,10 @@ calculate sqrt [367 valid perfect square](solution/0367_Valid_Perfect_Square.cpp
 
 - [401 binary watch](solution/0401_Binary_Watch.cpp)
 
+#### INT_MIN
+
+- [divide two integers](solution/0029_Divide_Two_Integers.cpp)
+
 ## problem
 
 ### permutation ans combination
@@ -198,6 +200,9 @@ calculate sqrt [367 valid perfect square](solution/0367_Valid_Perfect_Square.cpp
 
 
 ## appendix
+
+### shitty questions
+
 
 ### awesome solution post
 

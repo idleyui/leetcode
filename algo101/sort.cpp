@@ -60,48 +60,7 @@ void insertion_sort(vector<int> &A) {
     }
 }
 
-// 4. merge sort
-void merge(vector<int> &A, vector<int> &rt, int l, int h) {
-    int mid = l + (h - l) / 2, idx = l;
-    for (int i = l, j = mid + 1; i <= mid || j <= h;) {
-        if (j > h) rt[idx++] = A[i++];
-        else if (i > mid) rt[idx++] = A[j++];
-        else if (A[i] <= A[j]) rt[idx++] = A[i++];
-        else rt[idx++] = A[j++];
-    }
-    for (int i = l; i <= h; i++) { A[i] = rt[i]; }
-}
 
-void merge_sort(vector<int> &A, vector<int> &rt, int l, int h) {
-//   [l, h]
-    if (l >= h) return;
-    int mid = l + (h - l) / 2;
-    merge_sort(A, rt, l, mid);
-    merge_sort(A, rt, mid + 1, h);
-    merge(A, rt, l, h);
-}
-
-void merge_sort(vector<int> &A) {
-    vector<int> rt(A.size(), 0);
-    merge_sort(A, rt, 0, rt.size() - 1);
-}
-
-// q sort
-int partition(vector<int> &A, int l, int h) {
-    int flag = A[l], left = l;
-    for (int right = left + 1; right <= h; right++) {
-        if (A[right] <= flag) swap(A[++left], A[right]);
-    }
-    swap(A[l], A[left]);
-    return left;
-}
-
-void q_sort(vector<int> &A, int l, int h) {
-    if (l >= h) return;
-    int r = partition(A, l, h);
-    q_sort(A, l, r - 1);
-    q_sort(A, r + 1, h);
-}
 
 // https://stackoverflow.com/questions/22504837/how-to-implement-quick-sort-algorithm-in-c
 void sortIntegers(vector<int> &A) {
