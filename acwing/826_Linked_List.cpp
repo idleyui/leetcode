@@ -1,62 +1,56 @@
 //// https://www.acwing.com/problem/content/828/
-#include<vector>
 #include<iostream>
 
 using namespace std;
 
-int head_i, idx;
+const int N = 100010;
+int M, idx, head;
+int A[N], Next[N];
 
 void init() {
-    head_i = -1;
+    head = -1;
     idx = 0;
 }
 
-void head(vector<int> &num, vector<int> &next, int x) {
-    num[idx] = x;
-    next[idx] = head_i;
-    head_i = idx;
-    idx++;
+void insert_head(int val) {
+    Next[idx] = head;
+    head = idx;
+    A[idx++] = val;
 }
 
-void insert(vector<int> &num, vector<int> &next, int k, int x) {
-    num[idx] = x;
-    next[idx] = next[k];
-    next[k] = idx;
-    idx++;
+void insert(int k, int val) {
+    Next[idx] = Next[k];
+    Next[k] = idx;
+    A[idx++] = val;
 }
 
-void del(vector<int> &num, vector<int> &next, int k) {
-    if (k < 0) head_i = next[head_i];
-    else next[k] = next[next[k]];
-}
-
-void traversal(vector<int> &num, vector<int> &next) {
-    int p = head_i;
-    while (p >= 0) {
-        cout << num[p] << ' ';
-        p = next[p];
-    }
+void del(int k) {
+    if (k < 0) head = Next[head];
+    else Next[k] = Next[Next[k]];
 }
 
 int main() {
-    vector<int> num(100010, 0);
-    vector<int> next(100010, 0);
-    int M, k, x;
-    char op;
     cin >> M;
+    char op;
+    int k, x;
     init();
-    while (M--) {
+    while(M--) {
         cin >> op;
         if (op == 'H') {
             cin >> x;
-            head(num, next, x);
+            insert_head(x);
         } else if (op == 'D') {
             cin >> k;
-            del(num, next, k - 1);
-        } else if (op == 'I') {
+            del(k-1);
+        } else {
             cin >> k >> x;
-            insert(num, next, k - 1, x);
+            insert(k-1, x);
         }
     }
-    traversal(num, next);
+
+    while(head >= 0) {
+        cout << A[head] << ' ';
+        head = Next[head];
+    }
 }
+

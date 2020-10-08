@@ -1,40 +1,61 @@
-//评测题目:
-// 求最长线段
-// input: [3,5] [2,4] [9,10] [-1,1]
-// output: [2,5]
-
-#include <vector>
-#include <algorithm>
+// https://www.acwing.com/problem/content/829/
+#include<iostream>
 
 using namespace std;
 
-struct Line {
-    int left;
-    int right;
-};
+const int N = 100010;
 
-void CalcMaxline(vector<Line> input, Line &output) {
-    if (input.empty()) return;
-    sort(input.begin(), input.end(), [](const Line &l1, const Line &l2) {
-        return l1.left < l2.left || (l1.left == l2.left && l1.right < l2.right);
-    });
+int M;
+int A[N], L[N], R[N];
+int idx;
 
-    int max_val = 0;
-
-    Line pre = input[0];
-    for (auto line: input) {
-        if (line.left <= pre.right) {
-            pre.right = max(pre.right, line.right);
-        } else {
-            pre = line;
-        }
-        if (pre.right - pre.left > max_val) {
-            output = pre;
-            max_val = pre.right-pre.left;
-        }
-    }
+void init() {
+    R[0] = 1, L[1] = 0;
+    idx = 2;
 }
 
-int main() {
+// insert right
+void insert(int k, int x) {
+    L[idx] = k;
+    R[idx] = R[k];
+    R[k] = idx;
+    L[R[idx]] = idx;
+    A[idx++] = x;
+}
 
+void del(int k) {
+    R[L[k]] = R[k];
+    L[R[k]] = L[k];
+}
+
+
+int main() {
+    cin >> M;
+    char op;
+    int k, x;
+    init();
+    while(M--) {
+        cin >> op;
+        if (op == 'L') {
+            cin >> x;
+            insert(0, x);
+        } else if (op == 'R') {
+            cin >> x;
+            insert(L[1], x);
+        } else if (op == 'D') {
+            cin >> k;
+            del(k+1);
+        } else if (op == 'I') {
+            cin >> op;
+            cin >> k >> x;
+            if (op == 'L') insert(L[k+1], x);
+            else insert(k+1, x);
+        }
+    }
+
+    int h = R[0];
+    while(h != 1) {
+        cout << A[h] << ' ';
+        h = R[h];
+    }
 }
