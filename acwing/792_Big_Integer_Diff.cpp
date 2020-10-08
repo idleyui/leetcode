@@ -1,4 +1,8 @@
 // https://www.acwing.com/problem/content/794/
+// !note
+// handle negative result carefully
+// cmp function
+// (diff+10)%10 trick
 #include<vector>
 #include<iostream>
 
@@ -11,6 +15,7 @@ vector<int> _minus(vector<int> &A, vector<int> &B) {
     for (int i = 0; i < A.size(); i++) {
         int diff = A[i] - borrow;
         if (i < B.size()) diff -= B[i];
+        // trick!
         ans.push_back((diff + 10) % 10);
         borrow = diff < 0 ? 1 : 0;
     }
