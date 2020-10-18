@@ -11,6 +11,6 @@ big integer
     //todo 用大的数组作为返回值
     
 template:
-- [Big Integer Sum](../../acwing/791_Big_Integer_Sum.cpp)
-- [Big Integer Diff](../../acwing/792_Big_Integer_Diff.cpp)
-- [Big Integer Multiplication](../../acwing/793_Big_Integer_Multiplication.cpp)
+- [Big Integer Sum](../../acwing/foundations/791_Big_Integer_Sum.cpp)
+- [Big Integer Diff](../../acwing/foundations/792_Big_Integer_Diff.cpp)
+- [Big Integer Multiplication](../../acwing/foundations/793_Big_Integer_Multiplication.cpp)
