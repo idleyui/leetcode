@@ -412,3 +412,5 @@ add_executable(846_Gravity_Center_In_Tree acwing/searchandgraph/846_Gravity_Cent
 add_executable(qianxin1 interview/qianxin1.cpp)
 add_executable(qianxin2 interview/qianxin2.cpp)
 add_executable(847_Point_Level_in_Graph acwing/searchandgraph/847_Point_Level_in_Graph.cpp)
+add_executable(848_Topological_Sorting acwing/searchandgraph/848_Topological_Sorting.cpp)
+add_executable(849_Dijkstra_I acwing/searchandgraph/849_Dijkstra_I.cpp)
