@@ -416,3 +416,4 @@ add_executable(848_Topological_Sorting acwing/searchandgraph/848_Topological_Sor
 add_executable(849_Dijkstra_I acwing/searchandgraph/849_Dijkstra_I.cpp)
 add_executable(849_Dijkstra_II acwing/searchandgraph/850_Dijkstra_II.cpp)
 add_executable(853_Bellman_Ford acwing/searchandgraph/853_Bellman_Ford.cpp)
+add_executable(851_SPFA_for_Shortest_Path acwing/searchandgraph/851_SPFA_for_Shortest_Path.cpp)
