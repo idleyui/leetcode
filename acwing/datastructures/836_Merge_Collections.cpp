@@ -7,7 +7,7 @@ const int N = 100010;
 
 int parent[N];
 
-int check(int num) {
+int iteration_find(int num) {
     int i = num;
     while (parent[i] != i) { i = parent[i]; }
     while (parent[num] != num) {
@@ -25,7 +25,7 @@ int find(int x) {
 int main() {
     int n, m;
     cin >> n >> m;
-    for (int i = 0; i < n; ++i) { parent[i] = i; }
+    for (int i = 1; i <= n; ++i) { parent[i] = i; }
 
     char op;
     int a, b;
@@ -34,7 +34,7 @@ int main() {
         if (op == 'M') {
             parent[find(a)] = find(b);
         } else if (op == 'Q') {
-            if (check(a) == check(b)) cout << "Yes" << endl;
+            if (find(a) == find(b)) cout << "Yes" << endl;
             else cout << "No" << endl;
         }
     }

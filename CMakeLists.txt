@@ -420,3 +420,8 @@ add_executable(851_SPFA_for_Shortest_Path acwing/searchandgraph/851_SPFA_for_Sho
 add_executable(852_SPFA_Check_Negative_Path acwing/searchandgraph/852_SPFA_Check_Negative_Path.cpp)
 add_executable(854_Floyd acwing/searchandgraph/854_Floyd.cpp)
 add_executable(858_Prim acwing/searchandgraph/858_Prim.cpp)
+add_executable(pdd1 interview/pdd1.cpp)
+add_executable(pdd2 interview/pdd2.cpp)
+add_executable(pdd3 interview/pdd3.cpp)
+add_executable(pdd4 interview/pdd4.cpp)
+add_executable(859_Kruskal acwing/searchandgraph/859_Kruskal.cpp)
