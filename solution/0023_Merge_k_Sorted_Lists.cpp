@@ -39,17 +39,6 @@ ListNode *ml_one_by_one(vector<ListNode *> &lists) {
     return h.next;
 }
 
-ListNode *ml_priority_queue(vector<ListNode *> &lists) {
-//    priority_queue<
-//    for (auto p: lists) {
-//        while (p) {
-//
-//        }
-//    }
-// todo
-    return nullptr;
-}
-
 ListNode *mergeTwoLists(ListNode *l1, ListNode *l2) {
     if (!l1 || l2 && l1->val > l2->val) swap(l2, l1);
     if (l1) l1->next = mergeTwoLists(l1->next, l2);
@@ -68,6 +57,31 @@ ListNode *ml_merge_one_by_one(vector<ListNode *> &lists) {
 // https://leetcode.com/problems/merge-k-sorted-lists/discuss/10531/Sharing-my-straightforward-C%2B%2B-solution-without-data-structure-other-than-vector
 ListNode *merge_divide_and_conquer(vector<ListNode *> &lists) {
 // todo
+}
+
+// solution 3: priority queue
+struct cmp {
+    bool operator()(ListNode *l1, ListNode *l2) {
+        return l1->val > l2->val;
+    }
+};
+
+ListNode *mergeKLists_3(vector<ListNode *> &lists) {
+    priority_queue<ListNode *, vector<ListNode *>, cmp> q;
+    for (auto l: lists) {
+        if (l) q.push(l);
+    }
+
+    ListNode dummy(0), *p = &dummy;
+    while (!q.empty()) {
+        auto top = q.top();
+        q.pop();
+        p->next = top;
+        p = p->next;
+        if (top->next) q.push(top->next);
+    }
+
+    return dummy.next;
 }
 
 int main() {

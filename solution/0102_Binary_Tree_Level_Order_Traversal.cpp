@@ -48,6 +48,27 @@ vector<vector<int>> levelOrder(TreeNode *root) {
     return result;
 }
 
+vector<vector<int>> levelOrder(TreeNode *root) {
+    if (!root) return {};
+    vector<vector<int>> ans;
+    queue<TreeNode *> q;
+    q.push(root);
+    while (!q.empty()) {
+        q.push(nullptr);
+        vector<int> tmp;
+        while (true) {
+            auto front = q.front();
+            q.pop();
+            if (!front) break;
+            tmp.push_back(front->val);
+            if (front->left) q.push(front->left);
+            if (front->right) q.push(front->right);
+        }
+        ans.push_back(tmp);
+    }
+    return ans;
+}
+
 // preorder traversal but get result
 // https://leetcode.com/problems/binary-tree-level-order-traversal/discuss/33468/One-of-C%2B%2B-solutions-(preorder)
 
