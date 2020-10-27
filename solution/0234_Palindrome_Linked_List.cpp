@@ -15,6 +15,27 @@ bool isPalindrome_1(ListNode *head) {
     return equal(head);
 }
 
+// recursion 2
+int cnt = 0;
+
+bool isPalindRome(ListNode *&head, ListNode *p) {
+    int idx = cnt++;
+    bool ans = true;
+    if (p->next) ans = isPalindRome(head, p->next);
+    if (!ans) return ans;
+
+    if (idx >= cnt / 2) {
+        ans = (head->val == p->val);
+        head = head->next;
+    }
+    return ans;
+}
+
+bool isPalindrome(ListNode *head) {
+    if (!head) return true;
+    return isPalindRome(head, head);
+}
+
 ListNode *mid(ListNode *head) {
     ListNode *slow = head, *fast = head;
     while (fast && fast->next) {

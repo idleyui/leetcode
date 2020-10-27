@@ -37,6 +37,37 @@ vector<int> topKFrequent(vector<int> &nums, int k) {
     return rt;
 }
 
+struct cmp {
+    bool operator()(pair<int, int> &p1, pair<int, int> &p2) {
+        return p1.second > p2.second;
+    }
+};
+
+// priority queue
+vector<int> topKFrequent_2(vector<int> &nums, int k) {
+    unordered_map<int, int> cnt;
+    for (int i: nums) cnt[i]++;
+
+    priority_queue<pair<int, int>, vector<pair<int, int>>, cmp> q;
+    for (auto &p: cnt) {
+        if (q.size() < k) {
+            q.push(p);
+        } else {
+            if (q.top().second < p.second) {
+                q.pop();
+                q.push(p);
+            }
+        }
+    }
+
+    vector<int> ans;
+    while (!q.empty()) {
+        ans.push_back(q.top().first);
+        q.pop();
+    }
+    return ans;
+}
+
 int main() {
 
 }
