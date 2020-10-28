@@ -23,6 +23,32 @@ ListNode *reverseKGroup(ListNode *head, int k) {
     return preh->next;
 }
 
-int main() {
+ListNode *reverse(ListNode *head, ListNode *tail) {
+    ListNode *nextPre = head->next;
+    ListNode *p = head->next;
+    head->next = tail;
+    while (p != tail) {
+        auto next = p->next;
+        p->next = head->next;
+        head->next = p;
+        p = next;
+    }
+    return nextPre;
+}
 
+ListNode *reverseKGroup_2(ListNode *head, int k) {
+    ListNode dummy(0), *t = &dummy, *h = t;
+    dummy.next = head;
+    while (t) {
+        for (int i = 0; i < k && t; i++) t = t->next;
+        if (!t) break;
+        h = reverse(h, t->next);
+        t = h;
+    }
+    return dummy.next;
+}
+
+int main() {
+    auto lst = mklst({1, 2, 3, 4, 5});
+    printList(reverseKGroup_2(lst, 2));
 }

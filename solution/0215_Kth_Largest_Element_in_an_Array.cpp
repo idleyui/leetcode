@@ -16,6 +16,30 @@ int findKthLargest(vector<int> &nums, int k) {
     return q.top();
 }
 
+int partition(vector<int> &nums, int l, int h) {
+    int val = nums[l + (h - l) / 2];
+    l--;
+    h++;
+    while (l < h) {
+        do l++; while (nums[l] < val);
+        do h--; while (nums[h] > val);
+        if (l < h) swap(nums[l], nums[h]);
+    }
+    return h;
+}
+
+// quick select
+int findKthLargest_2(vector<int> &nums, int k) {
+    int l = 0, h = nums.size() - 1;
+    k = nums.size() - k;
+    while (l < h) {
+        int mid = partition(nums, l, h);
+        if (k <= mid) h = mid;
+        else l = mid + 1;
+    }
+    return nums[h];
+}
+
 int main() {
 
 }
