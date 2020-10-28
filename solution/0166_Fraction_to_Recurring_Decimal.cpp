@@ -1,5 +1,9 @@
 #include "alg.h"
 
+// 1. handle '-'
+// 2. to long long
+// 3. handle int part
+// 4. handle fraction part
 string fractionToDecimal(int numerator, int denominator) {
     if (numerator == 0) return "0";
     string result;

@@ -13,6 +13,17 @@ int maxProfit(vector<int> &prices) {
     return sell2;
 }
 
+int maxProfit_2(vector<int> &prices) {
+    int cost1 = INT_MAX, cost2 = INT_MAX, profit1 = 0, profit2 = 0;
+    for (int p: prices) {
+        cost1 = min(cost1, p); // min val
+        profit1 = max(profit1, p - cost1);
+        cost2 = min(cost2, p - profit1); // min val after first buy
+        profit2 = max(profit2, p - cost2);
+    }
+    return profit2;
+}
+
 // naive dp, time exceeded
 int maxProfit(vector<int> &prices) {
     if (prices.size() < 2) return 0;

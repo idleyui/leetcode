@@ -2,8 +2,7 @@
 
 // Solution 1: use prev min price
 int maxProfit1(vector<int> &prices) {
-    if (prices.size() < 2) return 0;
-    int max_profit = 0, min_price = prices[0];
+    int max_profit = 0, min_price = INT_MAX;
     for (int num: prices) {
         max_profit = max(max_profit, num - min_price);
         min_price = min(min_price, num);
