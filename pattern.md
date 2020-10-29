@@ -68,8 +68,6 @@ https://leetcode.com/problems/subarray-sum-equals-k/discuss/190674/Python-O(n)-B
 
 ### linked list
 
-
-
 ### queue
 
 ### stack
@@ -82,6 +80,12 @@ next greater element
 - [739 daily temperatures](solution/0739_Daily_Temperatures.cpp)
 
 ### tree
+
+traversal
+- [144 binary tree preorder traversal](solution/0144_Binary_Tree_Preorder_Traversal.cpp)
+- [94 binary tree inorder traversal](solution/0094_Binary_Tree_Inorder_Traversal.cpp)
+- [145 binary tree postorder_traversal](solution/0145_Binary_Tree_Postorder_Traversal.cpp)
+- [102 binary tree level order traversal](solution/0102_Binary_Tree_Level_Order_Traversal.cpp)
 
 ### graph
 
