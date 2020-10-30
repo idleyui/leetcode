@@ -437,3 +437,4 @@ add_executable(0188_Best_Time_to_Buy_and_Sell_Stock_IV solution/0188_Best_Time_t
 add_executable(0901_Online_Stock_Span solution/0901_Online_Stock_Span.cpp)
 add_executable(0077_Combinations solution/0077_Combinations.cpp)
 add_executable(0216_Combination_III solution/0216_Combination_III.cpp)
+add_executable(2_01_Knapsack_Problem acwing/dp/2_01_Knapsack_Problem.cpp)
