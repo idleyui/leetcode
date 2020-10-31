@@ -442,3 +442,6 @@ add_executable(3_Unbounded_Knapsack_Problem acwing/dp/3_Unbounded_Knapsack_Probl
 add_executable(3_Bounded_Knapsack_Problem acwing/dp/4_Bounded_Knapsack_Problem.cpp)
 add_executable(5_Bounded_Knapsack_Problem_II acwing/dp/5_Bounded_Knapsack_Problem_II.cpp)
 add_executable(9_Multiple_Knapsack_Problem acwing/dp/9_Multiple_Knapsack_Problem.cpp)
+add_executable(898_Numeric_Triangle acwing/dp/898_Numeric_Triangle.cpp)
+add_executable(895_Longest_Increasing_Subsequence acwing/dp/895_Longest_Increasing_Subsequence.cpp)
+add_executable(896_Longest_Increasing_Subsequence_II acwing/dp/896_Longest_Increasing_Subsequence_II.cpp)
