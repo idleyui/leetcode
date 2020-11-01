@@ -19,8 +19,9 @@ int minPrice() {
             for (int left = 1; left < len; left++) {
                 int v = dp[i][i + left - 1]
                         + dp[i + left][i + len - 1]
-                        + sum(i, i + left - 1)
-                        + sum(i + left, i + len - 1);
+                        // + sum(i, i + left - 1)
+                        // + sum(i + left, i + len - 1);
+                        + sum(i, i + len - 1);
                 if (v < dp[i][i + len - 1]) {
                     dp[i][i + len - 1] = v;
                 }
