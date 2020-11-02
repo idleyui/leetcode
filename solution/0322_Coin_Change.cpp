@@ -1,15 +1,12 @@
 #include "alg.h"
 
 // Solution 1: iterative Dp
-int coinChange1(vector<int> &coins, int amount) {
+int coinChange(vector<int> &coins, int amount) {
     vector<int> dp(amount + 1, amount + 1);
     dp[0] = 0;
-    //min_i = min{min_i-coins[0], min_i-coins[1], ...} + 1
-    for (int i = 1; i <= amount; i++) {
-        for (int j = 0; j < coins.size(); j++) {
-            if (coins[j] <= i) {
-                dp[i] = min(dp[i - coins[j]] + 1, dp[i]);
-            }
+    for (int i = 0; i < coins.size(); i++) {
+        for (int j = coins[i]; j <= amount; j++) {
+            dp[j] = min(dp[j], dp[j - coins[i]] + 1);
         }
     }
     return dp[amount] > amount ? -1 : dp[amount];
