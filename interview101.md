@@ -1,5 +1,8 @@
 # interview problem 101
 
+> [互联网公司题目考察频度](https://leetcode-cn.top/#/home)
+> [牛客高频面试题](https://www.nowcoder.com/ta/job-code-high-rd)
+
 **toc**
 - implement 101 algorithms & data structure
 - binary search
@@ -74,6 +77,7 @@ Solution:
 basic operations
 - [reverse linked list](solution/0206_Reverse_Linked_List.cpp)
 - find k / find mid / delete k
+    - [](solution/0019_Remove_Nth_Node_From_End_of_List.cpp)
 - cycle
     - [141 linked list cycle](solution/0141_Linked_List_Cycle.cpp)
     - [142 linked list cycle II](solution/0142_Linked_List_Cycle_II.cpp)
@@ -82,6 +86,11 @@ basic operations
     - [23 merge k sorted lists](solution/0023_Merge_k_Sorted_Lists.cpp)
 
 ## stack
+
+valid parentheses
+
+- [](solution/0020_Valid_Parentheses.cpp)
+- [](solution/0032_Longest_Valid_Parentheses.cpp)
 
 > https://leetcode.com/problems/next-greater-element-ii/discuss/98270/JavaC%2B%2BPython-Loop-Twice
 
@@ -100,7 +109,34 @@ traversal
 
 ## math
 
+- [](solution/0007_Reverse_Integer.cpp)
+- [441 arranging coins](solution/0441_Arranging_Coins.cpp)
 
+power and sqrt
+
+**basic**
+
+calculate sqrt [367 valid perfect square](solution/0367_Valid_Perfect_Square.cpp):
+- binary search
+- newton method
+
+**questions**
+- [326 power of three](solution/0326_Power_of_Three.cpp)
+- [342 power of four](solution/0342_Power_of_Four.cpp)
+
+#### binary, decimal and hexadecimal
+
+conversion
+- [](solution/0012_Integer_to_Roman.cpp)
+//todo roman to int
+
+- [405 convert a number to hexadecimal](solution/0405_Convert_a_Number_to_Hexadecimal.cpp)
+- [441 arranging coins](solution/0441_Arranging_Coins.cpp)
+
+`simulation`
+
+- [2 add two numbers](solution/0002_Add_Two_Numbers.cpp)
+- [](solution/0029_Divide_Two_Integers.cpp)
 
 ## dfs | bfs
 
@@ -133,6 +169,7 @@ use self matrix to log visit info
 
 https://leetcode.com/problems/subarray-sum-equals-k/discuss/301242/General-summary-of-what-kind-of-problem-can-cannot-solved-by-Two-Pointers
 - [3 longest substring without repeating characters](solution/0003_Longest_Substring_Without_Repeating_Characters.cpp)
+- [11 ](solution/0011_Container_With_Most_Water.cpp)
 - [763 partition labels](solution/0763_Partition_Labels.cpp)
 
 
@@ -173,26 +210,7 @@ merge interval
 - [232 implement queue using stacks](solution/0232_Implement_Queue_using_Stacks.cpp)
 - [155 min stack](solution/0155_Min_Stack.cpp)
 
-### math
 
-- [441 arranging coins](solution/0441_Arranging_Coins.cpp)
-
-#### power and sqrt
-
-**basic**
-
-calculate sqrt [367 valid perfect square](solution/0367_Valid_Perfect_Square.cpp):
-- binary search
-- newton method
-
-**questions**
-- [326 power of three](solution/0326_Power_of_Three.cpp)
-- [342 power of four](solution/0342_Power_of_Four.cpp)
-
-#### binary, decimal and hexadecimal
-
-- [405 convert a number to hexadecimal](solution/0405_Convert_a_Number_to_Hexadecimal.cpp)
-- [441 arranging coins](solution/0441_Arranging_Coins.cpp)
 
 ## tricks
 ### bit
@@ -214,4 +232,10 @@ calculate sqrt [367 valid perfect square](solution/0367_Valid_Perfect_Square.cpp
 
 - [divide two integers](solution/0029_Divide_Two_Integers.cpp)
 
+## N-Sum Problem
+
+- [1 two sum](solution/0001_Two_Sum.cpp)
+- [15 3 sum](solution/0015_3Sum.cpp)
+- [16 3 sum closest](solution/0016_3Sum_Closest.cpp)
+- [18 4 sum](solution/0018_4Sum.cpp)
 
