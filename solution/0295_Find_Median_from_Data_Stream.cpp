@@ -1,9 +1,9 @@
 #include "alg.h"
 
-//todo optim
 class MedianFinder {
 private:
-    vector<int> nums;
+    priority_queue<int, vector<int>> maxHeap;
+    priority_queue<int, vector<int>, greater<int>> minHeap;
 public:
     /** initialize your data structure here. */
     MedianFinder() {
@@ -11,15 +11,35 @@ public:
     }
 
     void addNum(int num) {
-        auto item = nums.begin();
-        for (; item != nums.end() && *item <= num; item++);
-        nums.insert(item, num);
+        if (maxHeap.size() == minHeap.size()) {
+            if (minHeap.empty()) {
+                minHeap.push(num);
+            } else if (num < maxHeap.top()) {
+                int tmp = maxHeap.top();
+                maxHeap.pop();
+                minHeap.push(tmp);
+                maxHeap.push(num);
+            } else {
+                minHeap.push(num);
+            }
+        } else {
+            if (num > minHeap.top()) {
+                int tmp = minHeap.top();
+                minHeap.pop();
+                maxHeap.push(tmp);
+                minHeap.push(num);
+            } else {
+                maxHeap.push(num);
+            }
+        }
     }
 
     double findMedian() {
-        int n = nums.size();
-        if (n % 2 == 0) return (nums[n / 2] + nums[n / 2 - 1]) / 2.0;
-        else return nums[n / 2];
+        if (maxHeap.size() == minHeap.size()) {
+            return (double) (maxHeap.top() + minHeap.top()) / 2;
+        } else {
+            return minHeap.top();
+        }
     }
 };
 
