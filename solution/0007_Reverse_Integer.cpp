@@ -14,6 +14,19 @@ int reverse(int x) {
     }
 }
 
+int reverse_1(int x) {
+    bool negative = x < 0;
+    long num = abs(x);
+    long y = 0;
+    while (num) {
+        y = y * 10 + num % 10;
+        num /= 10;
+    }
+    if (negative && -y < INT_MIN) return 0;
+    if (!negative && y > INT_MAX) return 0;
+    return negative ? -y : y;
+}
+
 int main() {
     int a = 0;
     int b = 129300;

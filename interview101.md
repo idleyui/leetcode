@@ -112,17 +112,18 @@ traversal
 - [](solution/0007_Reverse_Integer.cpp)
 - [441 arranging coins](solution/0441_Arranging_Coins.cpp)
 
-power and sqrt
+power
 
-**basic**
+- [50 pow(x, n)](solution/0050_Powx_n.cpp)
+- [326 power of three](solution/0326_Power_of_Three.cpp)
+- [342 power of four](solution/0342_Power_of_Four.cpp)
 
+sqrt
 calculate sqrt [367 valid perfect square](solution/0367_Valid_Perfect_Square.cpp):
 - binary search
 - newton method
 
 **questions**
-- [326 power of three](solution/0326_Power_of_Three.cpp)
-- [342 power of four](solution/0342_Power_of_Four.cpp)
 
 #### binary, decimal and hexadecimal
 
