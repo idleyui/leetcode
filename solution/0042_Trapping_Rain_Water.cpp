@@ -16,6 +16,23 @@ int trap(vector<int> height) {
     return res;
 }
 
+int trap_2(vector<int> &height) {
+    int left = 0, right = height.size() - 1, max_left = 0, max_right = 0, res = 0;
+    while (left <= right) {
+        if (height[left] <= height[right]) {
+            max_left = max(max_left, height[left]);
+            res += max_left - height[left];
+            left++;
+        } else {
+            max_right = max(max_right, height[right]);
+            res += max_right - height[right];
+            right--;
+        }
+    }
+
+    return res;
+}
+
 int main() {
     cout << trap({0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1});
     cout << trap({1, 0, 1});

@@ -65,19 +65,21 @@ Solution:
 - maintain a size K heap: stream data
 - quick select: based on quick sort
 
+- [4 mediam of two sorted arrays](solution/0004_Median_of_Two_Sorted_Arrays.cpp)
 - [973 K Closest Points to Origin](solution/0973_K_Closest_Points_to_Origin.cpp)
 - [215 kth largest element in an array](solution/0215_Kth_Largest_Element_in_an_Array.cpp)
 
 ## priority queue
 
-//todo
+- [23 merge k sorted lists](solution/0023_Merge_k_Sorted_Lists.cpp)
+//todo or merge
 
 ## linked list
 
 basic operations
-- [reverse linked list](solution/0206_Reverse_Linked_List.cpp)
+- [206 reverse linked list](solution/0206_Reverse_Linked_List.cpp)
 - find k / find mid / delete k
-    - [](solution/0019_Remove_Nth_Node_From_End_of_List.cpp)
+    - [19 remove nth node from end of list](solution/0019_Remove_Nth_Node_From_End_of_List.cpp)
 - cycle
     - [141 linked list cycle](solution/0141_Linked_List_Cycle.cpp)
     - [142 linked list cycle II](solution/0142_Linked_List_Cycle_II.cpp)
@@ -89,8 +91,8 @@ basic operations
 
 valid parentheses
 
-- [](solution/0020_Valid_Parentheses.cpp)
-- [](solution/0032_Longest_Valid_Parentheses.cpp)
+- [20 valid parentheses](solution/0020_Valid_Parentheses.cpp)
+- [32 longest valid parentheses](solution/0032_Longest_Valid_Parentheses.cpp)
 
 > https://leetcode.com/problems/next-greater-element-ii/discuss/98270/JavaC%2B%2BPython-Loop-Twice
 
@@ -109,7 +111,7 @@ traversal
 
 ## math
 
-- [](solution/0007_Reverse_Integer.cpp)
+- [7 reverse integer](solution/0007_Reverse_Integer.cpp)
 - [441 arranging coins](solution/0441_Arranging_Coins.cpp)
 
 power
@@ -125,25 +127,31 @@ calculate sqrt [367 valid perfect square](solution/0367_Valid_Perfect_Square.cpp
 
 **questions**
 
-#### binary, decimal and hexadecimal
+binary, decimal and hexadecimal
 
 conversion
 - [](solution/0012_Integer_to_Roman.cpp)
-//todo roman to int
+- [](solution/0013_)
 
 - [405 convert a number to hexadecimal](solution/0405_Convert_a_Number_to_Hexadecimal.cpp)
 - [441 arranging coins](solution/0441_Arranging_Coins.cpp)
 
-`simulation`
+simulation
 
 - [2 add two numbers](solution/0002_Add_Two_Numbers.cpp)
-- [](solution/0029_Divide_Two_Integers.cpp)
+
+==INT_MIN==
+- [29 divide two integers](solution/0029_Divide_Two_Integers.cpp)
 
 ## dfs | bfs
 
+- top-down backtrack
+> [A general approach to backtracking questions in Java (Subsets, Permutations, Combination Sum, Palindrome Partitioning)](https://leetcode.com/problems/combination-sum/discuss/16502/A-general-approach-to-backtracking-questions-in-Java-\(Subsets-Permutations-Combination-Sum-Palindrome-Partitioning\))
 
 ### permutation ans combination
 
+- [17 letter combination of a phone number](solution/0017_Letter_Combinations_of_a_Phone_Number.cpp)
+- [22 generate parentheses](solution/0022_Generate_Parentheses.cpp)
 - [39 combination sum](solution/0039_Combination_Sum.cpp)
 - [40 combination sum II](solution/0040_Combination_Sum_II.cpp)
 - [77 combinations](solution/0077_Combinations.cpp)
@@ -154,10 +162,6 @@ conversion
 
 ### backtrack
 
-- top-down backtrack
-> [A general approach to backtracking questions in Java (Subsets, Permutations, Combination Sum, Palindrome Partitioning)](https://leetcode.com/problems/combination-sum/discuss/16502/A-general-approach-to-backtracking-questions-in-Java-\(Subsets-Permutations-Combination-Sum-Palindrome-Partitioning\))
-
-- combination problem
 - bottom up combination and filter by condition
 - [401 binary watch](solution/0401_Binary_Watch.cpp)
 
@@ -170,7 +174,11 @@ use self matrix to log visit info
 
 https://leetcode.com/problems/subarray-sum-equals-k/discuss/301242/General-summary-of-what-kind-of-problem-can-cannot-solved-by-Two-Pointers
 - [3 longest substring without repeating characters](solution/0003_Longest_Substring_Without_Repeating_Characters.cpp)
-- [11 ](solution/0011_Container_With_Most_Water.cpp)
+- [11 container with most water](solution/0011_Container_With_Most_Water.cpp)
+- [26 remove duplicates from sorted array](solution/0026_Remove_Duplicates_from_Sorted_Array.cpp)
+//todo
+- [28]()
+- [38 count and say](solution/0038_Count_and_Say.cpp)
 - [763 partition labels](solution/0763_Partition_Labels.cpp)
 
 
@@ -197,6 +205,9 @@ https://leetcode.com/problems/subarray-sum-equals-k/discuss/301242/General-summa
 - [best time to buy and sell stock with cooldown](solution/0309_Best_Time_to_Buy_and_Sell_Stock_with_Cooldown.cpp)
 - [best time to buy and sell stock with transaction fee](solution/0714_Best_Time_to_Buy_and_Sell_Stock_with_Transaction_Fee.cpp)
 - [online stock span](solution/0901_Online_Stock_Span.cpp)
+
+### other
+- [regular expression matching](solution/0010_Regular_Expression_Matching.cpp)
 
 ## greedy
 
@@ -229,14 +240,31 @@ merge interval
 
 - [401 binary watch](solution/0401_Binary_Watch.cpp)
 
-#### INT_MIN
 
-- [divide two integers](solution/0029_Divide_Two_Integers.cpp)
-
-## N-Sum Problem
+## n sum Problem
 
 - [1 two sum](solution/0001_Two_Sum.cpp)
 - [15 3 sum](solution/0015_3Sum.cpp)
 - [16 3 sum closest](solution/0016_3Sum_Closest.cpp)
 - [18 4 sum](solution/0018_4Sum.cpp)
 
+## missing number
+
+- [268 missing number](solution/0268_Missing_Number.cpp)
+- [448 find all numbers disappeared in an array](solution/0448_Find_All_Numbers_Disappeared_in_an_Array.cpp)
+- [287 find the duplicate number](solution/0287_Find_the_Duplicate_Number.cpp)
+- [41 first missing positive](solution/0041_First_Missing_Positive.cpp)
+- [765 couples holding hands]()
+
+## palindrome string
+
+## corner case
+
+- [8 string to integer](solution/0008_String_to_Integer.cpp)
+==INT_MIN==
+- [29 divide two integers](solution/0029_Divide_Two_Integers.cpp)
+
+## other
+
+- [14](solution/0014_Longest_Common_Prefix.cpp)
+- [36]

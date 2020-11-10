@@ -36,6 +36,29 @@ vector<string> letterCombinations(string digits) {
     return result;
 }
 
+void dfs(vector<string> &ans, string &tmp, string &digits, int i, vector<string> &num2str) {
+    if (i >= digits.size()) {
+        ans.push_back(tmp);
+        return;
+    }
+
+    for (char c: num2str[digits[i] - '0']) {
+        tmp.push_back(c);
+        dfs(ans, tmp, digits, i + 1, num2str);
+        tmp.pop_back();
+    }
+}
+
+// solution 3 dfs
+vector<string> letterCombinations_2(string digits) {
+    if (digits.empty()) return {};
+    vector<string> ans;
+    string tmp;
+    vector<string> num2str = {"#", "#", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
+    dfs(ans, tmp, digits, 0, num2str);
+    return ans;
+}
+
 
 int main() {
     string s = "12345";
